@@ -1,0 +1,15 @@
+{
+  "model_id": "organization/model",
+  "model_revision": "exact-commit-sha",
+  "tokenizer_revision": "exact-commit-sha",
+  "transformers_version": "to-confirm",
+  "torch_version": "to-confirm",
+  "execution_path": "model_forward",
+  "use_cache": false,
+  "phase": "prefill",
+  "hidden_state_location": "to-confirm: pre-or-post-final-normalization",
+  "hidden_state_tuple_indexing": "embedding-plus-transformer-layers",
+  "prompt_id": "held-out-prompt-001",
+  "seed": 0,
+  "notes": "Never infer missing extraction details."
+}
