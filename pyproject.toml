@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "limen-runtime-audit"
+version = "0.1.0"
+description = "Reproducible runtime trajectory auditing for open-weight language models"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "Jean-Denis Batuli"}]
+dependencies = ["numpy>=1.24"]
+
+[project.urls]
+Homepage = "https://github.com/jeanbosange-bit/limen-runtime-audit"
+Repository = "https://github.com/jeanbosange-bit/limen-runtime-audit"
+Issues = "https://github.com/jeanbosange-bit/limen-runtime-audit/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+limen-audit = "limen_runtime_audit.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
