@@ -1,0 +1,19 @@
+{
+  "schema_version": "limen.audit.summary.v1",
+  "source_schema_version": "limen.audit.v1",
+  "source_npz_sha256": "0f5e68b65696bd16f6d4e586576e477bbcd63517cf89b393186eb4be7893d297",
+  "hidden_states_shape": [16, 22, 2048],
+  "logits_shape": [16, 32000],
+  "summary": {
+    "trajectory.path_length": {"n": 16, "median": 140.53797497306942, "q1": 138.88275133435303, "q3": 142.10408928334004},
+    "trajectory.displacement": {"n": 16, "median": 86.33044638515227, "q1": 86.1897478942751, "q3": 87.2065940146503},
+    "trajectory.tortuosity": {"n": 16, "median": 1.6195137962450263, "q1": 1.598409805965721, "q3": 1.64230897002551},
+    "trajectory.mean_speed": {"n": 16, "median": 6.692284522527116, "q1": 6.613464349254907, "q3": 6.766861394444764},
+    "trajectory.speed_cv": {"n": 16, "median": 2.1615920562768576, "q1": 2.118360982822919, "q3": 2.221598662678265},
+    "trajectory.mean_acceleration": {"n": 16, "median": 7.955966433492947, "q1": 7.793861589400834, "q3": 8.037248956640845},
+    "trajectory.mean_turning_angle_rad": {"n": 16, "median": 1.5799212627605328, "q1": 1.5579360478749202, "q3": 1.5946163036744936},
+    "baseline.entropy_nats": {"n": 16, "median": 0.3777600379722234, "q1": 0.032639455462114275, "q3": 1.3984702911219593},
+    "baseline.top1_probability": {"n": 16, "median": 0.8931420928604632, "q1": 0.5821860785551479, "q3": 0.9963437921479891},
+    "baseline.top1_top2_margin": {"n": 16, "median": 0.799074843286073, "q1": 0.44672460772164907, "q3": 0.9956087035404051}
+  }
+}
