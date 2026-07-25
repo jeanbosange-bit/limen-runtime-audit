@@ -82,6 +82,18 @@ The input is an `.npz` file containing:
 These are descriptive measurements. See
 [`docs/METRICS.md`](docs/METRICS.md) before interpreting them.
 
+## Real-model example
+
+The repository now includes a first real-model audit from
+`TinyLlama/TinyLlama-1.1B-Chat-v1.0`, with the exact revision, extraction
+semantics, source checksum, numerical summary and a plain-language
+interpretation:
+
+- [`examples/real_runs/tinyllama_20260725/`](examples/real_runs/tinyllama_20260725/)
+
+It is a single-run activation fingerprint, not a model-quality score or a
+reference distribution.
+
 ## Reproducibility contract
 
 Every scientific run should pin:
