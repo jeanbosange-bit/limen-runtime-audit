@@ -1,5 +1,7 @@
 name: Sync to Hugging Face Space
 
+# Mirrors the ZeroGPU-compatible Gradio application.
+
 on:
   push:
     branches:
