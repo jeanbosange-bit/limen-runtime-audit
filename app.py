@@ -71,7 +71,7 @@ def _format_number(value: Any) -> str:
 
 def _summary_rows(audit: dict[str, Any]) -> list[list[Any]]:
     rows: list[list[Any]] = []
-    metrics = audit.get("metrics", audit)
+    metrics = audit.get("summary", {})
     if not isinstance(metrics, dict):
         return rows
     for name, values in metrics.items():
@@ -118,7 +118,12 @@ def _markdown_report(audit: dict[str, Any], source_name: str) -> str:
     return "\n".join(lines)
 
 
-@spaces.GPU(duration=60)
+@spaces.GPU(duration=5)
+def zerogpu_probe() -> str:
+    """Minimal registered function required by a ZeroGPU-configured Space."""
+    return "ZeroGPU runtime available"
+
+
 def run_audit(file_path: str | None, metadata_text: str) -> tuple:
     if not file_path:
         raise gr.Error("Choose a trajectory.npz file first.")
@@ -208,7 +213,14 @@ model answered, or whether a representation caused an output.
         fn=run_audit,
         inputs=[trajectory, metadata],
         outputs=[summary, raw_json, json_download, report_download],
+        show_progress="full",
     )
+
+    # Register a real ZeroGPU endpoint without moving file-based NumPy auditing
+    # into the ephemeral GPU worker.
+    gpu_probe = gr.Button("ZeroGPU probe", visible=False)
+    gpu_probe_output = gr.Textbox(visible=False)
+    gpu_probe.click(fn=zerogpu_probe, outputs=gpu_probe_output)
 
     gr.Markdown("""
 ### Responsible interpretation
