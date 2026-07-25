@@ -1,0 +1,35 @@
+{
+  "schema_version": "limen.matched_prompt_comparison.v1",
+  "status": "DESCRIPTIVE_COMPARISON",
+  "evidence_level": "I",
+  "locked_fields": {
+    "model_id": true,
+    "resolved_revision": true,
+    "extraction_protocol": true,
+    "generated_token_count": true,
+    "dtype": true,
+    "device": true
+  },
+  "prompt_token_count": {
+    "reference": 28,
+    "contrast": 32,
+    "matched": false
+  },
+  "generated_text": {
+    "reference": "The sky appears blue because the sunlight reflects off the Earth's atmosphere",
+    "contrast": "2 + 2 = 5 because 2 is added to 2,"
+  },
+  "metrics": {
+    "trajectory.path_length": {"reference_median": 140.42873530793258, "contrast_median": 140.53797497306942, "relative_delta": 0.0007779010819779817},
+    "trajectory.displacement": {"reference_median": 86.35521820501404, "contrast_median": 86.33044638515227, "relative_delta": -0.00028685955958050827},
+    "trajectory.tortuosity": {"reference_median": 1.628288663508164, "contrast_median": 1.6195137962450263, "relative_delta": -0.0053890120712577145},
+    "trajectory.mean_speed": {"reference_median": 6.687082633711077, "contrast_median": 6.692284522527116, "relative_delta": 0.0007779010819778298},
+    "trajectory.speed_cv": {"reference_median": 2.09459997398237, "contrast_median": 2.1615920562768576, "relative_delta": 0.03198323456823048},
+    "trajectory.mean_acceleration": {"reference_median": 7.861628044258181, "contrast_median": 7.955966433492947, "relative_delta": 0.011999854063773428},
+    "trajectory.mean_turning_angle_rad": {"reference_median": 1.5628545384719832, "contrast_median": 1.5799212627605328, "relative_delta": 0.010920225694987516},
+    "baseline.entropy_nats": {"reference_median": 0.784379180360306, "contrast_median": 0.3777600379722234, "relative_delta": -0.5183961438156751},
+    "baseline.top1_probability": {"reference_median": 0.8527144238292612, "contrast_median": 0.8931420928604632, "relative_delta": 0.047410560794380094},
+    "baseline.top1_top2_margin": {"reference_median": 0.7758092211918777, "contrast_median": 0.799074843286073, "relative_delta": 0.02998884449768762}
+  },
+  "interpretation_boundary": "Descriptive two-trajectory comparison only. A difference may reflect prompt content, prompt token count, generated tokens or their interaction. Next-token probability concentration is not factual confidence. The comparison does not establish a semantic state, functional localization, causality or a model-quality score."
+}
