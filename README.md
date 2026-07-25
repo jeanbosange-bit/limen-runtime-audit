@@ -1,3 +1,15 @@
+---
+title: LIMEN Runtime Audit
+emoji: 🔎
+colorFrom: blue
+colorTo: indigo
+sdk: gradio
+app_file: app.py
+pinned: false
+license: apache-2.0
+short_description: Descriptive auditing of layer-wise LLM activation trajectories
+---
+
 # LIMEN Runtime Audit
 
 `limen-runtime-audit` is a small, reproducible toolkit for inspecting
