@@ -81,6 +81,14 @@ comparisons are:
 
 Machine-readable values are in [`summary.json`](summary.json).
 
+## Download and reproduce
+
+- [Download the source `trajectory.npz`](trajectory.npz)
+- [Read the extraction procedure](../../../scripts/README.md)
+
+The downloaded payload must have SHA-256
+`22e46f57d76d8c031ad81954fbd86c8510fd75083e1eefef908cb1782985baf2`.
+
 ## Replication status
 
 The locked extraction was run a second time and produced bitwise-identical

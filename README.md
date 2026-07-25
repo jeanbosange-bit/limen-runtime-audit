@@ -65,6 +65,9 @@ The input is an `.npz` file containing:
 - `hidden_states` — required, `[tokens, layers, hidden_dim]`;
 - `logits` — optional, `[tokens, vocabulary]`.
 
+The exact real-model extraction script, offline tests and locked TinyLlama
+command are available in [`scripts/`](scripts/).
+
 ## Output vocabulary
 
 | Metric | Plain-language meaning |
