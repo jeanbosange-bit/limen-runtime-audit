@@ -4,6 +4,7 @@
 
 - Added the first real-model example from a revision-pinned TinyLlama run.
 - Added machine-readable descriptive summaries and a plain-language report.
+- Added an exact, bitwise replication record for the first TinyLlama run.
 - Clarified that raw activation distances are protocol-dependent and that a
   single trajectory is not a quality score or reference distribution.
 
