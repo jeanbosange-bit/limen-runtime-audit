@@ -8,6 +8,7 @@ from typing import Any
 
 import gradio as gr
 import numpy as np
+import spaces
 
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "src"))
@@ -86,6 +87,7 @@ def _markdown_report(audit: dict[str, Any], source_name: str) -> str:
     return "\n".join(lines)
 
 
+@spaces.GPU(duration=60)
 def run_audit(file_path: str | None, metadata_text: str) -> tuple:
     if not file_path:
         raise gr.Error("Choose a trajectory.npz file first.")
