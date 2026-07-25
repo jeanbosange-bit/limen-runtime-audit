@@ -1,0 +1,37 @@
+{
+  "schema_version": "limen.replication.v1",
+  "evidence_level": "I",
+  "verdict": "EXACT_REPLICATION",
+  "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "model_revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+  "prompt": "Explain in two short sentences why the sky appears blue.",
+  "generation": {
+    "method": "greedy",
+    "generated_tokens": 16
+  },
+  "reference_npz_sha256": "22e46f57d76d8c031ad81954fbd86c8510fd75083e1eefef908cb1782985baf2",
+  "replication_npz_sha256": "22e46f57d76d8c031ad81954fbd86c8510fd75083e1eefef908cb1782985baf2",
+  "keys_match": true,
+  "arrays": {
+    "hidden_states": {
+      "shape": [16, 22, 2048],
+      "dtype": "float32",
+      "array_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "logits": {
+      "shape": [16, 32000],
+      "dtype": "float32",
+      "array_equal": true,
+      "max_absolute_difference": 0.0
+    },
+    "token_ids": {
+      "shape": [16],
+      "dtype": "int64",
+      "array_equal": true,
+      "max_absolute_difference": 0.0
+    }
+  },
+  "all_fixed_metadata_equal": true,
+  "interpretation_boundary": "Exact replication is established only for two executions of this locked greedy protocol. It does not establish cross-device, cross-version, sampled-generation or cross-architecture reproducibility, model quality, functional localization or causality."
+}
