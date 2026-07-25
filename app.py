@@ -17,6 +17,37 @@ from limen_runtime_audit import audit_arrays  # noqa: E402
 
 MAX_UPLOAD_BYTES = 250 * 1024 * 1024
 
+
+def _create_demo_file() -> Path:
+    """Create a deterministic synthetic trajectory for interface testing."""
+    demo_dir = Path(tempfile.gettempdir()) / "limen-runtime-audit"
+    demo_dir.mkdir(parents=True, exist_ok=True)
+    demo_path = demo_dir / "demo_trajectory.npz"
+
+    rng = np.random.default_rng(20260725)
+    n_tokens, n_layers, hidden_dim, vocabulary = 16, 12, 32, 64
+    layer_drift = rng.normal(0.0, 0.10, size=(n_tokens, n_layers, hidden_dim))
+    token_context = rng.normal(0.0, 0.20, size=(n_tokens, 1, hidden_dim))
+    hidden_states = (token_context + np.cumsum(layer_drift, axis=1)).astype(np.float32)
+    logits = rng.normal(0.0, 1.0, size=(n_tokens, vocabulary)).astype(np.float32)
+
+    np.savez_compressed(
+        demo_path,
+        hidden_states=hidden_states,
+        logits=logits,
+    )
+    return demo_path
+
+
+DEMO_PATH = _create_demo_file()
+DEMO_METADATA = json.dumps(
+    {
+        "model": "synthetic-demonstration",
+        "prompt_id": "demo-001",
+        "note": "Deterministic synthetic arrays; not measurements from a real model.",
+    }
+)
+
 PLAIN_LANGUAGE = {
     "step_norm": "How far the representation moves between consecutive tokens",
     "curvature": "How sharply the trajectory changes direction",
@@ -146,6 +177,21 @@ model answered, or whether a representation caused an output.
             value='{"model": "model-name", "prompt_id": "example-001"}',
             lines=5,
         )
+    gr.Markdown(
+        "**No trajectory yet?** Download the synthetic demonstration file below, "
+        "or click the example to load it automatically. It verifies the interface "
+        "but is not a scientific model result."
+    )
+    demo_download = gr.File(
+        value=str(DEMO_PATH),
+        label="Download demo_trajectory.npz",
+        interactive=False,
+    )
+    gr.Examples(
+        examples=[[str(DEMO_PATH), DEMO_METADATA]],
+        inputs=[trajectory, metadata],
+        label="Ready-to-use demonstration",
+    )
     audit_button = gr.Button("Run descriptive audit", variant="primary")
     summary = gr.Dataframe(
         headers=["Metric", "Plain-language meaning", "N", "Median", "Q1", "Q3"],
