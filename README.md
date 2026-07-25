@@ -7,7 +7,7 @@ sdk: gradio
 app_file: app.py
 pinned: false
 license: apache-2.0
-short_description: Descriptive auditing of layer-wise LLM activation trajectories
+short_description: Descriptive LLM activation-trajectory auditing
 ---
 
 # LIMEN Runtime Audit
