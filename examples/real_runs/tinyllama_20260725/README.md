@@ -80,3 +80,10 @@ comparisons are:
 4. the same prompt on a second open architecture.
 
 Machine-readable values are in [`summary.json`](summary.json).
+
+## Replication status
+
+The locked extraction was run a second time and produced bitwise-identical
+hidden states, logits and token IDs, including an identical NPZ checksum.
+See [`REPLICATION.md`](REPLICATION.md) and
+[`replication.json`](replication.json).
