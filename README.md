@@ -90,6 +90,7 @@ semantics, source checksum, numerical summary and a plain-language
 interpretation:
 
 - [`examples/real_runs/tinyllama_20260725/`](examples/real_runs/tinyllama_20260725/)
+- [`examples/real_runs/tinyllama_false_premise_20260725/`](examples/real_runs/tinyllama_false_premise_20260725/)
 
 It is a single-run activation fingerprint, not a model-quality score or a
 reference distribution.
