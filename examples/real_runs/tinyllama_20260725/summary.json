@@ -1,0 +1,81 @@
+{
+  "status": "descriptive_observation",
+  "evidence_level": "I",
+  "run_date": "2026-07-25",
+  "model_id": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "model_revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+  "prompt": "Explain in two short sentences why the sky appears blue.",
+  "extraction_protocol": "autoregressive_greedy_preselection_hidden_states_v1",
+  "hidden_states_semantics": "Transformer-layer states at the current final context position, recorded immediately before greedy selection of each generated token.",
+  "embedding_output_included": false,
+  "generated_text": "The sky appears blue because the sunlight reflects off the Earth's atmosphere",
+  "input": {
+    "hidden_states_shape": [16, 22, 2048],
+    "logits_shape": [16, 32000],
+    "generated_tokens": 16,
+    "source_npz_sha256": "22e46f57d76d8c031ad81954fbd86c8510fd75083e1eefef908cb1782985baf2"
+  },
+  "summary": {
+    "trajectory.path_length": {
+      "n": 16,
+      "median": 140.42873530793258,
+      "q1": 138.40412282538819,
+      "q3": 142.08834191115915
+    },
+    "trajectory.displacement": {
+      "n": 16,
+      "median": 86.35521820501404,
+      "q1": 86.03333355960163,
+      "q3": 86.70576613291792
+    },
+    "trajectory.tortuosity": {
+      "n": 16,
+      "median": 1.628288663508164,
+      "q1": 1.5906769353886905,
+      "q3": 1.6416519880299327
+    },
+    "trajectory.mean_speed": {
+      "n": 16,
+      "median": 6.687082633711077,
+      "q1": 6.590672515494676,
+      "q3": 6.766111519579008
+    },
+    "trajectory.speed_cv": {
+      "n": 16,
+      "median": 2.09459997398237,
+      "q1": 2.055023203135824,
+      "q3": 2.121525182841051
+    },
+    "trajectory.mean_acceleration": {
+      "n": 16,
+      "median": 7.861628044258181,
+      "q1": 7.68839940048533,
+      "q3": 8.050692356145705
+    },
+    "trajectory.mean_turning_angle_rad": {
+      "n": 16,
+      "median": 1.5628545384719832,
+      "q1": 1.5495328636140662,
+      "q3": 1.5796590019386731
+    },
+    "baseline.entropy_nats": {
+      "n": 16,
+      "median": 0.7843791803603058,
+      "q1": 0.27094807301,
+      "q3": 1.8690443847880074
+    },
+    "baseline.top1_probability": {
+      "n": 16,
+      "median": 0.8527144238292609,
+      "q1": 0.517117330992193,
+      "q3": 0.9595017835056062
+    },
+    "baseline.top1_top2_margin": {
+      "n": 16,
+      "median": 0.7758092211918776,
+      "q1": 0.3459121433679466,
+      "q3": 0.9401809994149022
+    }
+  },
+  "interpretation_boundary": "One real trajectory, not a reference distribution. Activation-space distances are scale- and protocol-dependent. The measurements do not establish model quality, functional localization, semantic identity, causality, reasoning, or controllability."
+}
