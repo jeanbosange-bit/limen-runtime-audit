@@ -9,6 +9,12 @@
   premise, with probability and geometry measurements kept separate.
 - Clarified that raw activation distances are protocol-dependent and that a
   single trajectory is not a quality score or reference distribution.
+- Added `tests/test_invariance.py`: 11 tests responding directly to an
+  independent technical review (July 2026), covering path-length/
+  displacement/velocity/acceleration scaling behavior, tortuosity and
+  turning-angle invariance under translation/rotation/uniform scale, and
+  the zero-motion turning-angle convention. All 20 tests (11 new + 9
+  existing in test_metrics.py) pass.
 
 ## 0.1.0 - 2026-07-24
 
