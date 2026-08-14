@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "limen-runtime-audit"
-version = "0.1.0"
-description = "Reproducible runtime trajectory auditing for open-weight language models"
+version = "0.2.0"
+description = "Reproducible runtime trajectory auditing and evidence-chain observability for open-weight language models"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "Apache-2.0"}
@@ -19,6 +19,7 @@ Issues = "https://github.com/jeanbosange-bit/limen-runtime-audit/issues"
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]
+space = ["torch>=2.1", "transformers>=4.42", "accelerate>=0.30", "gradio", "spaces"]
 
 [project.scripts]
 limen-audit = "limen_runtime_audit.cli:main"
