@@ -1,0 +1,18 @@
+{
+  "status": "FROZEN_PRE_ANALYSIS",
+  "note": "Predeclared before any count is inspected. Not altered after seeing data.",
+  "directed_edges": [
+    {"source": "L0", "target": "L1"}, {"source": "L0", "target": "L5"}, {"source": "L0", "target": "L20"},
+    {"source": "L1", "target": "L0"}, {"source": "L1", "target": "L5"}, {"source": "L1", "target": "L20"},
+    {"source": "L5", "target": "L0"}, {"source": "L5", "target": "L1"}, {"source": "L5", "target": "L20"},
+    {"source": "L20", "target": "L0"}, {"source": "L20", "target": "L1"}, {"source": "L20", "target": "L5"}
+  ],
+  "n_directed_edges": 12,
+  "undirected_cooccurrence_pairs": [
+    {"pair": ["L0", "L1"]}, {"pair": ["L0", "L5"]}, {"pair": ["L0", "L20"]},
+    {"pair": ["L1", "L5"]}, {"pair": ["L1", "L20"]}, {"pair": ["L5", "L20"]}
+  ],
+  "n_undirected_pairs": 6,
+  "total_predeclared_tests": 18,
+  "multiple_comparison_family": "all 18 tests (12 directed + 6 undirected) treated as ONE Holm-corrected family, frozen before analysis -- see FROZEN_NETWORK_PROTOCOL.md"
+}

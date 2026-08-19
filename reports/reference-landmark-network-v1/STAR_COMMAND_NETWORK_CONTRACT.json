@@ -1,0 +1,199 @@
+{
+  "contract": "STAR_COMMAND_REFERENCE_LANDMARK_NETWORK_V1",
+  "mode": "READ_ONLY",
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "confirmed_landmarks": [
+    {
+      "id": "L0",
+      "ui_label": "CONFIRMED LANDMARK",
+      "layer": 0
+    },
+    {
+      "id": "L1",
+      "ui_label": "CONFIRMED LANDMARK",
+      "layer": 1
+    },
+    {
+      "id": "L5",
+      "ui_label": "CONFIRMED LANDMARK",
+      "layer": 5
+    },
+    {
+      "id": "L20",
+      "ui_label": "CONFIRMED LANDMARK",
+      "layer": 20
+    }
+  ],
+  "connections": [
+    {
+      "source": "L0",
+      "target": "L1",
+      "ui_label": "LOW-SUPPORT CONNECTION",
+      "ui_text": "This transition has been observed 27 time(s) across 9 prompt families and 3 seed(s) -- not yet enough to call it a stable reference connection.",
+      "technical_detail_expandable": {
+        "observed_count": 27,
+        "holm_adjusted_p": 0.6063393660633937,
+        "n_families": 9,
+        "n_seeds": 3,
+        "n_prompt_ids": 18
+      }
+    },
+    {
+      "source": "L0",
+      "target": "L5",
+      "ui_label": "SUPPORTED REFERENCE CONNECTION",
+      "ui_text": "We have repeatedly observed this transition across 28 runs, 8 prompt families, and 3 seeds.",
+      "technical_detail_expandable": {
+        "observed_count": 28,
+        "holm_adjusted_p": 0.0053994600539946005,
+        "n_families": 8,
+        "n_seeds": 3,
+        "n_prompt_ids": 18
+      }
+    },
+    {
+      "source": "L0",
+      "target": "L20",
+      "ui_label": "SUPPORTED REFERENCE CONNECTION",
+      "ui_text": "We have repeatedly observed this transition across 24 runs, 8 prompt families, and 3 seeds.",
+      "technical_detail_expandable": {
+        "observed_count": 24,
+        "holm_adjusted_p": 0.0053994600539946005,
+        "n_families": 8,
+        "n_seeds": 3,
+        "n_prompt_ids": 17
+      }
+    },
+    {
+      "source": "L1",
+      "target": "L0",
+      "ui_label": "LOW-SUPPORT CONNECTION",
+      "ui_text": "This transition has been observed 15 time(s) across 6 prompt families and 3 seed(s) -- not yet enough to call it a stable reference connection.",
+      "technical_detail_expandable": {
+        "observed_count": 15,
+        "holm_adjusted_p": 1.0,
+        "n_families": 6,
+        "n_seeds": 3,
+        "n_prompt_ids": 13
+      }
+    },
+    {
+      "source": "L1",
+      "target": "L5",
+      "ui_label": "LOW-SUPPORT CONNECTION",
+      "ui_text": "This transition has been observed 23 time(s) across 8 prompt families and 3 seed(s) -- not yet enough to call it a stable reference connection.",
+      "technical_detail_expandable": {
+        "observed_count": 23,
+        "holm_adjusted_p": 1.0,
+        "n_families": 8,
+        "n_seeds": 3,
+        "n_prompt_ids": 16
+      }
+    },
+    {
+      "source": "L1",
+      "target": "L20",
+      "ui_label": "LOW-SUPPORT CONNECTION",
+      "ui_text": "This transition has been observed 16 time(s) across 9 prompt families and 3 seed(s) -- not yet enough to call it a stable reference connection.",
+      "technical_detail_expandable": {
+        "observed_count": 16,
+        "holm_adjusted_p": 1.0,
+        "n_families": 9,
+        "n_seeds": 3,
+        "n_prompt_ids": 12
+      }
+    },
+    {
+      "source": "L5",
+      "target": "L0",
+      "ui_label": "LOW-SUPPORT CONNECTION",
+      "ui_text": "This transition has been observed 11 time(s) across 6 prompt families and 3 seed(s) -- not yet enough to call it a stable reference connection.",
+      "technical_detail_expandable": {
+        "observed_count": 11,
+        "holm_adjusted_p": 1.0,
+        "n_families": 6,
+        "n_seeds": 3,
+        "n_prompt_ids": 9
+      }
+    },
+    {
+      "source": "L5",
+      "target": "L1",
+      "ui_label": "LOW-SUPPORT CONNECTION",
+      "ui_text": "This transition has been observed 16 time(s) across 6 prompt families and 3 seed(s) -- not yet enough to call it a stable reference connection.",
+      "technical_detail_expandable": {
+        "observed_count": 16,
+        "holm_adjusted_p": 1.0,
+        "n_families": 6,
+        "n_seeds": 3,
+        "n_prompt_ids": 11
+      }
+    },
+    {
+      "source": "L5",
+      "target": "L20",
+      "ui_label": "LOW-SUPPORT CONNECTION",
+      "ui_text": "This transition has been observed 10 time(s) across 6 prompt families and 3 seed(s) -- not yet enough to call it a stable reference connection.",
+      "technical_detail_expandable": {
+        "observed_count": 10,
+        "holm_adjusted_p": 1.0,
+        "n_families": 6,
+        "n_seeds": 3,
+        "n_prompt_ids": 8
+      }
+    },
+    {
+      "source": "L20",
+      "target": "L0",
+      "ui_label": "LOW-SUPPORT CONNECTION",
+      "ui_text": "This transition has been observed 6 time(s) across 3 prompt families and 3 seed(s) -- not yet enough to call it a stable reference connection.",
+      "technical_detail_expandable": {
+        "observed_count": 6,
+        "holm_adjusted_p": 1.0,
+        "n_families": 3,
+        "n_seeds": 3,
+        "n_prompt_ids": 5
+      }
+    },
+    {
+      "source": "L20",
+      "target": "L1",
+      "ui_label": "LOW-SUPPORT CONNECTION",
+      "ui_text": "This transition has been observed 15 time(s) across 7 prompt families and 3 seed(s) -- not yet enough to call it a stable reference connection.",
+      "technical_detail_expandable": {
+        "observed_count": 15,
+        "holm_adjusted_p": 1.0,
+        "n_families": 7,
+        "n_seeds": 3,
+        "n_prompt_ids": 11
+      }
+    },
+    {
+      "source": "L20",
+      "target": "L5",
+      "ui_label": "LOW-SUPPORT CONNECTION",
+      "ui_text": "This transition has been observed 15 time(s) across 5 prompt families and 3 seed(s) -- not yet enough to call it a stable reference connection.",
+      "technical_detail_expandable": {
+        "observed_count": 15,
+        "holm_adjusted_p": 1.0,
+        "n_families": 5,
+        "n_seeds": 3,
+        "n_prompt_ids": 10
+      }
+    }
+  ],
+  "observed_routes_ui_label": "OBSERVED ROUTE",
+  "reference_routes_ui_label": "REFERENCE ROUTE",
+  "reference_routes": [
+    {
+      "signature": "L0-L20",
+      "ui_text": "Observed 3 times across 2 prompt families and 2 seeds."
+    }
+  ],
+  "fallback_message_if_no_supported_edge": "Confirmed points of reference exist, but stable connections between them are not yet established.",
+  "fallback_message_applies_this_gate": false,
+  "ui_rule": "Edge p-value is NEVER the primary UI element -- it lives only in technical_detail_expandable. The primary UI text is always the plain-language run/family/seed count sentence.",
+  "control": "NO",
+  "sra_x": "NOT_TESTED",
+  "causal_claim": "NO"
+}

@@ -1,0 +1,35 @@
+{
+  "contract": "STAR_COMMAND_REFERENCE_LANDMARK_NETWORK_V0",
+  "mode": "READ_ONLY",
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "forward_navigation": [
+    "MODEL",
+    "RUN",
+    "ROUTE",
+    "LANDMARK",
+    "COORDINATE",
+    "OBSERVABLE",
+    "EVIDENCE"
+  ],
+  "reverse_navigation": [
+    "LANDMARK",
+    "SUPPORTING_RUNS",
+    "PROMPT_FAMILIES",
+    "MODEL_PASSPORT",
+    "EVIDENCE"
+  ],
+  "identity_rules": [
+    "Preserve run_id, prompt_id, candidate_id, layer, step and evidence hashes",
+    "Never infer links from row order",
+    "Join coordinate observables by run_id + layer + actual step"
+  ],
+  "sources": {
+    "nodes": "FROZEN_NODE_REGISTRY.json",
+    "routes": "ROUTE_INSTANCES.csv",
+    "edges": "EDGE_VALIDATION_RESULTS.json",
+    "local_observables": "LANDMARK_LOCAL_SIGNATURES.json",
+    "evidence": "canonical source paths and SHA-256 values"
+  },
+  "role_projection": "Same node, run and evidence IDs; wording/resolution may differ",
+  "control": "NO"
+}

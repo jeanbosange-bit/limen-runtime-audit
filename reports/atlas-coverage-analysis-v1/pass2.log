@@ -1,0 +1,11 @@
+Recomputing full descriptor series for all runs...
+  30/144 runs processed
+  60/144 runs processed
+  90/144 runs processed
+  120/144 runs processed
+Recompute done: 305 events, 87 runs with >=1 landmark
+Family/replication/cooccurrence written
+Route signatures written: 60 unique, 10 cross-family
+Local window CSVs written: 915 rows total
+Landmark vs non-landmark comparison written
+DOWNSTREAM PART 1 DONE

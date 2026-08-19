@@ -1,0 +1,254 @@
+{
+  "directed_edges": {
+    "L0->L1": {
+      "source": "L0",
+      "target": "L1",
+      "observed_count": 27,
+      "eligible_run_support": 27,
+      "n_families": 9,
+      "n_seeds": 3,
+      "n_prompt_ids": 18,
+      "raw_p": 0.037896210378962104,
+      "holm_adjusted_p": 0.6063393660633937,
+      "n_direct": 18,
+      "n_indirect": 21,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "L0->L5": {
+      "source": "L0",
+      "target": "L5",
+      "observed_count": 28,
+      "eligible_run_support": 28,
+      "n_families": 8,
+      "n_seeds": 3,
+      "n_prompt_ids": 18,
+      "raw_p": 0.00029997000299970003,
+      "holm_adjusted_p": 0.0053994600539946005,
+      "n_direct": 21,
+      "n_indirect": 21,
+      "status": "REFERENCE_EDGE_SUPPORTED"
+    },
+    "L0->L20": {
+      "source": "L0",
+      "target": "L20",
+      "observed_count": 24,
+      "eligible_run_support": 24,
+      "n_families": 8,
+      "n_seeds": 3,
+      "n_prompt_ids": 17,
+      "raw_p": 0.00029997000299970003,
+      "holm_adjusted_p": 0.0053994600539946005,
+      "n_direct": 13,
+      "n_indirect": 16,
+      "status": "REFERENCE_EDGE_SUPPORTED"
+    },
+    "L1->L0": {
+      "source": "L1",
+      "target": "L0",
+      "observed_count": 15,
+      "eligible_run_support": 15,
+      "n_families": 6,
+      "n_seeds": 3,
+      "n_prompt_ids": 13,
+      "raw_p": 0.9979002099790021,
+      "holm_adjusted_p": 1.0,
+      "n_direct": 14,
+      "n_indirect": 5,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "L1->L5": {
+      "source": "L1",
+      "target": "L5",
+      "observed_count": 23,
+      "eligible_run_support": 23,
+      "n_families": 8,
+      "n_seeds": 3,
+      "n_prompt_ids": 16,
+      "raw_p": 0.08809119088091191,
+      "holm_adjusted_p": 1.0,
+      "n_direct": 15,
+      "n_indirect": 13,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "L1->L20": {
+      "source": "L1",
+      "target": "L20",
+      "observed_count": 16,
+      "eligible_run_support": 16,
+      "n_families": 9,
+      "n_seeds": 3,
+      "n_prompt_ids": 12,
+      "raw_p": 0.45525447455254475,
+      "holm_adjusted_p": 1.0,
+      "n_direct": 14,
+      "n_indirect": 6,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "L5->L0": {
+      "source": "L5",
+      "target": "L0",
+      "observed_count": 11,
+      "eligible_run_support": 11,
+      "n_families": 6,
+      "n_seeds": 3,
+      "n_prompt_ids": 9,
+      "raw_p": 0.9999000099990001,
+      "holm_adjusted_p": 1.0,
+      "n_direct": 10,
+      "n_indirect": 6,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "L5->L1": {
+      "source": "L5",
+      "target": "L1",
+      "observed_count": 16,
+      "eligible_run_support": 16,
+      "n_families": 6,
+      "n_seeds": 3,
+      "n_prompt_ids": 11,
+      "raw_p": 0.9312068793120688,
+      "holm_adjusted_p": 1.0,
+      "n_direct": 11,
+      "n_indirect": 13,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "L5->L20": {
+      "source": "L5",
+      "target": "L20",
+      "observed_count": 10,
+      "eligible_run_support": 10,
+      "n_families": 6,
+      "n_seeds": 3,
+      "n_prompt_ids": 8,
+      "raw_p": 0.9803019698030196,
+      "holm_adjusted_p": 1.0,
+      "n_direct": 8,
+      "n_indirect": 8,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "L20->L0": {
+      "source": "L20",
+      "target": "L0",
+      "observed_count": 6,
+      "eligible_run_support": 6,
+      "n_families": 3,
+      "n_seeds": 3,
+      "n_prompt_ids": 5,
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1.0,
+      "n_direct": 6,
+      "n_indirect": 2,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "L20->L1": {
+      "source": "L20",
+      "target": "L1",
+      "observed_count": 15,
+      "eligible_run_support": 15,
+      "n_families": 7,
+      "n_seeds": 3,
+      "n_prompt_ids": 11,
+      "raw_p": 0.5782421757824218,
+      "holm_adjusted_p": 1.0,
+      "n_direct": 15,
+      "n_indirect": 6,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "L20->L5": {
+      "source": "L20",
+      "target": "L5",
+      "observed_count": 15,
+      "eligible_run_support": 15,
+      "n_families": 5,
+      "n_seeds": 3,
+      "n_prompt_ids": 10,
+      "raw_p": 0.34296570342965704,
+      "holm_adjusted_p": 1.0,
+      "n_direct": 11,
+      "n_indirect": 8,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    }
+  },
+  "cooccurrence_pairs": {
+    "L0~L1": {
+      "pair": [
+        "L0",
+        "L1"
+      ],
+      "observed_count": 35,
+      "n_families": 9,
+      "n_seeds": 3,
+      "n_prompt_ids": 21,
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1.0,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "L0~L5": {
+      "pair": [
+        "L0",
+        "L5"
+      ],
+      "observed_count": 31,
+      "n_families": 8,
+      "n_seeds": 3,
+      "n_prompt_ids": 20,
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1.0,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "L0~L20": {
+      "pair": [
+        "L0",
+        "L20"
+      ],
+      "observed_count": 25,
+      "n_families": 8,
+      "n_seeds": 3,
+      "n_prompt_ids": 17,
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1.0,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "L1~L5": {
+      "pair": [
+        "L1",
+        "L5"
+      ],
+      "observed_count": 30,
+      "n_families": 8,
+      "n_seeds": 3,
+      "n_prompt_ids": 19,
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1.0,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "L1~L20": {
+      "pair": [
+        "L1",
+        "L20"
+      ],
+      "observed_count": 24,
+      "n_families": 11,
+      "n_seeds": 3,
+      "n_prompt_ids": 17,
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1.0,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "L20~L5": {
+      "pair": [
+        "L20",
+        "L5"
+      ],
+      "observed_count": 23,
+      "n_families": 8,
+      "n_seeds": 3,
+      "n_prompt_ids": 16,
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1.0,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    }
+  },
+  "correction": "Holm, family of 18 (12 directed + 6 undirected)",
+  "thresholds": "reports/reference-landmark-network-v1/FROZEN_NETWORK_PROTOCOL.md#edge-status-thresholds"
+}

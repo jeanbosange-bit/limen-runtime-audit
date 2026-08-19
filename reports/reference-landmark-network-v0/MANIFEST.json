@@ -1,0 +1,64 @@
+{
+  "gate": "REFERENCE LANDMARK NETWORK V0",
+  "status": "EXECUTED",
+  "date": "2026-08-18",
+  "real_new_generations": 0,
+  "network_verdict": "REFERENCE_LANDMARK_NETWORK_PARTIAL",
+  "counts": {
+    "primary_nodes": 4,
+    "runs_analyzed": 30,
+    "runs_with_landmark": 18,
+    "runs_with_two_or_more_landmarks": 10,
+    "unique_route_signatures": 11,
+    "common_routes": 1,
+    "validated_edges": 0,
+    "recurring_low_support_edges": 5,
+    "cross_family_edges": 5,
+    "routes_with_no_landmark": 12
+  },
+  "most_broadly_observed_landmark": "L20",
+  "most_frequent_nonempty_route": "L20",
+  "source_inputs": [
+    {
+      "path": "reports/multi-tensor-landmarks-v0/LANDMARK_RESULTS.json",
+      "sha256": "91a9fb0b3003c87e7b230418efc0e70c7f8abf95d18530ec16bbfd240e9c3d2f"
+    },
+    {
+      "path": "reports/multi-tensor-landmarks-v0/TRANSITION_RESULTS.json",
+      "sha256": "bb3882b107db336dc8638e6853361bfc48e1e2c9713dd9af558d5952a1adac8d"
+    },
+    {
+      "path": "reports/multi-tensor-landmarks-v0/MANIFEST.json",
+      "sha256": "4a1fe439e6bba8aa66af91d885bf82f7adda61fea4eebfeb4ca79dd1cd7b2e11"
+    },
+    {
+      "path": "reports/multi-tensor-atlas-v0/COORDINATE_TABLE.csv",
+      "sha256": "80a0978f3854634e3c51a02bcacfc821a59189eeae728f40522cd3a51bc2dbcd"
+    },
+    {
+      "path": "reports/multi-tensor-atlas-v0/KV_MAP.csv",
+      "sha256": "a7eac9747b883515e4d61bbda2f58598109ce8bbe5de8ae1a925d3e36f9debcd"
+    },
+    {
+      "path": "reports/multi-tensor-atlas-v0/PROB_MAP.csv",
+      "sha256": "63445cc513266dada9b269678249577263e6a156fcd4746faf424c1361841ce8"
+    },
+    {
+      "path": "reports/attention-sensitivity-v1/ATTENTION_V1_RESULTS.json",
+      "sha256": "a0432f75363be018bd162ef67d16c5028b687102a6ae8f4f676e31dbb7c1de64"
+    },
+    {
+      "path": "reports/atlas-kv-compression-v0/MANIFEST.json",
+      "sha256": "76d109f76d90cb8774a64395145efda1d2a207e42b359732c681edc24a9d9cf3"
+    }
+  ],
+  "obsolete_inputs_ignored": [
+    "BUGFIX_DISCLOSURE_buggy_run.log",
+    "BUGFIX_DISCLOSURE_buggy_transition_results.json"
+  ],
+  "alignment": "ACTUAL_STEP_KEYED_WITH_TIES_PRESERVED",
+  "null_model_frozen_before_significance": true,
+  "control": "NO",
+  "sra_x": "NOT_TESTED",
+  "causal_claim": "NO"
+}

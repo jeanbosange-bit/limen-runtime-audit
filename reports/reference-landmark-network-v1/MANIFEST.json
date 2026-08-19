@@ -1,0 +1,46 @@
+{
+  "gate": "REFERENCE LANDMARK NETWORK V1 -- LANE B OUT-OF-SAMPLE VALIDATION",
+  "status": "EXECUTED, READ-ONLY",
+  "date": "2026-08-18",
+  "new_generations": 0,
+  "source_runs": 144,
+  "landmark_eligible_runs": 127,
+  "edge_eligible_runs": 69,
+  "source_inputs": [
+    {"path": "reports/atlas-coverage-analysis-v1/PASS1_CACHE.json", "role": "305 landmark encounter events, read-only"},
+    {"path": "reports/atlas-coverage-analysis-v1/RUN_ELIGIBILITY_AUDIT.csv", "role": "run-level eligibility/family/seed metadata, read-only"},
+    {"path": "reports/multi-tensor-landmarks-v0/FROZEN_LANDMARK_REGISTRY.json", "role": "frozen node definitions, read-only"},
+    {"path": "reports/reference-landmark-network-v0/test_network.py", "role": "canonical tie-notation evidence, read-only"},
+    {"path": "reports/reference-landmark-network-v0/STAR_COMMAND_INTEGRATION_CONTRACT.json", "role": "canonical contract shape reference, read-only"}
+  ],
+  "scientific_source_artifacts_modified": false,
+  "required_deliverables": [
+    "FROZEN_NETWORK_PROTOCOL.md", "FROZEN_NODE_REGISTRY.json", "ELIGIBILITY_AUDIT.csv",
+    "SAME_STEP_TIE_POLICY.md", "EDGE_UNIVERSE.json", "EDGE_OBSERVED_COUNTS.csv",
+    "EDGE_NULL_RESULTS.csv", "EDGE_VALIDATION_RESULTS.json", "EDGE_FAMILY_SUPPORT.csv",
+    "EDGE_SEED_SUPPORT.csv", "EDGE_LEAVE_FAMILY_OUT.csv", "ROUTE_SIGNATURES.csv",
+    "ROUTE_VALIDATION_RESULTS.json", "CROSS_FAMILY_ROUTE_AUDIT.json", "V0_V1_COMPARISON.json",
+    "NETWORK_GRAPH.json", "STAR_COMMAND_NETWORK_CONTRACT.json", "EPISTEMIC_STATUS.md",
+    "REPORT.md", "MANIFEST.json", "SHA256SUMS.txt"
+  ],
+  "supporting_files_not_required": ["build_network_v1.py", "build_network_v1_part2.py", "build_network_v1_part3.py", "build_network_v1_part4.py", "RELATIONS_CACHE.json"],
+  "counts": {
+    "unique_route_signatures": 60, "cross_family_route_references": 10,
+    "direct_edge_candidates_tested": 12,
+    "supported_direct_edges": 2, "low_support_direct_edges": 10, "not_supported_direct_edges": 0,
+    "supported_cooccurrence_links": 0, "low_support_cooccurrence_links": 6,
+    "supported_reference_routes": 1, "low_support_routes": 10, "not_supported_routes": 48,
+    "seed_stable_edges": 2, "family_stable_edges": 2,
+    "v0_supported_edges": 0, "v1_new_supported_edges": 2
+  },
+  "null_model": {
+    "type": "within-run landmark-label permutation, group-preserving (run/family/seed/tie-structure held fixed)",
+    "n_permutations": 10000, "rng_seed": 20260818,
+    "correction": "Holm, family of 18 (12 directed + 6 undirected)"
+  },
+  "bug_found_this_gate": false,
+  "control": "NO", "sra_x": "NOT_TESTED", "vbe": "NOT_TESTED_IN_THIS_GATE",
+  "causal_claim": "NO", "intervention": "NO", "steering": "NO", "navigation_policy": "NO",
+  "final_verdict": "REFERENCE_LANDMARK_NETWORK_PARTIAL",
+  "hashes_file": "SHA256SUMS.txt"
+}

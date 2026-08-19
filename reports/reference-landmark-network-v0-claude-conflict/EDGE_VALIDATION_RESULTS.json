@@ -1,0 +1,128 @@
+{
+  "null_model": "within-run landmark-label shuffle, group-preserving by run_id, N=200, seed=20260818",
+  "n_permutations": 200,
+  "alpha_corrected_bonferroni_12": 0.004166666666666667,
+  "n_runs_contributing_to_null": 10,
+  "edges": [
+    {
+      "from": "L0",
+      "to": "L1",
+      "observed_n_runs": 4,
+      "permutation_median": 2.0,
+      "permutation_mean": 2.09,
+      "p_value": 0.06467661691542288,
+      "alpha_corrected_bonferroni_12": 0.004166666666666667,
+      "status": "NOT_SUPPORTED"
+    },
+    {
+      "from": "L0",
+      "to": "L5",
+      "observed_n_runs": 1,
+      "permutation_median": 2.0,
+      "permutation_mean": 1.795,
+      "p_value": 0.9502487562189055,
+      "alpha_corrected_bonferroni_12": 0.004166666666666667,
+      "status": "NOT_SUPPORTED"
+    },
+    {
+      "from": "L0",
+      "to": "L20",
+      "observed_n_runs": 2,
+      "permutation_median": 2.0,
+      "permutation_mean": 1.975,
+      "p_value": 0.7064676616915423,
+      "alpha_corrected_bonferroni_12": 0.004166666666666667,
+      "status": "NOT_SUPPORTED"
+    },
+    {
+      "from": "L1",
+      "to": "L0",
+      "observed_n_runs": 1,
+      "permutation_median": 2.0,
+      "permutation_mean": 2.28,
+      "p_value": 0.9601990049751243,
+      "alpha_corrected_bonferroni_12": 0.004166666666666667,
+      "status": "NOT_SUPPORTED"
+    },
+    {
+      "from": "L1",
+      "to": "L5",
+      "observed_n_runs": 2,
+      "permutation_median": 2.0,
+      "permutation_mean": 1.86,
+      "p_value": 0.7014925373134329,
+      "alpha_corrected_bonferroni_12": 0.004166666666666667,
+      "status": "NOT_SUPPORTED"
+    },
+    {
+      "from": "L1",
+      "to": "L20",
+      "observed_n_runs": 1,
+      "permutation_median": 1.0,
+      "permutation_mean": 1.055,
+      "p_value": 0.7761194029850746,
+      "alpha_corrected_bonferroni_12": 0.004166666666666667,
+      "status": "NOT_SUPPORTED"
+    },
+    {
+      "from": "L5",
+      "to": "L0",
+      "observed_n_runs": 2,
+      "permutation_median": 2.0,
+      "permutation_mean": 1.82,
+      "p_value": 0.6467661691542289,
+      "alpha_corrected_bonferroni_12": 0.004166666666666667,
+      "status": "NOT_SUPPORTED"
+    },
+    {
+      "from": "L5",
+      "to": "L1",
+      "observed_n_runs": 3,
+      "permutation_median": 2.0,
+      "permutation_mean": 1.8,
+      "p_value": 0.2537313432835821,
+      "alpha_corrected_bonferroni_12": 0.004166666666666667,
+      "status": "NOT_SUPPORTED"
+    },
+    {
+      "from": "L5",
+      "to": "L20",
+      "observed_n_runs": 1,
+      "permutation_median": 1.0,
+      "permutation_mean": 0.655,
+      "p_value": 0.6567164179104478,
+      "alpha_corrected_bonferroni_12": 0.004166666666666667,
+      "status": "NOT_SUPPORTED"
+    },
+    {
+      "from": "L20",
+      "to": "L0",
+      "observed_n_runs": 2,
+      "permutation_median": 2.0,
+      "permutation_mean": 2.025,
+      "p_value": 0.7313432835820896,
+      "alpha_corrected_bonferroni_12": 0.004166666666666667,
+      "status": "NOT_SUPPORTED"
+    },
+    {
+      "from": "L20",
+      "to": "L1",
+      "observed_n_runs": 1,
+      "permutation_median": 1.0,
+      "permutation_mean": 0.945,
+      "p_value": 0.7213930348258707,
+      "alpha_corrected_bonferroni_12": 0.004166666666666667,
+      "status": "NOT_SUPPORTED"
+    },
+    {
+      "from": "L20",
+      "to": "L5",
+      "observed_n_runs": 1,
+      "permutation_median": 1.0,
+      "permutation_mean": 0.65,
+      "p_value": 0.6517412935323383,
+      "alpha_corrected_bonferroni_12": 0.004166666666666667,
+      "status": "NOT_SUPPORTED"
+    }
+  ]
+}

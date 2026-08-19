@@ -1,0 +1,76 @@
+{
+  "n_prior_cross_family_signatures": 10,
+  "entries": [
+    {
+      "prior_signature_atlas_coverage_v1_notation": "L0",
+      "prior_n_runs": 9,
+      "prior_n_families": 5,
+      "prior_n_seeds": 3,
+      "note": "atlas-coverage-analysis-v1 used its own > / ~ notation (different mission, no canonical V0 convention was mandated there). This gate's canonical +/- notation (SAME_STEP_TIE_POLICY.md) is NOT directly string-comparable -- reproduction is assessed by whether the SAME underlying node-set/order recurs in this gate's own ROUTE_SIGNATURES.csv, not by string match."
+    },
+    {
+      "prior_signature_atlas_coverage_v1_notation": "L1",
+      "prior_n_runs": 7,
+      "prior_n_families": 6,
+      "prior_n_seeds": 3,
+      "note": "atlas-coverage-analysis-v1 used its own > / ~ notation (different mission, no canonical V0 convention was mandated there). This gate's canonical +/- notation (SAME_STEP_TIE_POLICY.md) is NOT directly string-comparable -- reproduction is assessed by whether the SAME underlying node-set/order recurs in this gate's own ROUTE_SIGNATURES.csv, not by string match."
+    },
+    {
+      "prior_signature_atlas_coverage_v1_notation": "L0>L0",
+      "prior_n_runs": 4,
+      "prior_n_families": 4,
+      "prior_n_seeds": 3,
+      "note": "atlas-coverage-analysis-v1 used its own > / ~ notation (different mission, no canonical V0 convention was mandated there). This gate's canonical +/- notation (SAME_STEP_TIE_POLICY.md) is NOT directly string-comparable -- reproduction is assessed by whether the SAME underlying node-set/order recurs in this gate's own ROUTE_SIGNATURES.csv, not by string match."
+    },
+    {
+      "prior_signature_atlas_coverage_v1_notation": "L20>L1",
+      "prior_n_runs": 3,
+      "prior_n_families": 3,
+      "prior_n_seeds": 2,
+      "note": "atlas-coverage-analysis-v1 used its own > / ~ notation (different mission, no canonical V0 convention was mandated there). This gate's canonical +/- notation (SAME_STEP_TIE_POLICY.md) is NOT directly string-comparable -- reproduction is assessed by whether the SAME underlying node-set/order recurs in this gate's own ROUTE_SIGNATURES.csv, not by string match."
+    },
+    {
+      "prior_signature_atlas_coverage_v1_notation": "L0>L20",
+      "prior_n_runs": 3,
+      "prior_n_families": 2,
+      "prior_n_seeds": 2,
+      "note": "atlas-coverage-analysis-v1 used its own > / ~ notation (different mission, no canonical V0 convention was mandated there). This gate's canonical +/- notation (SAME_STEP_TIE_POLICY.md) is NOT directly string-comparable -- reproduction is assessed by whether the SAME underlying node-set/order recurs in this gate's own ROUTE_SIGNATURES.csv, not by string match."
+    },
+    {
+      "prior_signature_atlas_coverage_v1_notation": "L0>L1",
+      "prior_n_runs": 3,
+      "prior_n_families": 3,
+      "prior_n_seeds": 3,
+      "note": "atlas-coverage-analysis-v1 used its own > / ~ notation (different mission, no canonical V0 convention was mandated there). This gate's canonical +/- notation (SAME_STEP_TIE_POLICY.md) is NOT directly string-comparable -- reproduction is assessed by whether the SAME underlying node-set/order recurs in this gate's own ROUTE_SIGNATURES.csv, not by string match."
+    },
+    {
+      "prior_signature_atlas_coverage_v1_notation": "L1>L5",
+      "prior_n_runs": 2,
+      "prior_n_families": 2,
+      "prior_n_seeds": 2,
+      "note": "atlas-coverage-analysis-v1 used its own > / ~ notation (different mission, no canonical V0 convention was mandated there). This gate's canonical +/- notation (SAME_STEP_TIE_POLICY.md) is NOT directly string-comparable -- reproduction is assessed by whether the SAME underlying node-set/order recurs in this gate's own ROUTE_SIGNATURES.csv, not by string match."
+    },
+    {
+      "prior_signature_atlas_coverage_v1_notation": "L1>L20",
+      "prior_n_runs": 2,
+      "prior_n_families": 2,
+      "prior_n_seeds": 1,
+      "note": "atlas-coverage-analysis-v1 used its own > / ~ notation (different mission, no canonical V0 convention was mandated there). This gate's canonical +/- notation (SAME_STEP_TIE_POLICY.md) is NOT directly string-comparable -- reproduction is assessed by whether the SAME underlying node-set/order recurs in this gate's own ROUTE_SIGNATURES.csv, not by string match."
+    },
+    {
+      "prior_signature_atlas_coverage_v1_notation": "L20>L5",
+      "prior_n_runs": 2,
+      "prior_n_families": 2,
+      "prior_n_seeds": 1,
+      "note": "atlas-coverage-analysis-v1 used its own > / ~ notation (different mission, no canonical V0 convention was mandated there). This gate's canonical +/- notation (SAME_STEP_TIE_POLICY.md) is NOT directly string-comparable -- reproduction is assessed by whether the SAME underlying node-set/order recurs in this gate's own ROUTE_SIGNATURES.csv, not by string match."
+    },
+    {
+      "prior_signature_atlas_coverage_v1_notation": "L5",
+      "prior_n_runs": 2,
+      "prior_n_families": 2,
+      "prior_n_seeds": 2,
+      "note": "atlas-coverage-analysis-v1 used its own > / ~ notation (different mission, no canonical V0 convention was mandated there). This gate's canonical +/- notation (SAME_STEP_TIE_POLICY.md) is NOT directly string-comparable -- reproduction is assessed by whether the SAME underlying node-set/order recurs in this gate's own ROUTE_SIGNATURES.csv, not by string match."
+    }
+  ],
+  "reproduced_in_v1": "See ROUTE_SIGNATURES.csv for this gate's own independently-derived cross-family (n_families>=2) signatures -- not promoted here solely for being cross-family, per mission section 11."
+}

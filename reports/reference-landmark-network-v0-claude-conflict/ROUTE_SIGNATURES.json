@@ -1,0 +1,224 @@
+{
+  "n_unique_signatures": 12,
+  "signatures": [
+    {
+      "route_signature": "NONE",
+      "n_runs": 12,
+      "n_prompt_ids": 4,
+      "prompt_ids": [
+        "FG01",
+        "FG02",
+        "MR01",
+        "MR02"
+      ],
+      "families": [
+        "FACTUAL_GROUNDED",
+        "MATH_REASONING"
+      ],
+      "seeds": [
+        1101,
+        1102,
+        1103
+      ],
+      "mean_length": 0.0,
+      "median_length": 0.0,
+      "epistemic_status": "NO_LANDMARK"
+    },
+    {
+      "route_signature": "L20",
+      "n_runs": 6,
+      "n_prompt_ids": 2,
+      "prompt_ids": [
+        "SO01",
+        "SO02"
+      ],
+      "families": [
+        "STRUCTURED_OUTPUT"
+      ],
+      "seeds": [
+        1101,
+        1102,
+        1103
+      ],
+      "mean_length": 1.0,
+      "median_length": 1.0,
+      "epistemic_status": "COMMON_ROUTE"
+    },
+    {
+      "route_signature": "L5",
+      "n_runs": 2,
+      "n_prompt_ids": 2,
+      "prompt_ids": [
+        "AH02",
+        "GI01"
+      ],
+      "families": [
+        "AMBIGUITY_HANDLING",
+        "GENERAL_INSTRUCTION"
+      ],
+      "seeds": [
+        1102,
+        1103
+      ],
+      "mean_length": 1.0,
+      "median_length": 1.0,
+      "epistemic_status": "LOW_SUPPORT_ROUTE"
+    },
+    {
+      "route_signature": "L5-L0",
+      "n_runs": 2,
+      "n_prompt_ids": 2,
+      "prompt_ids": [
+        "AH01",
+        "GI02"
+      ],
+      "families": [
+        "AMBIGUITY_HANDLING",
+        "GENERAL_INSTRUCTION"
+      ],
+      "seeds": [
+        1101,
+        1102
+      ],
+      "mean_length": 2.0,
+      "median_length": 2.0,
+      "epistemic_status": "LOW_SUPPORT_ROUTE"
+    },
+    {
+      "route_signature": "L0-L20",
+      "n_runs": 1,
+      "n_prompt_ids": 1,
+      "prompt_ids": [
+        "GI01"
+      ],
+      "families": [
+        "GENERAL_INSTRUCTION"
+      ],
+      "seeds": [
+        1101
+      ],
+      "mean_length": 2.0,
+      "median_length": 2.0,
+      "epistemic_status": "UNIQUE_ROUTE"
+    },
+    {
+      "route_signature": "L5-L1",
+      "n_runs": 1,
+      "n_prompt_ids": 1,
+      "prompt_ids": [
+        "GI01"
+      ],
+      "families": [
+        "GENERAL_INSTRUCTION"
+      ],
+      "seeds": [
+        1103
+      ],
+      "mean_length": 2.0,
+      "median_length": 2.0,
+      "epistemic_status": "UNIQUE_ROUTE"
+    },
+    {
+      "route_signature": "L0~L1-L0",
+      "n_runs": 1,
+      "n_prompt_ids": 1,
+      "prompt_ids": [
+        "GI02"
+      ],
+      "families": [
+        "GENERAL_INSTRUCTION"
+      ],
+      "seeds": [
+        1102
+      ],
+      "mean_length": 2.0,
+      "median_length": 2.0,
+      "epistemic_status": "UNIQUE_ROUTE"
+    },
+    {
+      "route_signature": "L20-L0-L1",
+      "n_runs": 1,
+      "n_prompt_ids": 1,
+      "prompt_ids": [
+        "GI02"
+      ],
+      "families": [
+        "GENERAL_INSTRUCTION"
+      ],
+      "seeds": [
+        1103
+      ],
+      "mean_length": 3.0,
+      "median_length": 3.0,
+      "epistemic_status": "UNIQUE_ROUTE"
+    },
+    {
+      "route_signature": "L1-L5-L1",
+      "n_runs": 1,
+      "n_prompt_ids": 1,
+      "prompt_ids": [
+        "AH01"
+      ],
+      "families": [
+        "AMBIGUITY_HANDLING"
+      ],
+      "seeds": [
+        1101
+      ],
+      "mean_length": 2.0,
+      "median_length": 2.0,
+      "epistemic_status": "UNIQUE_ROUTE"
+    },
+    {
+      "route_signature": "L0-L1",
+      "n_runs": 1,
+      "n_prompt_ids": 1,
+      "prompt_ids": [
+        "AH01"
+      ],
+      "families": [
+        "AMBIGUITY_HANDLING"
+      ],
+      "seeds": [
+        1103
+      ],
+      "mean_length": 2.0,
+      "median_length": 2.0,
+      "epistemic_status": "UNIQUE_ROUTE"
+    },
+    {
+      "route_signature": "L20-L0",
+      "n_runs": 1,
+      "n_prompt_ids": 1,
+      "prompt_ids": [
+        "AH02"
+      ],
+      "families": [
+        "AMBIGUITY_HANDLING"
+      ],
+      "seeds": [
+        1101
+      ],
+      "mean_length": 2.0,
+      "median_length": 2.0,
+      "epistemic_status": "UNIQUE_ROUTE"
+    },
+    {
+      "route_signature": "L0-L5-L1-L20-L5",
+      "n_runs": 1,
+      "n_prompt_ids": 1,
+      "prompt_ids": [
+        "AH02"
+      ],
+      "families": [
+        "AMBIGUITY_HANDLING"
+      ],
+      "seeds": [
+        1102
+      ],
+      "mean_length": 4.0,
+      "median_length": 4.0,
+      "epistemic_status": "UNIQUE_ROUTE"
+    }
+  ]
+}

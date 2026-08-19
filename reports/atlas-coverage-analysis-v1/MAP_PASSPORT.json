@@ -1,0 +1,29 @@
+{
+  "human_readable": {
+    "WHAT_IS_THIS_MAP": "A coverage map of Qwen2.5-0.5B-Instruct's internal execution space, built from 144 real deep tensor captures (Lane B of the BCC Atlas Expansion V1 campaign). It shows where 4 previously-confirmed recurring internal patterns ('landmarks') reappear, which combinations of prompt type and generation length are well-documented vs. thinly documented, and where no data exists yet.",
+    "WHAT_DATA_SUPPORT_IT": "144 real, non-simulated generations with full internal tensor capture (hidden states, queries, keys, values, attention weights, attention output, and bounded logits), captured in a single teacher-forced forward pass per generation. Zero technical failures, zero NaN/Inf values, all hashes verified.",
+    "WHICH_MODEL": "Qwen/Qwen2.5-0.5B-Instruct (558.5M parameters), the same model used in every prior Atlas gate in this program.",
+    "WHICH_PROMPT_FAMILIES": "All 12 canonical families: AMBIGUITY_HANDLING, CODING, CONSTRAINT_FOLLOWING, DOCUMENT_EXTRACTION, FACTUAL_GROUNDED, GENERAL_INSTRUCTION, MATH_REASONING, MULTISTEP_INSTRUCTION, RECOVERY_CORRECTION, STRUCTURED_OUTPUT, SUMMARIZATION, TRANSFORMATION.",
+    "HOW_MANY_RUNS": "144 (48 prompts x 3 seeds). 127 were long enough (>=4 generated tokens) to test for landmarks; 17 were shorter and are explicitly labeled not-evaluable rather than failed.",
+    "WHICH_TENSORS": "Hidden states, Query, Key, Value, Attention weights, Attention output, and bounded (predictive-position) logits -- all captured live, all complete, zero missing.",
+    "WHAT_LANDMARKS_ARE_CONFIRMED": "4 previously-validated recurring patterns (named L0, L1, L5, L20, after the network layer where each occurs) all reappeared in this new data, each in 30-47% of the runs long enough to test, across 10-12 of the 12 prompt families and all 3 seeds -- REPLICATED_ON_LANE_B by this gate's own frozen criteria.",
+    "WHAT_ROUTES_ARE_OBSERVED": "60 distinct ordered sequences of landmark encounters. Most are rare (seen once or twice). A few recur more often, including one repeated self-visit pattern (a run touching the same landmark twice) and 4 sequences observed across at least 2 prompt families.",
+    "WHAT_TERRITORY_IS_LOW_SUPPORT": "FACTUAL_GROUNDED and MATH_REASONING landmark evidence specifically -- present for the first time ever in this program, but from only 1 and 2 supporting runs respectively (out of 7 and 6 testable runs in those families). Most 1-2-generated-token runs (17 of 144).",
+    "WHAT_TERRITORY_IS_UNKNOWN": "20 of the model's 24 mechanism layers -- this gate, by design, only tests the 4 already-confirmed layers, never searches for new ones.",
+    "WHAT_THE_MAP_DOES_NOT_ESTABLISH": "No causal claim. No claim that a landmark represents a reasoning step, decision, or any cognitive process. No claim about which internal properties 'cause' a landmark to appear (a descriptive statistical comparison was run, with modest effect sizes, but effect != cause). No new landmark or connecting edge was created or promoted -- that requires its own separate validation gate."
+  },
+  "technical_detail": {
+    "primary_verdict": "ATLAS_COVERAGE_SUBSTANTIALLY_EXPANDED",
+    "source_runs": 144, "source_directory": "reports/bcc-atlas-expansion-v1/ATLAS_DEEP/",
+    "landmark_replication_summary": "L0/L1/L5/L20 all REPLICATED_ON_LANE_B -- see LANDMARK_REPLICATION_RESULTS.json",
+    "route_signature_count": 60, "cross_family_routes": 10,
+    "factual_grounded_verdict": "NONZERO_SUPPORT_ONLY", "math_reasoning_verdict": "LOW_SUPPORT_REPLICATION_CANDIDATE",
+    "landmark_vs_nonlandmark_significant_comparisons_bonferroni": ["H_curvature", "K_norm", "probability_top2_gap"],
+    "coverage_holes_identified": 59
+  },
+  "provenance_hashes": {
+    "source_run_index_sha256": "687ec3d8f437d1f1d35ecbf886e94f30a2666069b6f5b78308efce91aea3bc13",
+    "source_hash_verification": "160/160 PASS (reports/bcc-atlas-expansion-v1/ATLAS_DEEP/SHA256SUMS.txt)",
+    "this_gate_hash_file": "SHA256SUMS.txt (this directory)"
+  }
+}

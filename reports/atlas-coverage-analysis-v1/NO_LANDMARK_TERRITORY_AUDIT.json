@@ -1,0 +1,217 @@
+{
+  "definition": "ELIGIBLE (n_steps>=4) runs with zero encounters at any of L0/L1/L5/L20 -- distinct from LANDMARK_NOT_EVALUABLE_SHORT_EXECUTION (see SHORT_EXECUTION_TERRITORY_AUDIT.json).",
+  "n_no_landmark_eligible": 40,
+  "n_landmark_eligible": 87,
+  "by_family": {
+    "MATH_REASONING": 4,
+    "AMBIGUITY_HANDLING": 2,
+    "CONSTRAINT_FOLLOWING": 2,
+    "FACTUAL_GROUNDED": 6,
+    "RECOVERY_CORRECTION": 4,
+    "STRUCTURED_OUTPUT": 6,
+    "DOCUMENT_EXTRACTION": 3,
+    "TRANSFORMATION": 7,
+    "CODING": 2,
+    "SUMMARIZATION": 3,
+    "GENERAL_INSTRUCTION": 1
+  },
+  "generation_length": {
+    "no_landmark_runs": {
+      "min": 4,
+      "median": 12.5,
+      "max": 49,
+      "mean": 14.78
+    },
+    "landmark_runs": {
+      "min": 4,
+      "median": 49,
+      "max": 224,
+      "mean": 66.92
+    }
+  },
+  "descriptive_local_properties_at_layer_0": {
+    "no_landmark_runs": {
+      "H_norm": {
+        "mean": 0.45436,
+        "n": 40
+      },
+      "H_delta_norm": {
+        "mean": -0.02858,
+        "n": 40
+      },
+      "H_cos": {
+        "mean": 0.10979,
+        "n": 40
+      },
+      "H_curvature": {
+        "mean": 1.47116,
+        "n": 40
+      },
+      "Q_norm": {
+        "mean": 236.78694,
+        "n": 40
+      },
+      "Q_delta_norm": {
+        "mean": -1.30765,
+        "n": 40
+      },
+      "Q_cos": {
+        "mean": 0.9892,
+        "n": 40
+      },
+      "K_norm": {
+        "mean": 367.07622,
+        "n": 40
+      },
+      "K_delta_norm": {
+        "mean": -0.09192,
+        "n": 40
+      },
+      "K_cos": {
+        "mean": 0.98911,
+        "n": 40
+      },
+      "V_norm": {
+        "mean": 0.32956,
+        "n": 40
+      },
+      "V_delta_norm": {
+        "mean": 0.00082,
+        "n": 40
+      },
+      "V_cos": {
+        "mean": 0.17533,
+        "n": 40
+      },
+      "A_dispersion": {
+        "mean": 2.06558,
+        "n": 40
+      },
+      "A_concentration": {
+        "mean": 0.4168,
+        "n": 40
+      },
+      "A_max_mass": {
+        "mean": 0.99769,
+        "n": 40
+      },
+      "Oattn_norm": {
+        "mean": 0.41071,
+        "n": 40
+      },
+      "Oattn_delta_norm": {
+        "mean": -0.01843,
+        "n": 40
+      },
+      "Oattn_cos": {
+        "mean": 0.64361,
+        "n": 40
+      },
+      "probability_entropy": {
+        "mean": 0.42761,
+        "n": 40
+      },
+      "probability_top2_gap": {
+        "mean": 0.82051,
+        "n": 40
+      },
+      "logit_norm": {
+        "mean": 1427.53557,
+        "n": 40
+      }
+    },
+    "landmark_runs": {
+      "H_norm": {
+        "mean": 0.44442,
+        "n": 87
+      },
+      "H_delta_norm": {
+        "mean": -0.00918,
+        "n": 87
+      },
+      "H_cos": {
+        "mean": 0.06132,
+        "n": 87
+      },
+      "H_curvature": {
+        "mean": 1.5024,
+        "n": 87
+      },
+      "Q_norm": {
+        "mean": 236.90495,
+        "n": 87
+      },
+      "Q_delta_norm": {
+        "mean": -0.41676,
+        "n": 87
+      },
+      "Q_cos": {
+        "mean": 0.99059,
+        "n": 87
+      },
+      "K_norm": {
+        "mean": 367.07574,
+        "n": 87
+      },
+      "K_delta_norm": {
+        "mean": -0.03122,
+        "n": 87
+      },
+      "K_cos": {
+        "mean": 0.98933,
+        "n": 87
+      },
+      "V_norm": {
+        "mean": 0.30697,
+        "n": 87
+      },
+      "V_delta_norm": {
+        "mean": 7e-05,
+        "n": 87
+      },
+      "V_cos": {
+        "mean": 0.15283,
+        "n": 87
+      },
+      "A_dispersion": {
+        "mean": 2.18956,
+        "n": 87
+      },
+      "A_concentration": {
+        "mean": 0.40522,
+        "n": 87
+      },
+      "A_max_mass": {
+        "mean": 0.99741,
+        "n": 87
+      },
+      "Oattn_norm": {
+        "mean": 0.38744,
+        "n": 87
+      },
+      "Oattn_delta_norm": {
+        "mean": -0.00637,
+        "n": 87
+      },
+      "Oattn_cos": {
+        "mean": 0.72239,
+        "n": 87
+      },
+      "probability_entropy": {
+        "mean": 1.15671,
+        "n": 87
+      },
+      "probability_top2_gap": {
+        "mean": 0.60287,
+        "n": 87
+      },
+      "logit_norm": {
+        "mean": 1455.63719,
+        "n": 87
+      }
+    }
+  },
+  "primary_question": "ARE THESE RUNS SIMPLY UNDER-SAMPLED, OR DO THEY OCCUPY DESCRIPTIVELY DIFFERENT REGIONS?",
+  "answer": "NOT_ESTABLISHED",
+  "reasoning": "No-landmark runs are on average shorter (mean 14.8 vs 66.9 steps) than landmark runs, which is consistent with (but does not prove) under-sampling: fewer decode steps means fewer opportunities for a within-run z-score to cross the |z|>1.5/3-of-4-signals bar, independent of any real difference in the underlying region. A formal test distinguishing 'shorter => less likely to trip the detector by chance' from 'these runs are in a genuinely different regime' was not run in this gate (would require a length-matched or length-controlled comparison, not attempted here). LANDMARK_VS_NONLANDMARK_ANALYSIS.json's step-level comparison is the closest available evidence but compares STEPS, not RUNS, and is already disclosed there as descriptive/exploratory only."
+}

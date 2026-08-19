@@ -1,0 +1,234 @@
+{
+  "schema": "ReferenceLandmarkNetworkV1 -- read-only descriptive graph, NOT a general reasoning graph",
+  "nodes": [
+    {
+      "id": "L0",
+      "layer": 0,
+      "status": "REFERENCE_LANDMARK_SUPPORTED",
+      "lane_b_replication": "REPLICATED_ON_LANE_B"
+    },
+    {
+      "id": "L1",
+      "layer": 1,
+      "status": "REFERENCE_LANDMARK_SUPPORTED",
+      "lane_b_replication": "REPLICATED_ON_LANE_B"
+    },
+    {
+      "id": "L5",
+      "layer": 5,
+      "status": "REFERENCE_LANDMARK_SUPPORTED",
+      "lane_b_replication": "REPLICATED_ON_LANE_B"
+    },
+    {
+      "id": "L20",
+      "layer": 20,
+      "status": "REFERENCE_LANDMARK_SUPPORTED",
+      "lane_b_replication": "REPLICATED_ON_LANE_B"
+    }
+  ],
+  "edges": [
+    {
+      "source": "L0",
+      "target": "L1",
+      "edge_type": "LOW_SUPPORT_DESCRIPTIVE_TRANSITION",
+      "observed_count": 27,
+      "n_families": 9,
+      "n_seeds": 3,
+      "n_prompt_ids": 18,
+      "holm_adjusted_p": 0.6063393660633937,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    {
+      "source": "L0",
+      "target": "L5",
+      "edge_type": "SUPPORTED_DESCRIPTIVE_TRANSITION",
+      "observed_count": 28,
+      "n_families": 8,
+      "n_seeds": 3,
+      "n_prompt_ids": 18,
+      "holm_adjusted_p": 0.0053994600539946005,
+      "status": "REFERENCE_EDGE_SUPPORTED"
+    },
+    {
+      "source": "L0",
+      "target": "L20",
+      "edge_type": "SUPPORTED_DESCRIPTIVE_TRANSITION",
+      "observed_count": 24,
+      "n_families": 8,
+      "n_seeds": 3,
+      "n_prompt_ids": 17,
+      "holm_adjusted_p": 0.0053994600539946005,
+      "status": "REFERENCE_EDGE_SUPPORTED"
+    },
+    {
+      "source": "L1",
+      "target": "L0",
+      "edge_type": "LOW_SUPPORT_DESCRIPTIVE_TRANSITION",
+      "observed_count": 15,
+      "n_families": 6,
+      "n_seeds": 3,
+      "n_prompt_ids": 13,
+      "holm_adjusted_p": 1.0,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    {
+      "source": "L1",
+      "target": "L5",
+      "edge_type": "LOW_SUPPORT_DESCRIPTIVE_TRANSITION",
+      "observed_count": 23,
+      "n_families": 8,
+      "n_seeds": 3,
+      "n_prompt_ids": 16,
+      "holm_adjusted_p": 1.0,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    {
+      "source": "L1",
+      "target": "L20",
+      "edge_type": "LOW_SUPPORT_DESCRIPTIVE_TRANSITION",
+      "observed_count": 16,
+      "n_families": 9,
+      "n_seeds": 3,
+      "n_prompt_ids": 12,
+      "holm_adjusted_p": 1.0,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    {
+      "source": "L5",
+      "target": "L0",
+      "edge_type": "LOW_SUPPORT_DESCRIPTIVE_TRANSITION",
+      "observed_count": 11,
+      "n_families": 6,
+      "n_seeds": 3,
+      "n_prompt_ids": 9,
+      "holm_adjusted_p": 1.0,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    {
+      "source": "L5",
+      "target": "L1",
+      "edge_type": "LOW_SUPPORT_DESCRIPTIVE_TRANSITION",
+      "observed_count": 16,
+      "n_families": 6,
+      "n_seeds": 3,
+      "n_prompt_ids": 11,
+      "holm_adjusted_p": 1.0,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    {
+      "source": "L5",
+      "target": "L20",
+      "edge_type": "LOW_SUPPORT_DESCRIPTIVE_TRANSITION",
+      "observed_count": 10,
+      "n_families": 6,
+      "n_seeds": 3,
+      "n_prompt_ids": 8,
+      "holm_adjusted_p": 1.0,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    {
+      "source": "L20",
+      "target": "L0",
+      "edge_type": "LOW_SUPPORT_DESCRIPTIVE_TRANSITION",
+      "observed_count": 6,
+      "n_families": 3,
+      "n_seeds": 3,
+      "n_prompt_ids": 5,
+      "holm_adjusted_p": 1.0,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    {
+      "source": "L20",
+      "target": "L1",
+      "edge_type": "LOW_SUPPORT_DESCRIPTIVE_TRANSITION",
+      "observed_count": 15,
+      "n_families": 7,
+      "n_seeds": 3,
+      "n_prompt_ids": 11,
+      "holm_adjusted_p": 1.0,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    {
+      "source": "L20",
+      "target": "L5",
+      "edge_type": "LOW_SUPPORT_DESCRIPTIVE_TRANSITION",
+      "observed_count": 15,
+      "n_families": 5,
+      "n_seeds": 3,
+      "n_prompt_ids": 10,
+      "holm_adjusted_p": 1.0,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    }
+  ],
+  "cooccurrence_links": [
+    {
+      "pair": [
+        "L0",
+        "L1"
+      ],
+      "observed_count": 35,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    {
+      "pair": [
+        "L0",
+        "L5"
+      ],
+      "observed_count": 31,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    {
+      "pair": [
+        "L0",
+        "L20"
+      ],
+      "observed_count": 25,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    {
+      "pair": [
+        "L1",
+        "L5"
+      ],
+      "observed_count": 30,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    {
+      "pair": [
+        "L1",
+        "L20"
+      ],
+      "observed_count": 24,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    {
+      "pair": [
+        "L20",
+        "L5"
+      ],
+      "observed_count": 23,
+      "status": "REFERENCE_EDGE_LOW_SUPPORT"
+    }
+  ],
+  "reference_routes": [
+    {
+      "signature": "L0-L20",
+      "n_runs": 3,
+      "n_families": 2,
+      "n_seeds": 2,
+      "constituent_edges": [
+        "L0->L20"
+      ],
+      "constituent_edge_statuses": [
+        "REFERENCE_EDGE_SUPPORTED"
+      ],
+      "involves_tie": false,
+      "status": "REFERENCE_ROUTE_SUPPORTED"
+    }
+  ],
+  "explicit_non_claims": [
+    "No edge is causal.",
+    "No node is a reasoning step, decision, or cognitive stage.",
+    "This is not a general-purpose reasoning graph for the model."
+  ]
+}

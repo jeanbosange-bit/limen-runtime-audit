@@ -1,0 +1,15 @@
+{
+  "status": "FROZEN_PRE_ANALYSIS",
+  "source": "reports/multi-tensor-landmarks-v0/FROZEN_LANDMARK_REGISTRY.json, unaltered. Independently reconfirmed as REPLICATED_ON_LANE_B by reports/atlas-coverage-analysis-v1/LANDMARK_REPLICATION_RESULTS.json.",
+  "primary_nodes": [
+    {"landmark_id": "L0", "layer": 0, "validation_status": "REFERENCE_LANDMARK_SUPPORTED", "lane_b_replication_status": "REPLICATED_ON_LANE_B"},
+    {"landmark_id": "L1", "layer": 1, "validation_status": "REFERENCE_LANDMARK_SUPPORTED", "lane_b_replication_status": "REPLICATED_ON_LANE_B"},
+    {"landmark_id": "L5", "layer": 5, "validation_status": "REFERENCE_LANDMARK_SUPPORTED", "lane_b_replication_status": "REPLICATED_ON_LANE_B"},
+    {"landmark_id": "L20", "layer": 20, "validation_status": "REFERENCE_LANDMARK_SUPPORTED", "lane_b_replication_status": "REPLICATED_ON_LANE_B"}
+  ],
+  "n_primary_nodes": 4,
+  "no_new_landmark_promotion": true,
+  "no_threshold_retuning": true,
+  "no_reinterpretation_of_landmark_definitions": true,
+  "detection_rule_inherited_unchanged": "Within (run_id, layer), z-score H_curvature/Oattn_delta_norm/A_dispersion/probability_entropy across that run/layer's decode steps; a step is a landmark encounter if |z|>1.5 on >=3 of the 4 signals. Reused verbatim -- not redefined here."
+}

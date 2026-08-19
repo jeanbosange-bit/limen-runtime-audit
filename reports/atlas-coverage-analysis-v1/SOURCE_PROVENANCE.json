@@ -1,0 +1,26 @@
+{
+  "status": "VERIFIED_READ_ONLY",
+  "verification_performed": "sha256sum -c reports/bcc-atlas-expansion-v1/ATLAS_DEEP/SHA256SUMS.txt -> 160/160 OK, checked before this gate began computing",
+  "primary_source": {
+    "run_index": {"path": "reports/bcc-atlas-expansion-v1/ATLAS_DEEP/run_index.jsonl", "sha256": "687ec3d8f437d1f1d35ecbf886e94f30a2666069b6f5b78308efce91aea3bc13", "n_lines": 144},
+    "raw_captures": {"path": "reports/bcc-atlas-expansion-v1/ATLAS_DEEP/raw_captures/*.npz", "n_files": 144, "verified_via": "SHA256SUMS.txt (144 of its 160 entries)"},
+    "lane_b_capture_manifest": {"path": "reports/bcc-atlas-expansion-v1/ATLAS_DEEP/LANE_B_CAPTURE_MANIFEST.json", "sha256": "c95baeb3595c527a37aa6fa93b27350a461888ec0135bcd4b38326d2359ce76f"},
+    "lane_b_landmark_recurrence_audit": {"path": "reports/bcc-atlas-expansion-v1/ATLAS_DEEP/LANDMARK_RECURRENCE_AUDIT.json", "sha256": "07add967969e22342090ec029a0f815d7ca5f39420b817bebcb3f96c44ba15fa", "role": "cross-check reference only -- this gate recomputes recurrence independently from raw npz, does not merely copy Lane B's own numbers"}
+  },
+  "frozen_reference_registry": {
+    "path": "reports/multi-tensor-landmarks-v0/FROZEN_LANDMARK_REGISTRY.json",
+    "role": "source of the 4 confirmed landmark node definitions (L0/L1/L5/L20) and the exact detection rule -- reused verbatim, never modified"
+  },
+  "read_only_never_modified_this_gate": [
+    "reports/bcc-atlas-expansion-v1/A/BCC_WIDE/ (Lane A)",
+    "reports/bcc-atlas-expansion-v1/ATLAS_DEEP/ (Lane B, including raw_captures/)",
+    "star_command_bcc_v2/ (canonical BCC V2)",
+    "star_command_panel_v2_authoring/FREEZE/ (Panel V2 frozen canonical)",
+    "reports/multi-tensor-atlas-v0/",
+    "reports/multi-tensor-landmarks-v0/",
+    "reports/reference-landmark-network-v0/ (canonical, plus its -claude-conflict quarantine dir)",
+    "reports/attention-sensitivity-v1/",
+    "reports/atlas-kv-compression-v0/"
+  ],
+  "this_gate_output_directory": "reports/atlas-coverage-analysis-v1/ (new, confirmed empty via ls -la before first write)"
+}

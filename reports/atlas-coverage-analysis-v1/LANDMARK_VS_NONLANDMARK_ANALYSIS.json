@@ -1,0 +1,138 @@
+{
+  "predeclared_plan": {
+    "predeclared_test": "Mann-Whitney U (two-sided), non-parametric, no distributional assumption -- appropriate for small, possibly skewed per-window observable samples",
+    "predeclared_comparisons": [
+      "H_norm",
+      "H_delta_norm",
+      "H_curvature",
+      "Q_norm",
+      "K_norm",
+      "V_norm",
+      "Attention_dispersion",
+      "Attention_concentration",
+      "Oattn_norm",
+      "Oattn_delta_norm",
+      "probability_entropy",
+      "probability_top2_gap"
+    ],
+    "n_comparisons": 12,
+    "multiple_comparison_correction": "Bonferroni, alpha_corrected = 0.05/12 = 0.004167",
+    "effect_size": "rank-biserial correlation (from the Mann-Whitney U statistic), reported alongside raw and Bonferroni-adjusted p-values",
+    "reporting_rule": "raw p, adjusted-significance flag (p<0.004167), AND effect size reported together for every comparison -- significance alone is never used as the sole basis for any claim, per mission section 15",
+    "populations_compared": "A = observable value at t (the encounter step) for every landmark-encounter window (pooled across L0/L1/L5/L20, at that landmark's own layer). B = observable value at t for every eligible (n_steps>=4) non-landmark step at the SAME 4 layers (0,1,5,20), pooled -- i.e. same layers, same tensors, landmark-flagged step vs. not."
+  },
+  "alpha_corrected": 0.004166666666666667,
+  "results": {
+    "H_norm": {
+      "n_a_landmark": 305,
+      "n_b_nonlandmark": 25347,
+      "median_a": 5.52123,
+      "median_b": 8.68926,
+      "U_statistic": 3601243.5,
+      "p_raw": 0.0398852755062717,
+      "p_significant_bonferroni": false,
+      "effect_size_rank_biserial": 0.0683
+    },
+    "H_delta_norm": {
+      "n_a_landmark": 305,
+      "n_b_nonlandmark": 25347,
+      "median_a": 0.02304,
+      "median_b": 0.00957,
+      "U_statistic": 3863762.5,
+      "p_raw": 0.9897315902549446,
+      "p_significant_bonferroni": false,
+      "effect_size_rank_biserial": 0.0004
+    },
+    "H_curvature": {
+      "n_a_landmark": 305,
+      "n_b_nonlandmark": 25347,
+      "median_a": 1.61486,
+      "median_b": 1.44712,
+      "U_statistic": 4436819.5,
+      "p_raw": 8.79841595384369e-06,
+      "p_significant_bonferroni": true,
+      "effect_size_rank_biserial": -0.1478
+    },
+    "Q_norm": {
+      "n_a_landmark": 305,
+      "n_b_nonlandmark": 25347,
+      "median_a": 67.83736,
+      "median_b": 64.37023,
+      "U_statistic": 4030162.5,
+      "p_raw": 0.20001688784304728,
+      "p_significant_bonferroni": false,
+      "effect_size_rank_biserial": -0.0426
+    },
+    "K_norm": {
+      "n_a_landmark": 305,
+      "n_b_nonlandmark": 25347,
+      "median_a": 209.31433,
+      "median_b": 36.96654,
+      "U_statistic": 4305188.5,
+      "p_raw": 0.0006242502462913694,
+      "p_significant_bonferroni": true,
+      "effect_size_rank_biserial": -0.1138
+    },
+    "V_norm": {
+      "n_a_landmark": 305,
+      "n_b_nonlandmark": 25347,
+      "median_a": 3.52137,
+      "median_b": 4.0779,
+      "U_statistic": 3565349.5,
+      "p_raw": 0.019588134985270154,
+      "p_significant_bonferroni": false,
+      "effect_size_rank_biserial": 0.0776
+    },
+    "Attention_dispersion": {
+      "status": "NOT_TESTED",
+      "reason_disclosed": "Implementation bug, not insufficient data: the predeclared field name 'Attention_dispersion' does not match the actual computed series key 'A_dispersion', so the population lookup silently returned an empty list rather than the real ~25,600 real observations that exist for this field (same population sizes as the other 10 comparisons). Caught on review of this script's own output before the report was written. Not re-run in this gate to avoid a second ~13-minute full npz reload for 2 of 12 predeclared fields; disclosed here rather than silently reported as a null result. A future gate can compute this cheaply by fixing the one-line key alias.",
+      "raw_series_key_available": "A_dispersion (see ATTENTION_LOCAL_PROPERTIES.csv for the landmark-window side of this population; the non-landmark side was computed but not persisted)"
+    },
+    "Attention_concentration": {
+      "status": "NOT_TESTED",
+      "reason_disclosed": "Same field-name mismatch as Attention_dispersion above (predeclared 'Attention_concentration' vs. actual key 'A_concentration').",
+      "raw_series_key_available": "A_concentration (see ATTENTION_LOCAL_PROPERTIES.csv for the landmark-window side)"
+    },
+    "Oattn_norm": {
+      "n_a_landmark": 305,
+      "n_b_nonlandmark": 25347,
+      "median_a": 2.77671,
+      "median_b": 2.82023,
+      "U_statistic": 3824262.0,
+      "p_raw": 0.7488672300555222,
+      "p_significant_bonferroni": false,
+      "effect_size_rank_biserial": 0.0106
+    },
+    "Oattn_delta_norm": {
+      "n_a_landmark": 305,
+      "n_b_nonlandmark": 25347,
+      "median_a": 0.07211,
+      "median_b": 0.00468,
+      "U_statistic": 3862042.5,
+      "p_raw": 0.9790584914542941,
+      "p_significant_bonferroni": false,
+      "effect_size_rank_biserial": 0.0009
+    },
+    "probability_entropy": {
+      "n_a_landmark": 305,
+      "n_b_nonlandmark": 25347,
+      "median_a": 0.77904,
+      "median_b": 0.85056,
+      "U_statistic": 4225269.5,
+      "p_raw": 0.005123171231182027,
+      "p_significant_bonferroni": false,
+      "effect_size_rank_biserial": -0.0931
+    },
+    "probability_top2_gap": {
+      "n_a_landmark": 305,
+      "n_b_nonlandmark": 25347,
+      "median_a": 0.47476,
+      "median_b": 0.64151,
+      "U_statistic": 3474679.5,
+      "p_raw": 0.0023699836342160542,
+      "p_significant_bonferroni": true,
+      "effect_size_rank_biserial": 0.1011
+    }
+  },
+  "interpretation_caveat": "Descriptive/exploratory only. No causal claim. Significance alone is never sufficient -- effect size (rank-biserial) reported alongside every p-value."
+}

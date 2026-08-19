@@ -1,0 +1,49 @@
+{
+  "context": "V0's old 8-step-window rule gave FACTUAL_GROUNDED and MATH_REASONING effectively zero usable landmark support (reports/reference-landmark-network-v0). Lane B's native full-sequence capture removed that structural exclusion.",
+  "FACTUAL_GROUNDED": {
+    "n_eligible_runs": 7,
+    "n_supporting_runs": 1,
+    "supporting_run_ids": [
+      "BAX1DEEP_FG10-V2_2102"
+    ],
+    "supporting_prompt_ids": [
+      "FG10-V2"
+    ],
+    "n_distinct_prompt_ids": 1,
+    "supporting_seeds": [
+      "2102"
+    ],
+    "n_distinct_seeds": 1,
+    "nodes_involved": [
+      "L1",
+      "L5"
+    ],
+    "verdict": "NONZERO_SUPPORT_ONLY",
+    "reason": "exactly 1 supporting run"
+  },
+  "MATH_REASONING": {
+    "n_eligible_runs": 6,
+    "n_supporting_runs": 2,
+    "supporting_run_ids": [
+      "BAX1DEEP_MR07_2102",
+      "BAX1DEEP_MR07_2103"
+    ],
+    "supporting_prompt_ids": [
+      "MR07"
+    ],
+    "n_distinct_prompt_ids": 1,
+    "supporting_seeds": [
+      "2102",
+      "2103"
+    ],
+    "n_distinct_seeds": 2,
+    "nodes_involved": [
+      "L0",
+      "L1",
+      "L20"
+    ],
+    "verdict": "LOW_SUPPORT_REPLICATION_CANDIDATE",
+    "reason": ">=2 supporting runs but confined to a single prompt_id"
+  },
+  "classification": "NEW_NONZERO_OBSERVATION, not replication yet -- per mission section 18 explicit instruction not to overclaim."
+}

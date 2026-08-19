@@ -1,0 +1,3 @@
+PASS 1 done: 305 landmark events across 87 runs
+RUN_ELIGIBILITY_AUDIT.csv written
+Checkpoint saved (PASS1_CACHE.json). Continuing to downstream analyses...

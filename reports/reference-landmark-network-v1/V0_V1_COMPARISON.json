@@ -1,0 +1,26 @@
+{
+  "v0_historical_reference_not_pooled_into_v1_statistics": {
+    "runs": 30,
+    "runs_with_ge1_landmark": 18,
+    "runs_with_ge2_landmark": 10,
+    "unique_route_signatures": 11,
+    "common_routes": 1,
+    "validated_edges": 0,
+    "low_support_edges": 5,
+    "verdict": "REFERENCE_LANDMARK_NETWORK_PARTIAL"
+  },
+  "v1_lane_b_summary": {
+    "runs": 144,
+    "edge_eligible_runs": 69,
+    "unique_route_signatures": 60,
+    "validated_edges": 2,
+    "low_support_edges": 10
+  },
+  "edges_new_in_v1_supported": [
+    "L0->L5",
+    "L0->L20"
+  ],
+  "edges_low_support_in_both": "V0 never validated any specific directed edge (0 validated); V1's 10 low-support edges have no V0 analogue to compare against directly since V0's 5 low-support edges were not individually named with the same node-pair granularity in the surviving V0 artifacts.",
+  "note_no_pvalue_pooling": "p-values and counts are NOT combined across V0 and V1 -- V0 is historical reference only, per mission section 16.",
+  "note_v0_not_rewritten": "reports/reference-landmark-network-v0/ and its -claude-conflict quarantine directory are unmodified."
+}

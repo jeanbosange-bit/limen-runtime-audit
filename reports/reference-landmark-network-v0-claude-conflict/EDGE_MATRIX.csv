@@ -1,0 +1,13 @@
+from,to,n_runs_direct,n_runs_indirect,n_runs_total,run_ids,n_prompt_ids,prompt_ids,n_families,families,median_step_distance_direct,step_distance_std_direct,reverse_pair_n_runs_total,direction_consistency,background_frequency_note
+L0,L1,2,1,3,"KVC_AH01_1103,KVC_AH02_1102,KVC_GI02_1103",3,"AH01,AH02,GI02",2,"AMBIGUITY_HANDLING,GENERAL_INSTRUCTION",13.0,11.0,1,BIDIRECTIONAL_OBSERVED,see EDGE_VALIDATION_RESULTS.json for the frozen permutation-null background rate for this pair
+L0,L5,1,0,1,KVC_AH02_1102,1,AH02,1,AMBIGUITY_HANDLING,1.0,0.0,2,BIDIRECTIONAL_OBSERVED,see EDGE_VALIDATION_RESULTS.json for the frozen permutation-null background rate for this pair
+L0,L20,1,1,2,"KVC_AH02_1102,KVC_GI01_1101",2,"AH02,GI01",2,"AMBIGUITY_HANDLING,GENERAL_INSTRUCTION",26.0,0.0,2,BIDIRECTIONAL_OBSERVED,see EDGE_VALIDATION_RESULTS.json for the frozen permutation-null background rate for this pair
+L1,L0,1,0,1,KVC_GI02_1102,1,GI02,1,GENERAL_INSTRUCTION,25.0,0.0,3,BIDIRECTIONAL_OBSERVED,see EDGE_VALIDATION_RESULTS.json for the frozen permutation-null background rate for this pair
+L1,L5,1,1,2,"KVC_AH01_1101,KVC_AH02_1102",2,"AH01,AH02",1,AMBIGUITY_HANDLING,6.0,0.0,3,BIDIRECTIONAL_OBSERVED,see EDGE_VALIDATION_RESULTS.json for the frozen permutation-null background rate for this pair
+L1,L20,1,0,1,KVC_AH02_1102,1,AH02,1,AMBIGUITY_HANDLING,3.0,0.0,1,BIDIRECTIONAL_OBSERVED,see EDGE_VALIDATION_RESULTS.json for the frozen permutation-null background rate for this pair
+L5,L0,2,0,2,"KVC_AH01_1102,KVC_GI02_1101",2,"AH01,GI02",2,"AMBIGUITY_HANDLING,GENERAL_INSTRUCTION",14.5,6.5,1,BIDIRECTIONAL_OBSERVED,see EDGE_VALIDATION_RESULTS.json for the frozen permutation-null background rate for this pair
+L5,L1,3,0,3,"KVC_AH01_1101,KVC_AH02_1102,KVC_GI01_1103",3,"AH01,AH02,GI01",2,"AMBIGUITY_HANDLING,GENERAL_INSTRUCTION",22.0,6.847546194724712,2,BIDIRECTIONAL_OBSERVED,see EDGE_VALIDATION_RESULTS.json for the frozen permutation-null background rate for this pair
+L5,L20,0,1,1,KVC_AH02_1102,1,AH02,1,AMBIGUITY_HANDLING,,,1,BIDIRECTIONAL_OBSERVED,see EDGE_VALIDATION_RESULTS.json for the frozen permutation-null background rate for this pair
+L20,L0,2,0,2,"KVC_AH02_1101,KVC_GI02_1103",2,"AH02,GI02",2,"AMBIGUITY_HANDLING,GENERAL_INSTRUCTION",24.0,14.0,2,BIDIRECTIONAL_OBSERVED,see EDGE_VALIDATION_RESULTS.json for the frozen permutation-null background rate for this pair
+L20,L1,0,1,1,KVC_GI02_1103,1,GI02,1,GENERAL_INSTRUCTION,,,1,BIDIRECTIONAL_OBSERVED,see EDGE_VALIDATION_RESULTS.json for the frozen permutation-null background rate for this pair
+L20,L5,1,0,1,KVC_AH02_1102,1,AH02,1,AMBIGUITY_HANDLING,1.0,0.0,1,BIDIRECTIONAL_OBSERVED,see EDGE_VALIDATION_RESULTS.json for the frozen permutation-null background rate for this pair

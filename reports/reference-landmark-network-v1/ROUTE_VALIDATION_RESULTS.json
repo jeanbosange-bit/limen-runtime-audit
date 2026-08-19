@@ -1,0 +1,955 @@
+{
+  "L1-L5": {
+    "n_runs": 2,
+    "n_families": 2,
+    "n_seeds": 2,
+    "constituent_edges": [
+      "L1->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_LOW_SUPPORT"
+  },
+  "L1+L20-L0+L1+L20": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L1->L0",
+      "L1->L20",
+      "L20->L0",
+      "L20->L1"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L20-L1": {
+    "n_runs": 3,
+    "n_families": 3,
+    "n_seeds": 2,
+    "constituent_edges": [
+      "L20->L1"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_LOW_SUPPORT"
+  },
+  "L0-L20-L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L20",
+      "L20->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0+L1+L5-L0-L5-L1": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L1->L0",
+      "L5->L0",
+      "L0->L5",
+      "L5->L1"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L1-L20-L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L1->L20",
+      "L20->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L5-L0-L1-L0-L1-L1-L1": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L5->L0",
+      "L0->L1",
+      "L1->L0",
+      "L0->L1"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L5-L20+L5-L20": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L5->L20",
+      "L5->L20"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L0": {
+    "n_runs": 4,
+    "n_families": 4,
+    "n_seeds": 3,
+    "constituent_edges": [],
+    "constituent_edge_statuses": [],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_LOW_SUPPORT"
+  },
+  "L1-L0-L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L1->L0",
+      "L0->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_SUPPORTED"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L20": {
+    "n_runs": 3,
+    "n_families": 2,
+    "n_seeds": 2,
+    "constituent_edges": [
+      "L0->L20"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_SUPPORTED"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_SUPPORTED"
+  },
+  "L1-L20+L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L1->L20",
+      "L1->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L1": {
+    "n_runs": 7,
+    "n_families": 6,
+    "n_seeds": 3,
+    "constituent_edges": [],
+    "constituent_edge_statuses": [],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_LOW_SUPPORT"
+  },
+  "L0-L1-L0-L1": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L1",
+      "L1->L0",
+      "L0->L1"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L1+L5-L0": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L1->L0",
+      "L5->L0"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L1-L0-L0-L20+L5-L20-L1-L20-L5-L1": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L1->L0",
+      "L0->L20",
+      "L0->L5",
+      "L5->L20",
+      "L20->L1",
+      "L1->L20",
+      "L20->L5",
+      "L5->L1"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0": {
+    "n_runs": 9,
+    "n_families": 5,
+    "n_seeds": 3,
+    "constituent_edges": [],
+    "constituent_edge_statuses": [],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_LOW_SUPPORT"
+  },
+  "L1-L20": {
+    "n_runs": 2,
+    "n_families": 2,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L1->L20"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_LOW_SUPPORT"
+  },
+  "L0-L1": {
+    "n_runs": 3,
+    "n_families": 3,
+    "n_seeds": 3,
+    "constituent_edges": [
+      "L0->L1"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_LOW_SUPPORT"
+  },
+  "L20-L20": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [],
+    "constituent_edge_statuses": [],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L5-L0+L1-L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L5->L0",
+      "L5->L1",
+      "L0->L5",
+      "L1->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0+L1-L20-L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L20",
+      "L1->L20",
+      "L20->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L5-L0+L1+L5-L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L5->L0",
+      "L5->L1",
+      "L0->L5",
+      "L1->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L20-L1-L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L20->L1",
+      "L1->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L1+L5-L0-L0-L1-L1-L0": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L1->L0",
+      "L5->L0",
+      "L0->L1",
+      "L1->L0"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L5-L5-L5-L0-L20-L0-L5-L5-L0": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L5",
+      "L5->L0",
+      "L0->L20",
+      "L20->L0",
+      "L0->L5",
+      "L5->L0"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L1-L0-L1-L1+L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L1->L0",
+      "L0->L1",
+      "L1->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_SUPPORTED"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L5-L1-L5-L1+L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L5->L1",
+      "L1->L5",
+      "L5->L1"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L20+L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [],
+    "constituent_edge_statuses": [],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L1-L0-L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L1",
+      "L1->L0",
+      "L0->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_SUPPORTED"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L1-L1-L1-L1-L0-L0": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L1->L0"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0+L20-L1-L20": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L1",
+      "L20->L1",
+      "L1->L20"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L5-L5-L1+L5-L0-L1-L20-L20-L0": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L5",
+      "L5->L1",
+      "L1->L0",
+      "L5->L0",
+      "L0->L1",
+      "L1->L20",
+      "L20->L0"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L1-L0-L1": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L1->L0",
+      "L0->L1"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L1-L1": {
+    "n_runs": 2,
+    "n_families": 1,
+    "n_seeds": 2,
+    "constituent_edges": [],
+    "constituent_edge_statuses": [],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_LOW_SUPPORT"
+  },
+  "L0-L0+L1-L5-L1-L5-L5-L5-L20-L1-L5-L5-L5-L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L1",
+      "L0->L5",
+      "L1->L5",
+      "L5->L1",
+      "L1->L5",
+      "L5->L20",
+      "L20->L1",
+      "L1->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L20-L5": {
+    "n_runs": 2,
+    "n_families": 2,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L20->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_LOW_SUPPORT"
+  },
+  "L5": {
+    "n_runs": 2,
+    "n_families": 2,
+    "n_seeds": 2,
+    "constituent_edges": [],
+    "constituent_edge_statuses": [],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_LOW_SUPPORT"
+  },
+  "L0-L5-L1-L0-L1": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L5",
+      "L5->L1",
+      "L1->L0",
+      "L0->L1"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L20-L0-L20-L1-L1": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L20->L0",
+      "L0->L20",
+      "L20->L1"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L20-L0+L1-L20": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L20->L0",
+      "L20->L1",
+      "L0->L20",
+      "L1->L20"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L20-L0+L20": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L20",
+      "L20->L0"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L1-L5-L5-L0+L20-L5-L20-L1": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L1",
+      "L1->L5",
+      "L5->L0",
+      "L5->L20",
+      "L0->L5",
+      "L20->L5",
+      "L5->L20",
+      "L20->L1"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L0-L1-L20-L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L1",
+      "L1->L20",
+      "L20->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L0-L1": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L1"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L5-L1+L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L5",
+      "L5->L1"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0+L1-L5-L1+L20-L20-L1+L20-L20": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L5",
+      "L1->L5",
+      "L5->L1",
+      "L5->L20",
+      "L1->L20",
+      "L20->L1",
+      "L1->L20"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L20+L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L20",
+      "L0->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_SUPPORTED"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L0-L5-L0+L20+L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L5",
+      "L5->L0",
+      "L5->L20"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L5-L1-L1-L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L5",
+      "L5->L1",
+      "L1->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L5-L20-L1-L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L5",
+      "L5->L20",
+      "L20->L1",
+      "L1->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L1-L1-L1-L1+L20-L20-L20-L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L1",
+      "L1->L20",
+      "L1->L20",
+      "L20->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L0-L0-L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_SUPPORTED"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L0-L20-L20": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L20"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_SUPPORTED"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L1-L1+L20+L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L1",
+      "L1->L20",
+      "L1->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L5-L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_SUPPORTED"
+    ],
+    "involves_tie": false,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L5-L20-L20-L1+L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L5",
+      "L5->L20",
+      "L20->L1",
+      "L20->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L20-L20-L1+L20-L5": {
+    "n_runs": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "constituent_edges": [
+      "L0->L20",
+      "L20->L1",
+      "L1->L5",
+      "L20->L5"
+    ],
+    "constituent_edge_statuses": [
+      "REFERENCE_EDGE_SUPPORTED",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT",
+      "REFERENCE_EDGE_LOW_SUPPORT"
+    ],
+    "involves_tie": true,
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  }
+}

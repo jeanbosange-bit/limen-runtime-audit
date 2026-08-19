@@ -1,0 +1,16 @@
+{
+  "status": "FROZEN_PRE_ANALYSIS",
+  "frozen_date": "2026-08-18",
+  "source": "reports/multi-tensor-landmarks-v0/LANDMARK_RESULTS.json, candidates with promotion_status == REFERENCE_LANDMARK_SUPPORTED, exactly 4, verbatim",
+  "node_set": [
+    {"node_id": "L0", "layer": 0, "original_candidate_id": "LC00", "validation_leave_one_out_recurrence": 1.0, "family_conditioning": "cross_family"},
+    {"node_id": "L1", "layer": 1, "original_candidate_id": "LC01", "validation_leave_one_out_recurrence": 1.0, "family_conditioning": "cross_family"},
+    {"node_id": "L5", "layer": 5, "original_candidate_id": "LC05", "validation_leave_one_out_recurrence": 1.0, "family_conditioning": "cross_family"},
+    {"node_id": "L20", "layer": 20, "original_candidate_id": "LC20", "validation_leave_one_out_recurrence": 1.0, "family_conditioning": "cross_family"}
+  ],
+  "n_nodes": 4,
+  "detection_rule_inherited_unchanged": "Within (run_id, layer), z-score H_curvature/Oattn_delta_norm/A_dispersion/probability_entropy across that run/layer's decode steps; a step is a landmark encounter if |z|>1.5 on >=3 of the 4 signals. Reused verbatim from reports/multi-tensor-atlas-v0 -- not redefined here.",
+  "excluded_by_freeze": "All 20 non-REFERENCE_LANDMARK_SUPPORTED candidates (11 RECURRING_BUT_LOW_SUPPORT, 9 NOT_REPLICATED) are excluded from the primary node set per mission section 4. They may appear only as SECONDARY/GHOST nodes in supplementary material, never in the primary network.",
+  "no_post_hoc_additions": "This registry is frozen before any route, edge, or centrality computation. No node is added or removed after inspecting results.",
+  "registry_hash_note": "This file's own sha256 is recorded in SHA256SUMS.txt at gate completion."
+}

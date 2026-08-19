@@ -1,0 +1,43 @@
+{
+  "status": "READ_ONLY_SCHEMA -- not a global reasoning graph",
+  "type_name": "ReferenceLandmarkNetwork",
+  "scope_note": "This schema describes ONLY the 4-node network built from validated REFERENCE_LANDMARK_SUPPORTED landmarks. It is explicitly not, and must not be extended into, a general-purpose 'reasoning graph' for the model.",
+  "Nodes": {
+    "cardinality": 4,
+    "source": "FROZEN_NODE_REGISTRY.json",
+    "fields": {
+      "node_id": "string, e.g. 'L0'", "layer": "int 0-23",
+      "support": "{run_coverage_n, prompt_id_coverage, family_coverage, total_encounters_across_corpus} -- see NODE_PROPERTIES.json",
+      "coverage": "run_coverage_of_21_eligible (float 0-1)",
+      "epistemic_status": "REFERENCE_LANDMARK_SUPPORTED (all 4, by construction of the frozen node set)"
+    }
+  },
+  "Edges": {
+    "cardinality": "up to 12 (4x3 ordered pairs); this gate observed 12/12 with >=1 supporting run, 0/12 statistically VALIDATED after Bonferroni correction",
+    "source": "EDGE_MATRIX.csv + EDGE_VALIDATION_RESULTS.json",
+    "fields": {
+      "from": "node_id", "to": "node_id",
+      "direction": "DIRECT_SUCCESSION | INDIRECT_SUCCESSION | CO_OCCURRENCE (per EDGE_DEFINITION.md)",
+      "support": "{n_runs_direct, n_runs_indirect, n_runs_total, n_prompt_ids, n_families}",
+      "step_distance": "{median_step_distance_direct, step_distance_std_direct}",
+      "validation_status": "VALIDATED | LOW_SUPPORT | NOT_SUPPORTED, from EDGE_VALIDATION_RESULTS.json's frozen permutation test"
+    },
+    "never_labeled": "CAUSES"
+  },
+  "RouteInstances": {
+    "cardinality": 30,
+    "source": "ROUTE_INSTANCES.csv, one row per raw run (18 with >=1 landmark, 12 with none)",
+    "fields": {
+      "run_id": "string", "prompt_id": "string", "family": "string", "seed": "int",
+      "landmark_sequence_full": "ordered 'node@step' string, or 'NONE'",
+      "route_signature": "collapsed (consecutive-duplicate-merged, co-occurrence-tied) signature string used for ROUTE_SIGNATURES.json clustering",
+      "n_encounters": "int", "n_distinct_landmarks": "int 0-4", "has_repeat_encounter": "bool",
+      "landmarks_bypassed": "comma-separated node_ids never encountered in this run"
+    }
+  },
+  "epistemic_labels_used_throughout": ["MEASURED", "DERIVED", "PROXY", "UNKNOWN", "NOT_CAPTURED", "NOT_ESTABLISHED", "DESCRIPTIVE_NETWORK_PROPERTY"],
+  "explicit_non_claims": [
+    "No node or edge means: reasoning step, cognitive stage, decision, concept, truth state, hallucination state, causal mechanism.",
+    "No global model-wide graph is implied or constructed -- this schema covers only the 4 validated nodes and their observed inter-relationships in this specific 21-run eligible pool."
+  ]
+}

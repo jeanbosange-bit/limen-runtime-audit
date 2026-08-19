@@ -1,0 +1,13 @@
+family,n_runs,n_eligible,n_short_noneval,n_ge1_landmark,n_ge2_landmark,n_no_landmark,min_len,median_len,max_len,n_seeds,n_prompt_ids,layer_coverage_note
+AMBIGUITY_HANDLING,12,12,0,10,9,2,12,39.0,128,3,4,L0/L1/L5/L20 only (frozen node set) -- 20 other mechanism layers UNKNOWN by design
+CODING,12,12,0,10,9,2,16,62.0,160,3,4,L0/L1/L5/L20 only (frozen node set) -- 20 other mechanism layers UNKNOWN by design
+CONSTRAINT_FOLLOWING,12,12,0,10,6,2,10,35.5,96,3,4,L0/L1/L5/L20 only (frozen node set) -- 20 other mechanism layers UNKNOWN by design
+DOCUMENT_EXTRACTION,12,9,3,6,2,3,3,6.5,59,3,4,L0/L1/L5/L20 only (frozen node set) -- 20 other mechanism layers UNKNOWN by design
+FACTUAL_GROUNDED,12,7,5,1,1,6,2,4.0,12,3,4,L0/L1/L5/L20 only (frozen node set) -- 20 other mechanism layers UNKNOWN by design
+GENERAL_INSTRUCTION,12,12,0,11,11,1,35,96.0,160,3,4,L0/L1/L5/L20 only (frozen node set) -- 20 other mechanism layers UNKNOWN by design
+MATH_REASONING,12,6,6,2,1,4,2,3.5,25,3,4,L0/L1/L5/L20 only (frozen node set) -- 20 other mechanism layers UNKNOWN by design
+MULTISTEP_INSTRUCTION,12,12,0,12,6,0,11,86.0,224,3,4,L0/L1/L5/L20 only (frozen node set) -- 20 other mechanism layers UNKNOWN by design
+RECOVERY_CORRECTION,12,9,3,5,3,4,2,15.0,160,3,4,L0/L1/L5/L20 only (frozen node set) -- 20 other mechanism layers UNKNOWN by design
+STRUCTURED_OUTPUT,12,12,0,6,3,6,13,25.0,96,3,4,L0/L1/L5/L20 only (frozen node set) -- 20 other mechanism layers UNKNOWN by design
+SUMMARIZATION,12,12,0,9,7,3,19,32.0,48,3,4,L0/L1/L5/L20 only (frozen node set) -- 20 other mechanism layers UNKNOWN by design
+TRANSFORMATION,12,12,0,5,4,7,6,12.0,72,3,4,L0/L1/L5/L20 only (frozen node set) -- 20 other mechanism layers UNKNOWN by design

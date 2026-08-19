@@ -1,0 +1,150 @@
+{
+  "status": "DERIVED_FROM_REAL_COMPUTATION",
+  "granularity_disclosure": "H_curvature/Oattn_delta_norm/A_dispersion/probability_entropy are (run,layer,step)-resolved MEASURED/DERIVED values at each landmark's own actual encounter events, averaged across all encounters of that landmark. K/V columns are (run,layer)-structural, PROXY-tagged, broadcast across step (NOT step-resolved at t-1/t/t+1) -- reported once per landmark as the mean over the landmark's contributing runs at that layer, per MULTI_TENSOR_SCHEMA.json's granularity warning.",
+  "landmarks": {
+    "L0": {
+      "layer": 0,
+      "n_encounters": 10,
+      "n_encounters_with_tminus1_available": 7,
+      "n_encounters_with_tplus1_available": 10,
+      "local_window_mean": {
+        "H_curvature": {
+          "t-1": 1.4552,
+          "t": 1.6523,
+          "t+1": 1.6412
+        },
+        "Oattn_delta_norm": {
+          "t-1": 0.1237,
+          "t": -0.1953,
+          "t+1": 0.1403
+        },
+        "A_dispersion": {
+          "t-1": 2.0445,
+          "t": 2.1784,
+          "t+1": 1.9654
+        },
+        "probability_entropy": {
+          "t-1": 1.9261,
+          "t": 2.3839,
+          "t+1": 0.4349
+        }
+      },
+      "epistemic_status_signals": "MEASURED (Oattn_norm-type raw reads) / DERIVED (deltas, curvature, dispersion, entropy) -- see reports/multi-tensor-atlas-v0/EPISTEMIC_STATUS.md",
+      "kv_structural_run_layer_mean": {
+        "K_effective_rank": 10.6781,
+        "K_mean_pairwise_cosine": 0.9707,
+        "V_effective_rank": 30.6885,
+        "V_mean_pairwise_cosine": 0.1474
+      },
+      "epistemic_status_kv": "PROXY, (run,layer)-broadcast, NOT step-resolved"
+    },
+    "L1": {
+      "layer": 1,
+      "n_encounters": 7,
+      "n_encounters_with_tminus1_available": 7,
+      "n_encounters_with_tplus1_available": 7,
+      "local_window_mean": {
+        "H_curvature": {
+          "t-1": 1.4652,
+          "t": 1.6801,
+          "t+1": 1.316
+        },
+        "Oattn_delta_norm": {
+          "t-1": -0.1229,
+          "t": 0.3818,
+          "t+1": -0.3334
+        },
+        "A_dispersion": {
+          "t-1": 2.7953,
+          "t": 2.4685,
+          "t+1": 2.7893
+        },
+        "probability_entropy": {
+          "t-1": 1.4787,
+          "t": 0.5794,
+          "t+1": 1.134
+        }
+      },
+      "epistemic_status_signals": "MEASURED (Oattn_norm-type raw reads) / DERIVED (deltas, curvature, dispersion, entropy) -- see reports/multi-tensor-atlas-v0/EPISTEMIC_STATUS.md",
+      "kv_structural_run_layer_mean": {
+        "K_effective_rank": 45.1066,
+        "K_mean_pairwise_cosine": 0.9941,
+        "V_effective_rank": 49.6265,
+        "V_mean_pairwise_cosine": 0.4202
+      },
+      "epistemic_status_kv": "PROXY, (run,layer)-broadcast, NOT step-resolved"
+    },
+    "L5": {
+      "layer": 5,
+      "n_encounters": 8,
+      "n_encounters_with_tminus1_available": 8,
+      "n_encounters_with_tplus1_available": 7,
+      "local_window_mean": {
+        "H_curvature": {
+          "t-1": 1.3514,
+          "t": 1.5399,
+          "t+1": 1.4082
+        },
+        "Oattn_delta_norm": {
+          "t-1": 0.1953,
+          "t": -0.0883,
+          "t+1": -0.3046
+        },
+        "A_dispersion": {
+          "t-1": 1.7139,
+          "t": 1.6599,
+          "t+1": 1.6977
+        },
+        "probability_entropy": {
+          "t-1": 1.5185,
+          "t": 1.5769,
+          "t+1": 1.7121
+        }
+      },
+      "epistemic_status_signals": "MEASURED (Oattn_norm-type raw reads) / DERIVED (deltas, curvature, dispersion, entropy) -- see reports/multi-tensor-atlas-v0/EPISTEMIC_STATUS.md",
+      "kv_structural_run_layer_mean": {
+        "K_effective_rank": 43.6323,
+        "K_mean_pairwise_cosine": 0.5913,
+        "V_effective_rank": 55.5711,
+        "V_mean_pairwise_cosine": 0.1016
+      },
+      "epistemic_status_kv": "PROXY, (run,layer)-broadcast, NOT step-resolved"
+    },
+    "L20": {
+      "layer": 20,
+      "n_encounters": 10,
+      "n_encounters_with_tminus1_available": 9,
+      "n_encounters_with_tplus1_available": 10,
+      "local_window_mean": {
+        "H_curvature": {
+          "t-1": 1.5,
+          "t": 1.1396,
+          "t+1": 1.5587
+        },
+        "Oattn_delta_norm": {
+          "t-1": 1.1332,
+          "t": -4.2181,
+          "t+1": 2.3251
+        },
+        "A_dispersion": {
+          "t-1": 1.2881,
+          "t": 0.943,
+          "t+1": 1.2697
+        },
+        "probability_entropy": {
+          "t-1": 0.6081,
+          "t": 0.5849,
+          "t+1": 0.2239
+        }
+      },
+      "epistemic_status_signals": "MEASURED (Oattn_norm-type raw reads) / DERIVED (deltas, curvature, dispersion, entropy) -- see reports/multi-tensor-atlas-v0/EPISTEMIC_STATUS.md",
+      "kv_structural_run_layer_mean": {
+        "K_effective_rank": 34.8588,
+        "K_mean_pairwise_cosine": 0.6528,
+        "V_effective_rank": 49.2243,
+        "V_mean_pairwise_cosine": 0.3049
+      },
+      "epistemic_status_kv": "PROXY, (run,layer)-broadcast, NOT step-resolved"
+    }
+  }
+}

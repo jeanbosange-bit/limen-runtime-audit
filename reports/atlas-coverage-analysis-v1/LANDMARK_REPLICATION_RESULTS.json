@@ -1,0 +1,47 @@
+{
+  "thresholds_used": {
+    "note": "Applied per-landmark (L0, L1, L5, L20) independently, against Lane B's 127 landmark-eligible runs (n_steps>=4).",
+    "REPLICATED_ON_LANE_B": "recurs in >=3 distinct prompt_families AND >=2 distinct seeds AND recurrence_rate_among_eligible >= 0.15 (15%)",
+    "PARTIAL_REPLICATION": "recurs in >=2 distinct prompt_families OR >=2 distinct seeds, AND recurrence_rate_among_eligible >= 0.05 (5%), but does not meet REPLICATED_ON_LANE_B",
+    "NOT_REPLICATED": "fails PARTIAL_REPLICATION's bar (recurrence_rate_among_eligible < 0.05, or confined to a single family AND single seed)",
+    "rescue_prohibition": "A landmark's canonical REFERENCE_LANDMARK_SUPPORTED status from reports/multi-tensor-landmarks-v0/ is NEVER changed by this gate's result -- this is an independent replication AUDIT on new data, not a re-validation that can revoke or upgrade the frozen prior status."
+  },
+  "results": {
+    "L0": {
+      "n_runs_with_node": 60,
+      "n_eligible_total": 127,
+      "recurrence_rate": 0.4724,
+      "n_families_with_node": 11,
+      "n_seeds_with_node": 3,
+      "verdict": "REPLICATED_ON_LANE_B",
+      "canonical_status_unchanged": "REFERENCE_LANDMARK_SUPPORTED (reports/multi-tensor-landmarks-v0, not altered by this audit)"
+    },
+    "L1": {
+      "n_runs_with_node": 55,
+      "n_eligible_total": 127,
+      "recurrence_rate": 0.4331,
+      "n_families_with_node": 12,
+      "n_seeds_with_node": 3,
+      "verdict": "REPLICATED_ON_LANE_B",
+      "canonical_status_unchanged": "REFERENCE_LANDMARK_SUPPORTED (reports/multi-tensor-landmarks-v0, not altered by this audit)"
+    },
+    "L5": {
+      "n_runs_with_node": 43,
+      "n_eligible_total": 127,
+      "recurrence_rate": 0.3386,
+      "n_families_with_node": 10,
+      "n_seeds_with_node": 3,
+      "verdict": "REPLICATED_ON_LANE_B",
+      "canonical_status_unchanged": "REFERENCE_LANDMARK_SUPPORTED (reports/multi-tensor-landmarks-v0, not altered by this audit)"
+    },
+    "L20": {
+      "n_runs_with_node": 38,
+      "n_eligible_total": 127,
+      "recurrence_rate": 0.2992,
+      "n_families_with_node": 11,
+      "n_seeds_with_node": 3,
+      "verdict": "REPLICATED_ON_LANE_B",
+      "canonical_status_unchanged": "REFERENCE_LANDMARK_SUPPORTED (reports/multi-tensor-landmarks-v0, not altered by this audit)"
+    }
+  }
+}

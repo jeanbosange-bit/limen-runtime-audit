@@ -1,0 +1,40 @@
+{
+  "thresholds": "reports/atlas-coverage-analysis-v1/SUPPORT_THRESHOLD_FREEZE.json (frozen before inspection)",
+  "by_prompt_family": {
+    "AMBIGUITY_HANDLING": "WELL_OBSERVED",
+    "CODING": "WELL_OBSERVED",
+    "CONSTRAINT_FOLLOWING": "WELL_OBSERVED",
+    "DOCUMENT_EXTRACTION": "WELL_OBSERVED",
+    "FACTUAL_GROUNDED": "WELL_OBSERVED",
+    "GENERAL_INSTRUCTION": "WELL_OBSERVED",
+    "MATH_REASONING": "WELL_OBSERVED",
+    "MULTISTEP_INSTRUCTION": "WELL_OBSERVED",
+    "RECOVERY_CORRECTION": "WELL_OBSERVED",
+    "STRUCTURED_OUTPUT": "WELL_OBSERVED",
+    "SUMMARIZATION": "WELL_OBSERVED",
+    "TRANSFORMATION": "WELL_OBSERVED"
+  },
+  "by_landmark_node": {
+    "L0": "REPLICATED_ON_LANE_B",
+    "L1": "REPLICATED_ON_LANE_B",
+    "L5": "REPLICATED_ON_LANE_B",
+    "L20": "REPLICATED_ON_LANE_B"
+  },
+  "by_layer_for_landmark_purposes": {
+    "0": "REPLICATED_ON_LANE_B",
+    "1": "REPLICATED_ON_LANE_B",
+    "5": "REPLICATED_ON_LANE_B",
+    "20": "REPLICATED_ON_LANE_B",
+    "other_20_layers": "UNKNOWN (not tested -- frozen node set, mission section 3)"
+  },
+  "by_generation_length_regime": "see LANDMARK_RECURRENCE_AUDIT (Lane B) recurrence_by_execution_length_bucket for SHORT/MEDIUM/LONG bucket support",
+  "tensor_type_coverage": {
+    "H": "WELL_OBSERVED",
+    "Q": "WELL_OBSERVED (first time captured)",
+    "K": "WELL_OBSERVED",
+    "V": "WELL_OBSERVED",
+    "ATTENTION": "WELL_OBSERVED",
+    "ATTENTION_OUTPUT": "WELL_OBSERVED",
+    "LOGITS": "WELL_OBSERVED (bounded, predictive positions only)"
+  }
+}

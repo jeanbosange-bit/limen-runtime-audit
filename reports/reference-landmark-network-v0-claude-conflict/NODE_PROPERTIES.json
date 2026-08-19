@@ -1,0 +1,100 @@
+{
+  "L0": {
+    "epistemic_label": "DESCRIPTIVE_NETWORK_PROPERTY",
+    "layer": 0,
+    "run_coverage_n": 8,
+    "run_coverage_of_21_eligible": 0.381,
+    "prompt_id_coverage": [
+      "AH01",
+      "AH02",
+      "GI01",
+      "GI02"
+    ],
+    "n_prompt_ids": 4,
+    "family_coverage": [
+      "AMBIGUITY_HANDLING",
+      "GENERAL_INSTRUCTION"
+    ],
+    "n_families": 2,
+    "total_encounters_across_corpus": 10,
+    "in_degree_observed_any": 3,
+    "out_degree_observed_any": 3,
+    "in_degree_validated_only": 0,
+    "out_degree_validated_only": 0,
+    "betweenness_centrality_descriptive": 0.0
+  },
+  "L1": {
+    "epistemic_label": "DESCRIPTIVE_NETWORK_PROPERTY",
+    "layer": 1,
+    "run_coverage_n": 6,
+    "run_coverage_of_21_eligible": 0.286,
+    "prompt_id_coverage": [
+      "AH01",
+      "AH02",
+      "GI01",
+      "GI02"
+    ],
+    "n_prompt_ids": 4,
+    "family_coverage": [
+      "AMBIGUITY_HANDLING",
+      "GENERAL_INSTRUCTION"
+    ],
+    "n_families": 2,
+    "total_encounters_across_corpus": 7,
+    "in_degree_observed_any": 3,
+    "out_degree_observed_any": 3,
+    "in_degree_validated_only": 0,
+    "out_degree_validated_only": 0,
+    "betweenness_centrality_descriptive": 0.0
+  },
+  "L5": {
+    "epistemic_label": "DESCRIPTIVE_NETWORK_PROPERTY",
+    "layer": 5,
+    "run_coverage_n": 7,
+    "run_coverage_of_21_eligible": 0.333,
+    "prompt_id_coverage": [
+      "AH01",
+      "AH02",
+      "GI01",
+      "GI02"
+    ],
+    "n_prompt_ids": 4,
+    "family_coverage": [
+      "AMBIGUITY_HANDLING",
+      "GENERAL_INSTRUCTION"
+    ],
+    "n_families": 2,
+    "total_encounters_across_corpus": 8,
+    "in_degree_observed_any": 3,
+    "out_degree_observed_any": 3,
+    "in_degree_validated_only": 0,
+    "out_degree_validated_only": 0,
+    "betweenness_centrality_descriptive": 0.0
+  },
+  "L20": {
+    "epistemic_label": "DESCRIPTIVE_NETWORK_PROPERTY",
+    "layer": 20,
+    "run_coverage_n": 10,
+    "run_coverage_of_21_eligible": 0.476,
+    "prompt_id_coverage": [
+      "AH02",
+      "GI01",
+      "GI02",
+      "SO01",
+      "SO02"
+    ],
+    "n_prompt_ids": 5,
+    "family_coverage": [
+      "AMBIGUITY_HANDLING",
+      "GENERAL_INSTRUCTION",
+      "STRUCTURED_OUTPUT"
+    ],
+    "n_families": 3,
+    "total_encounters_across_corpus": 10,
+    "in_degree_observed_any": 3,
+    "out_degree_observed_any": 3,
+    "in_degree_validated_only": 0,
+    "out_degree_validated_only": 0,
+    "betweenness_centrality_descriptive": 0.0
+  }
+}

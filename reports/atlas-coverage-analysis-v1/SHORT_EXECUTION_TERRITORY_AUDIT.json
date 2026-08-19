@@ -1,0 +1,25 @@
+{
+  "n_short_executions_1_to_9_tokens": 38,
+  "n_evaluable_4_to_9_tokens": 21,
+  "n_not_evaluable_1_to_3_tokens": 17,
+  "by_family": {
+    "MATH_REASONING": 9,
+    "FACTUAL_GROUNDED": 11,
+    "RECOVERY_CORRECTION": 5,
+    "DOCUMENT_EXTRACTION": 10,
+    "TRANSFORMATION": 3
+  },
+  "tensor_completeness": "COMPLETE for all 21 short runs (H/Q/K/V/ATTENTION/ATTENTION_OUTPUT/LOGITS/TOKEN_IDS) -- per reports/bcc-atlas-expansion-v1/ATLAS_DEEP/TENSOR_AVAILABILITY_MATRIX.csv, full native-resolution capture regardless of generation length",
+  "what_can_be_evaluated": [
+    "Raw tensor norms (H/Q/K/V/Oattn) at every captured step -- always available regardless of length.",
+    "Attention dispersion/concentration at every captured step.",
+    "Probability entropy/top2-gap/logit-norm at every captured step.",
+    "Landmark z-score detection for the 4-9 token subset (21-17=4 runs... see n_evaluable above) -- the within-run z-score needs >=4 steps to have any variance to standardize against."
+  ],
+  "what_cannot_be_evaluated": [
+    "Landmark z-score detection for the 1-3 token subset (LANDMARK_NOT_EVALUABLE_SHORT_EXECUTION) -- mathematically undefined with <4 samples for a per-run z-score.",
+    "Any multi-step trend (curvature needs >=3 points, delta needs >=2) is degenerate or unavailable for the shortest runs."
+  ],
+  "alternate_short_run_descriptors_possible": "Single-step (not delta/trend-based) descriptors -- raw norm, raw entropy, raw attention concentration AT the one or two available steps -- remain well-defined even for 1-2 token runs. These are NOT converted into a landmark definition in this gate (mission section 17 explicit prohibition) but are flagged as a possible basis for a future short-execution-specific descriptive scheme.",
+  "no_landmark_definition_created_for_short_runs": true
+}

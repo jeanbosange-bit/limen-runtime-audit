@@ -1,0 +1,36 @@
+{
+  "status": "DERIVED_FROM_REAL_COMPUTATION",
+  "meaning_disclaimer": "UNKNOWN/NO_LANDMARK means insufficient reference structure only. It does NOT mean dangerous, unsafe, unstable, or wrong.",
+  "totals": {
+    "total_runs_in_full_capture": 30,
+    "runs_in_landmark_eligible_7_prompt_pool": 21,
+    "runs_outside_eligible_pool": 9,
+    "runs_outside_pool_breakdown": {"MR01": 3, "MR02": 3, "FG02": 3},
+    "reason_outside_pool": "MR01/MR02: n_steps=3<4, structurally cannot be z-scored (unchanged since reports/multi-tensor-atlas-v0). FG02: n_steps=6, was scored across all 24 layers in the original V0 sweep, produced zero qualifying spikes at any layer, not only the 4 confirmed ones.",
+    "total_decode_steps_all_30_runs": 751,
+    "total_landmark_encounters_4_nodes": 35,
+    "overall_step_density_of_encounters": 0.0466
+  },
+  "routes_with_no_confirmed_landmark": {
+    "count": 12,
+    "run_ids": ["KVC_FG01_1101", "KVC_FG01_1102", "KVC_FG01_1103", "KVC_FG02_1101", "KVC_FG02_1102", "KVC_FG02_1103", "KVC_MR01_1101", "KVC_MR01_1102", "KVC_MR01_1103", "KVC_MR02_1101", "KVC_MR02_1102", "KVC_MR02_1103"],
+    "note": "3 of these 12 (FG01, all seeds) ARE in the eligible pool and WERE scored -- they simply never produced a qualifying spike at any of the 4 confirmed layers. This is a genuine null result for FG01, not a scoring gap."
+  },
+  "runs_with_partial_landmark_coverage": {
+    "runs_with_exactly_1_of_4_nodes": 8,
+    "runs_with_exactly_2_of_4_nodes": 8,
+    "runs_with_exactly_3_of_4_nodes": 1,
+    "runs_with_all_4_of_4_nodes": 1,
+    "the_one_full_coverage_run": "KVC_AH02_1102, route L0-L5-L1-L20-L5 -- the single most complete observed route in the corpus, from one AMBIGUITY_HANDLING seed",
+    "note": "Most runs that touch the network at all touch only 1-2 of its 4 nodes -- the network is real but thinly traversed by any single run."
+  },
+  "prompt_families_with_zero_route_support": {
+    "FACTUAL_GROUNDED": "0/6 runs (both FG01 and FG02) show any of the 4 confirmed landmarks, despite FG01 contributing to a different (non-network, RECURRING_BUT_LOW_SUPPORT) candidate at layer 2 in the validated landmark gate",
+    "MATH_REASONING": "0/6 runs -- structurally excluded from z-scoring at the candidate-generation stage (n_steps=3)"
+  },
+  "prompt_families_with_full_route_support": {
+    "AMBIGUITY_HANDLING": "6/6 runs show >=1 node", "GENERAL_INSTRUCTION": "6/6 runs", "STRUCTURED_OUTPUT": "6/6 runs (all via the single-node L20 route only)"
+  },
+  "large_step_intervals_without_landmarks": "Not separately computed as a dedicated interval-gap statistic in this gate (would require a frozen gap-length threshold not specified in the mission); qualitatively evident from ROUTE_INSTANCES.csv's first/last-encounter-step columns -- e.g. GI01_1102's single L5 encounter is at step 41 of a 48-step run, meaning steps 0-40 and 42-47 contain no confirmed landmark for that run.",
+  "unknown_territory_preserved": true
+}
