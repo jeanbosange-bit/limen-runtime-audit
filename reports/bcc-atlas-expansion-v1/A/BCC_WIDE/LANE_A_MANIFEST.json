@@ -1,0 +1,37 @@
+{
+  "gate": "BCC ATLAS EXPANSION V1 -- LANE A (BCC-WIDE) EXECUTION",
+  "status": "EXECUTED, PASS",
+  "date": "2026-08-18",
+  "real_new_generations": 729,
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "device": "cuda", "dtype": "torch.bfloat16", "attn_implementation": "sdpa",
+  "prompt_source": "star_command_panel_v2_authoring/FREEZE/PANEL_V2_FROZEN_CANONICAL.jsonl (sha256 4172b4e0b0e3c08021307cc7358f3b8258d165f8b9950aed361babebc421b249), read-only, unmodified",
+  "seeds": [2101, 2102, 2103],
+  "generation_config_deviation_from_bcc_v2": "do_sample=True (BCC V2 used do_sample=False and no seed) -- necessary adaptation disclosed in run_lane_a.py's module docstring so the 3 new seeds actually produce divergent generations; temperature=1.0/top_p=1.0/top_k=0/repetition_penalty=1.0 otherwise match BCC V2's stated hyperparameters",
+  "results": {
+    "attempted": 729, "success": 729, "failures": 0, "success_rate_pct": 100.0,
+    "duplicate_run_ids": 0, "missing_run_ids": 0,
+    "prompt_coverage": "243/243", "family_coverage": "12/12", "seed_coverage": "3/3",
+    "generation_length_min_median_max": [2, 25, 224],
+    "short_executions_1_to_9_tokens": 189,
+    "probability_capture_completeness": "YES (729/729)",
+    "total_runtime_seconds": 3150.1
+  },
+  "runtime_actual_vs_estimate": "~52.5 min actual (3150s generation-loop time, ~57 min wall including model load) vs. ~50-65 min estimated in RESOURCE_ESTIMATE.md -- within range",
+  "storage_actual_vs_estimate": "3.3 MB actual vs. 'under 50 MB' estimated -- well within range",
+  "bug_disclosure": "One path-depth bug (HERE.parents[2] instead of parents[3]) caused an immediate FileNotFoundError on the first launch attempt, before any generation ran (0 tokens generated, 0 compute spent). Fixed and verified before the real 729-generation run that produced this manifest's results.",
+  "canonical_bcc_v2_modified": false, "panel_v2_modified": false,
+  "lane_b_started": false,
+  "files": {
+    "raw_data": "lane_a_generations.jsonl (729 lines, one JSON object per run)",
+    "audit": "LANE_A_ACQUISITION_AUDIT.json",
+    "lane_b_candidates": "LANE_B_STRUCTURAL_CANDIDATES.json (48 candidates, structural selection only -- NOT an authorization, NOT outcome/landmark-based)",
+    "execution_script": "run_lane_a.py",
+    "audit_script": "build_audit.py",
+    "logs": ["lane_a_run.log", "nohup_stdout.log"]
+  },
+  "control": "NO", "sra_x": "NOT_TESTED", "causal_claim": "NO",
+  "atlas_routes_interpreted": false,
+  "landmarks_promoted": false,
+  "hashes_file": "SHA256SUMS.txt"
+}

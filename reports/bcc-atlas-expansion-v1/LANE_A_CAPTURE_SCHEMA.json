@@ -1,0 +1,36 @@
+{
+  "status": "FROZEN_PRE_EXECUTION",
+  "lane": "A_BCC_WIDE",
+  "output_directory": "reports/bcc-atlas-expansion-v1/A/BCC_WIDE/",
+  "full_tensors_captured": false,
+  "per_generation_record_schema": {
+    "run_id": "string, e.g. BAX1_<candidate_prompt_id>_<seed>",
+    "prompt_id": "string, candidate_prompt_id from Panel V2 (verbatim, e.g. 'SU01')",
+    "prompt_family": "string, verbatim from Panel V2 (e.g. 'SUMMARIZATION') -- exact label preserved, no semantic reinterpretation",
+    "seed": "int, one of [2101, 2102, 2103]",
+    "prompt_hash": "string, copied verbatim from Panel V2 frozen record (provenance link, not recomputed)",
+    "token_ids_prompt": "list[int]",
+    "token_ids_generated": "list[int]",
+    "generated_text": "string",
+    "per_step_probability_summary": {
+      "granularity": "one entry per generated step",
+      "fields": ["entropy", "top1_probability", "top2_gap"],
+      "formulas": "entropy_from_logits / top2_gap_from_logits, reused verbatim from reports/atlas-kv-compression-v0/execution/kv_capture_lib.py -- not redefined",
+      "epistemic_status": "MEASURED (direct softmax of the real per-step logit vector, from generate(..., output_scores=True))"
+    },
+    "token_count_prompt": "int", "token_count_generated": "int",
+    "timestamps": "{start_iso, end_iso}",
+    "runtime_seconds": "float",
+    "peak_memory_mb": "float, if cheaply available from the runtime environment (e.g. torch.cuda.max_memory_allocated or resource.getrusage) -- NOT_CAPTURED if unavailable at negligible cost",
+    "completion_reason": "string, e.g. 'eos_token' | 'max_new_tokens' -- from the actual generation stop reason, not inferred",
+    "model_config": "{model_id, torch_dtype, attn_implementation, max_new_tokens_config, do_sample, temperature_if_any}",
+    "hashes": "{output_text_sha256}"
+  },
+  "hidden_state_summary_policy": "IF cheaply available without persisting full tensors: allow COMPACT DERIVED summaries only (e.g. final-layer hidden-state norm at each generated step, a single float per step) -- never full per-layer per-step hidden-state vectors. This is a Lane A implementation decision to be finalized at Lane A build time, not frozen with specific fields here; if implemented, it must be documented in the Lane A execution report as an addendum to this schema, not a silent schema change.",
+  "explicitly_excluded_from_lane_a": [
+    "Full K/V tensors", "Full attention weight tensors", "Full attention-output tensors",
+    "Full per-layer hidden-state tensors", "Full-vocabulary logits at every step (only entropy/top1/top2gap summaries)"
+  ],
+  "granularity": "RUN x STEP (probability summaries); RUN-level for everything else",
+  "family_label_policy": "prompt_family is copied verbatim from the frozen Panel V2 record. No new semantic categories are invented."
+}

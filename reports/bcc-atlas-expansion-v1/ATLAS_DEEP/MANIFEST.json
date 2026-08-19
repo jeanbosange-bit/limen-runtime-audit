@@ -1,0 +1,29 @@
+{
+  "gate": "BCC ATLAS EXPANSION V1 -- LANE B (ATLAS-DEEP)",
+  "status": "EXECUTED, PASS",
+  "date": "2026-08-18",
+  "real_new_generations": 144,
+  "required_deliverables": [
+    "LANE_B_CAPTURE_MANIFEST.json", "LANE_B_ACQUISITION_AUDIT.json",
+    "TENSOR_AVAILABILITY_MATRIX.csv", "TENSOR_GRANULARITY.json",
+    "CROSSAXIS_COVERAGE.csv", "SHORT_EXECUTION_AUDIT.json",
+    "LANDMARK_RECURRENCE_AUDIT.json", "UNKNOWN_TERRITORY_AUDIT.json",
+    "RUN_INDEX.csv", "MANIFEST.json", "SHA256SUMS.txt"
+  ],
+  "supporting_files_not_in_required_list": [
+    "run_lane_b.py", "build_lane_b_audit.py", "run_index.jsonl",
+    "lane_b_run.log", "nohup_stdout.log", "EARLY_INTEGRITY_CHECK.json",
+    "raw_captures/ (144 .npz files)"
+  ],
+  "counts": {
+    "attempted": 144, "success": 144, "failures": 0,
+    "prompt_coverage": "48/48", "family_coverage": "12/12", "seed_coverage": "3/3",
+    "short_executions": 21, "structurally_ineligible_for_landmark_detection": 17,
+    "runs_with_ge1_landmark": 87, "runs_with_ge2_landmark": 62, "no_landmark_runs": 40,
+    "new_landmarks_promoted": 0, "network_edges_promoted": 0
+  },
+  "storage_gb": 3.644, "total_runtime_seconds": 1756.3,
+  "canonical_bcc_v2_modified": false, "panel_v2_modified": false, "lane_a_modified": false,
+  "control": "NO", "sra_x": "NOT_TESTED", "causal_claim": "NO",
+  "hashes_file": "SHA256SUMS.txt"
+}

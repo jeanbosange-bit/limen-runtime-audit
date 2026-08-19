@@ -1,0 +1,45 @@
+{
+  "gate": "BCC ATLAS DATA EXPANSION V1 -- PREFLIGHT",
+  "status": "PREFLIGHT_ONLY, no execution occurred",
+  "date": "2026-08-18",
+  "real_new_generations": 0,
+  "provenance_check_performed": "ls -la reports/bcc-atlas-expansion-v1/ run and confirmed non-existent/empty immediately before the first write, per mission section 0 and the disclosed reference-landmark-network-v0 conflict incident",
+  "canonical_bcc_v2_modified": false,
+  "model_phase_1": "Qwen/Qwen2.5-0.5B-Instruct",
+  "lane_a": {
+    "prompt_source": "star_command_panel_v2_authoring/FREEZE/PANEL_V2_FROZEN_CANONICAL.jsonl (sha256 4172b4e0b0e3c08021307cc7358f3b8258d165f8b9950aed361babebc421b249)",
+    "n_prompts": 243, "n_seeds": 3, "seeds": [2101, 2102, 2103],
+    "n_generations": 729,
+    "estimated_runtime": "~1 hour (~50-65 min)",
+    "estimated_storage": "under 50 MB",
+    "full_tensors": false
+  },
+  "lane_b": {
+    "candidate_n_prompts": 48, "n_seeds": 3, "seeds": [2101, 2102, 2103],
+    "n_generations": 144,
+    "estimated_runtime": "~20-40 minutes",
+    "estimated_storage_range_gb": [2.13, 4.38],
+    "estimated_storage_note": "V0-reference-based (2.13GB) vs stratified-realistic (4.38GB, more likely given Panel V2's longer generations) -- see RESOURCE_ESTIMATE.md",
+    "full_tensors": true,
+    "q_capture_status": "AVAILABLE (empirically verified via zero-generation forward-pass hook dry-run, see LANE_B_CAPTURE_SCHEMA.json)",
+    "prompt_selection_status": "RULE FROZEN (4 prompts/family x 12 families), ACTUAL LIST NOT YET SELECTED -- deferred to post-Lane-A structural selection per execution order"
+  },
+  "prompt_families": ["AMBIGUITY_HANDLING", "CODING", "CONSTRAINT_FOLLOWING", "DOCUMENT_EXTRACTION", "FACTUAL_GROUNDED", "GENERAL_INSTRUCTION", "MATH_REASONING", "MULTISTEP_INSTRUCTION", "RECOVERY_CORRECTION", "STRUCTURED_OUTPUT", "SUMMARIZATION", "TRANSFORMATION"],
+  "n_prompt_families": 12,
+  "short_executions_preserved": true,
+  "landmark_selection_bias": "NONE -- L0/L1/L5/L20 not used to select any prompt (mission section 12)",
+  "required_deliverables": [
+    "CAMPAIGN_PLAN.md", "PROMPT_SOURCE_REGISTRY.json", "PROMPT_FAMILY_COVERAGE.csv",
+    "SEED_REGISTRY.json", "LANE_A_CAPTURE_SCHEMA.json", "LANE_B_CAPTURE_SCHEMA.json",
+    "SHORT_EXECUTION_POLICY.md", "RESOURCE_ESTIMATE.md", "PROVENANCE_RULES.md",
+    "MANIFEST.json", "SHA256SUMS.txt"
+  ],
+  "canonical_artifacts_referenced_read_only": [
+    "star_command_bcc_v2/", "star_command_panel_v2_authoring/FREEZE/",
+    "reports/atlas-kv-compression-v0/", "reports/attention-sensitivity-v1/",
+    "reports/multi-tensor-atlas-v0/", "reports/multi-tensor-landmarks-v0/"
+  ],
+  "control": "NO", "sra_x": "NOT_TESTED", "causal_claim": "NO",
+  "ready_for_lane_a_go": true,
+  "hashes_file": "SHA256SUMS.txt"
+}

@@ -1,0 +1,260 @@
+{
+  "status": "STRUCTURAL_CANDIDATE_LIST -- NOT a Lane B authorization or final selection",
+  "selection_method": "For each of the 12 families, rank that family's own prompts by mean observed generated-token-count across the 3 seeds (structural, not outcome-based), then pick up to 4 prompts spanning the family's own min/lower-third/upper-third/max positions in that ranking. No landmark occurrence, entropy, effect size, or output quality used anywhere in this selection.",
+  "n_families": 12,
+  "total_candidates": 48,
+  "by_family": {
+    "MATH_REASONING": {
+      "selected": [
+        {
+          "prompt_id": "MR13",
+          "mean_generated_tokens": 2.7
+        },
+        {
+          "prompt_id": "MR14",
+          "mean_generated_tokens": 3
+        },
+        {
+          "prompt_id": "MR12",
+          "mean_generated_tokens": 4
+        },
+        {
+          "prompt_id": "MR07",
+          "mean_generated_tokens": 25
+        }
+      ],
+      "n_family_prompts_with_data": 20
+    },
+    "GENERAL_INSTRUCTION": {
+      "selected": [
+        {
+          "prompt_id": "GI11-V2",
+          "mean_generated_tokens": 61
+        },
+        {
+          "prompt_id": "GI06-V2",
+          "mean_generated_tokens": 83.3
+        },
+        {
+          "prompt_id": "GI08-V2",
+          "mean_generated_tokens": 96
+        },
+        {
+          "prompt_id": "GI01-V3",
+          "mean_generated_tokens": 150.7
+        }
+      ],
+      "n_family_prompts_with_data": 20
+    },
+    "AMBIGUITY_HANDLING": {
+      "selected": [
+        {
+          "prompt_id": "AH18",
+          "mean_generated_tokens": 16.3
+        },
+        {
+          "prompt_id": "AH11",
+          "mean_generated_tokens": 62.7
+        },
+        {
+          "prompt_id": "AH16",
+          "mean_generated_tokens": 81
+        },
+        {
+          "prompt_id": "AH19",
+          "mean_generated_tokens": 128
+        }
+      ],
+      "n_family_prompts_with_data": 20
+    },
+    "CONSTRAINT_FOLLOWING": {
+      "selected": [
+        {
+          "prompt_id": "CF05",
+          "mean_generated_tokens": 14.3
+        },
+        {
+          "prompt_id": "CF14",
+          "mean_generated_tokens": 33
+        },
+        {
+          "prompt_id": "CF02",
+          "mean_generated_tokens": 45.7
+        },
+        {
+          "prompt_id": "CF19",
+          "mean_generated_tokens": 96
+        }
+      ],
+      "n_family_prompts_with_data": 20
+    },
+    "SUMMARIZATION": {
+      "selected": [
+        {
+          "prompt_id": "SU18",
+          "mean_generated_tokens": 22.3
+        },
+        {
+          "prompt_id": "SU12",
+          "mean_generated_tokens": 26
+        },
+        {
+          "prompt_id": "SU19",
+          "mean_generated_tokens": 31
+        },
+        {
+          "prompt_id": "SU02",
+          "mean_generated_tokens": 39
+        }
+      ],
+      "n_family_prompts_with_data": 20
+    },
+    "FACTUAL_GROUNDED": {
+      "selected": [
+        {
+          "prompt_id": "FG14-V2",
+          "mean_generated_tokens": 2
+        },
+        {
+          "prompt_id": "FG19-V2",
+          "mean_generated_tokens": 4
+        },
+        {
+          "prompt_id": "FG10-V2",
+          "mean_generated_tokens": 5.3
+        },
+        {
+          "prompt_id": "FG01-V2",
+          "mean_generated_tokens": 12
+        }
+      ],
+      "n_family_prompts_with_data": 20
+    },
+    "RECOVERY_CORRECTION": {
+      "selected": [
+        {
+          "prompt_id": "RC18",
+          "mean_generated_tokens": 2.7
+        },
+        {
+          "prompt_id": "RC17",
+          "mean_generated_tokens": 11
+        },
+        {
+          "prompt_id": "RC16",
+          "mean_generated_tokens": 38.3
+        },
+        {
+          "prompt_id": "RC08",
+          "mean_generated_tokens": 100
+        }
+      ],
+      "n_family_prompts_with_data": 20
+    },
+    "MULTISTEP_INSTRUCTION": {
+      "selected": [
+        {
+          "prompt_id": "MI15-V2",
+          "mean_generated_tokens": 21.3
+        },
+        {
+          "prompt_id": "MI01",
+          "mean_generated_tokens": 77.3
+        },
+        {
+          "prompt_id": "MI14-V2",
+          "mean_generated_tokens": 122
+        },
+        {
+          "prompt_id": "MI06-V2",
+          "mean_generated_tokens": 219.7
+        }
+      ],
+      "n_family_prompts_with_data": 20
+    },
+    "STRUCTURED_OUTPUT": {
+      "selected": [
+        {
+          "prompt_id": "SO04-V2",
+          "mean_generated_tokens": 13
+        },
+        {
+          "prompt_id": "SO08-V2",
+          "mean_generated_tokens": 22
+        },
+        {
+          "prompt_id": "SO06-V2",
+          "mean_generated_tokens": 30.7
+        },
+        {
+          "prompt_id": "SO03-V2",
+          "mean_generated_tokens": 90.3
+        }
+      ],
+      "n_family_prompts_with_data": 20
+    },
+    "DOCUMENT_EXTRACTION": {
+      "selected": [
+        {
+          "prompt_id": "DE09-V2",
+          "mean_generated_tokens": 3
+        },
+        {
+          "prompt_id": "DE08-V2",
+          "mean_generated_tokens": 4
+        },
+        {
+          "prompt_id": "DE13-V2",
+          "mean_generated_tokens": 9
+        },
+        {
+          "prompt_id": "DE06-V2",
+          "mean_generated_tokens": 26
+        }
+      ],
+      "n_family_prompts_with_data": 20
+    },
+    "TRANSFORMATION": {
+      "selected": [
+        {
+          "prompt_id": "TR06",
+          "mean_generated_tokens": 6
+        },
+        {
+          "prompt_id": "TR01",
+          "mean_generated_tokens": 10
+        },
+        {
+          "prompt_id": "TR19",
+          "mean_generated_tokens": 16.3
+        },
+        {
+          "prompt_id": "TR09-V2",
+          "mean_generated_tokens": 43.3
+        }
+      ],
+      "n_family_prompts_with_data": 20
+    },
+    "CODING": {
+      "selected": [
+        {
+          "prompt_id": "CO04",
+          "mean_generated_tokens": 29
+        },
+        {
+          "prompt_id": "CO06-V2A",
+          "mean_generated_tokens": 57.7
+        },
+        {
+          "prompt_id": "CO08",
+          "mean_generated_tokens": 112.3
+        },
+        {
+          "prompt_id": "CO09",
+          "mean_generated_tokens": 159.3
+        }
+      ],
+      "n_family_prompts_with_data": 23
+    }
+  }
+}

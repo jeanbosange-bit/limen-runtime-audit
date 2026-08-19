@@ -1,0 +1,47 @@
+{
+  "gate": "BCC ATLAS EXPANSION V1 -- LANE B (ATLAS-DEEP) EXECUTION",
+  "status": "EXECUTED, PASS",
+  "date": "2026-08-18",
+  "real_new_generations": 144,
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "attn_implementation": "eager (required for real per-head output_attentions -- V0's proven pattern, reused verbatim)",
+  "candidate_source": "reports/bcc-atlas-expansion-v1/A/BCC_WIDE/LANE_B_STRUCTURAL_CANDIDATES.json, 48 candidates, unaltered (family/length-position selection only, no landmark/entropy/outcome bias)",
+  "seeds": [2101, 2102, 2103],
+  "protocol_continuity_with_lane_a": "do_sample=True, temperature=1.0, top_p=1.0, top_k=0, repetition_penalty=1.0 -- identical to Lane A, verified in run_lane_b.py",
+  "path_note": "Written to reports/bcc-atlas-expansion-v1/ATLAS_DEEP/ per this GO mission's explicit instruction (differs from the preflight's planned B/ATLAS_DEEP/ subdirectory, which remains empty/unused)",
+  "early_integrity_check": {"performed_after_n_runs": 3, "result": "PASS", "ref": "EARLY_INTEGRITY_CHECK.json"},
+  "results": {
+    "attempted": 144, "success": 144, "partial_captures": 0, "failures": 0,
+    "prompt_coverage": "48/48", "family_coverage": "12/12", "seed_coverage": "3/3",
+    "generation_length_min_median_max": [2, 24.5, 224],
+    "short_executions_1_to_9_tokens": 21,
+    "total_nan": 0, "total_inf": 0,
+    "raw_storage_gb": 3.644,
+    "total_runtime_seconds": 1756.3
+  },
+  "storage_actual_vs_estimate": "3.644 GB actual vs. 2.1-4.4 GB estimated in RESOURCE_ESTIMATE.md -- within range, close to the stratified-realistic estimate",
+  "q_capture": {
+    "status": "CAPTURED (real, live, from self_attn.q_proj -- not reconstructed)",
+    "shape_per_run": "(24 layers, 14 query heads, seq_len, 64 head_dim)",
+    "layer_count": 24, "head_mapping": "14 query heads (vs. K/V's 2 GQA kv-heads at the same head_dim=64)",
+    "nan_inf_audit": "0 NaN / 0 Inf across all 144 runs (see LANE_B_ACQUISITION_AUDIT.json total_nan/total_inf)"
+  },
+  "tensor_completeness_summary": {"H": "COMPLETE", "Q": "COMPLETE", "K": "COMPLETE", "V": "COMPLETE", "ATTENTION": "COMPLETE", "ATTENTION_OUTPUT": "COMPLETE", "LOGITS": "COMPLETE", "TOKEN_IDS": "COMPLETE"},
+  "landmark_recurrence_headline": {
+    "runs_with_ge1_confirmed_landmark": 87, "runs_with_ge2_confirmed_landmark": 62,
+    "no_landmark_runs": 40, "structurally_ineligible_n_steps_lt_4": 17,
+    "notable_finding": "FACTUAL_GROUNDED (1/7 eligible) and MATH_REASONING (2/6 eligible) show non-zero landmark recurrence for the first time in this program -- both contributed ZERO landmark support in every prior gate (reports/multi-tensor-landmarks-v0, reports/reference-landmark-network-v0) due to V0's old 8-step-window exclusion rule. Reported descriptively only -- not interpreted, not used to promote any new edge.",
+    "new_landmarks_promoted": 0, "network_edges_promoted": 0
+  },
+  "canonical_bcc_v2_modified": false, "panel_v2_modified": false, "lane_a_modified": false,
+  "candidate_set_altered": false,
+  "files": {
+    "raw_captures_dir": "raw_captures/ (144 .npz files, referenced by hash in RUN_INDEX.csv)",
+    "run_index": "run_index.jsonl (144 lines, full per-run metadata incl. shapes/nan-inf/tensor_completeness)",
+    "capture_script": "run_lane_b.py", "audit_script": "build_lane_b_audit.py",
+    "log": "lane_b_run.log", "early_integrity": "EARLY_INTEGRITY_CHECK.json"
+  },
+  "control": "NO", "sra_x": "NOT_TESTED", "causal_claim": "NO",
+  "atlas_routes_interpreted": false,
+  "hashes_file": "SHA256SUMS.txt"
+}

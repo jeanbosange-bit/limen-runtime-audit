@@ -1,0 +1,16 @@
+{
+  "status": "FROZEN_PRE_EXECUTION",
+  "verification_method": "grep -rE '\"seed\"\\s*:\\s*[0-9]+' across the entire project tree (--include=*.json --include=*.jsonl), deduplicated, before choosing new values.",
+  "seeds_found_already_in_use_anywhere_in_project": [
+    7, 8, 9, 101, 102, 103, 148, 202, 301, 302, 303, 404, 501, 502, 503, 505, 601,
+    901, 902, 903, 1001, 1101, 1102, 1103
+  ],
+  "note_on_1101_1102_1103": "These are the exact 3 seeds used throughout reports/atlas-kv-compression-v0/, reports/multi-tensor-atlas-v0/, and reports/multi-tensor-landmarks-v0/ -- the seeds underlying every prior Atlas/Landmark finding in this program. Deliberately NOT reused, per mission section 5's explicit seed-independence requirement.",
+  "new_seeds_selected_for_this_campaign": [2101, 2102, 2103],
+  "selection_rationale": "Same 3-seed convention (thousand-block + 101/102/103 suffix) as the prior KVC campaign, shifted to a new, unused thousand-block (2100s) for unambiguous provenance separation while remaining easy to recognize as 'the same style, a new generation of seeds.' Verified absent from the seeds-found-in-use list above.",
+  "seed_usage": {
+    "lane_a_bcc_wide": "All 3 seeds (2101, 2102, 2103) x all 243 frozen Panel V2 prompts = 729 generations.",
+    "lane_b_atlas_deep": "Same 3 seeds (2101, 2102, 2103), applied to the 48-prompt structural subset selected after Lane A completes = 144 deep runs. Lane B does NOT introduce further new seeds -- it reuses Lane A's seed registry so that Lane B's 144 runs are a genuine structural subset of Lane A's 729, not an independent sample."
+  },
+  "frozen_before_any_generation": true
+}

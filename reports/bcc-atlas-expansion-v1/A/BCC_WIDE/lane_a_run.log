@@ -1,0 +1,40 @@
+[20:24:56] Loading Panel V2 frozen canonical (read-only)...
+[20:24:56] 243 prompts loaded, 12 families
+[20:24:56] Loading tokenizer/model Qwen/Qwen2.5-0.5B-Instruct ...
+[20:25:01] Model loaded. device=cuda dtype=torch.bfloat16 attn_impl=sdpa chat_template=YES
+[20:25:01] === SEED 2101 starting ===
+[20:26:36] progress: attempted=25 success=25 fail=0 (seed=2101, prompt 25/243)
+[20:28:22] progress: attempted=50 success=50 fail=0 (seed=2101, prompt 50/243)
+[20:30:14] progress: attempted=75 success=75 fail=0 (seed=2101, prompt 75/243)
+[20:31:10] progress: attempted=100 success=100 fail=0 (seed=2101, prompt 100/243)
+[20:34:04] progress: attempted=125 success=125 fail=0 (seed=2101, prompt 125/243)
+[20:34:27] progress: attempted=150 success=150 fail=0 (seed=2101, prompt 150/243)
+[20:35:19] progress: attempted=175 success=175 fail=0 (seed=2101, prompt 175/243)
+[20:36:05] progress: attempted=200 success=200 fail=0 (seed=2101, prompt 200/243)
+[20:39:43] progress: attempted=225 success=225 fail=0 (seed=2101, prompt 225/243)
+[20:41:47] === SEED 2101 complete: checkpoint flushed to lane_a_generations.jsonl ===
+[20:41:47] === SEED 2102 starting ===
+[20:42:10] progress: attempted=250 success=250 fail=0 (seed=2102, prompt 7/243)
+[20:44:42] progress: attempted=275 success=275 fail=0 (seed=2102, prompt 32/243)
+[20:45:45] progress: attempted=300 success=300 fail=0 (seed=2102, prompt 57/243)
+[20:48:09] progress: attempted=325 success=325 fail=0 (seed=2102, prompt 82/243)
+[20:50:42] progress: attempted=350 success=350 fail=0 (seed=2102, prompt 107/243)
+[20:52:56] progress: attempted=375 success=375 fail=0 (seed=2102, prompt 132/243)
+[20:53:19] progress: attempted=400 success=400 fail=0 (seed=2102, prompt 157/243)
+[20:54:27] progress: attempted=425 success=425 fail=0 (seed=2102, prompt 182/243)
+[20:55:37] progress: attempted=450 success=450 fail=0 (seed=2102, prompt 207/243)
+[21:00:02] progress: attempted=475 success=475 fail=0 (seed=2102, prompt 232/243)
+[21:01:52] === SEED 2102 complete: checkpoint flushed to lane_a_generations.jsonl ===
+[21:01:52] === SEED 2103 starting ===
+[21:02:36] progress: attempted=500 success=500 fail=0 (seed=2103, prompt 14/243)
+[21:05:57] progress: attempted=525 success=525 fail=0 (seed=2103, prompt 39/243)
+[21:07:12] progress: attempted=550 success=550 fail=0 (seed=2103, prompt 64/243)
+[21:09:18] progress: attempted=575 success=575 fail=0 (seed=2103, prompt 89/243)
+[21:11:50] progress: attempted=600 success=600 fail=0 (seed=2103, prompt 114/243)
+[21:13:13] progress: attempted=625 success=625 fail=0 (seed=2103, prompt 139/243)
+[21:13:45] progress: attempted=650 success=650 fail=0 (seed=2103, prompt 164/243)
+[21:14:56] progress: attempted=675 success=675 fail=0 (seed=2103, prompt 189/243)
+[21:18:06] progress: attempted=700 success=700 fail=0 (seed=2103, prompt 214/243)
+[21:21:00] progress: attempted=725 success=725 fail=0 (seed=2103, prompt 239/243)
+[21:21:30] === SEED 2103 complete: checkpoint flushed to lane_a_generations.jsonl ===
+[21:21:30] LANE A COMPLETE. attempted=729 success=729 fail=0

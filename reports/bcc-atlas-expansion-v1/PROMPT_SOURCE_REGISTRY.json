@@ -1,0 +1,39 @@
+{
+  "status": "FROZEN_PRE_EXECUTION",
+  "note": "Read-only reference registry. No source file listed here is modified, mutated, or rewritten by this campaign.",
+  "primary_source": {
+    "name": "Panel V2 frozen canonical",
+    "path": "star_command_panel_v2_authoring/FREEZE/PANEL_V2_FROZEN_CANONICAL.jsonl",
+    "sha256": "4172b4e0b0e3c08021307cc7358f3b8258d165f8b9950aed361babebc421b249",
+    "verified_at_preflight": true,
+    "prompt_count": 243,
+    "families": 12,
+    "freeze_record_ref": "star_command_panel_v2_authoring/FREEZE/PANEL_V2_FREEZE_RECORD.json",
+    "freeze_status": "FROZEN, bcc_v2_authorized=false (that flag governs a different, already-executed BCC V2 campaign; irrelevant to this new campaign's own authorization)",
+    "usage_here": "Lane A (BCC-WIDE) uses all 243 prompts verbatim, read-only. Lane B (ATLAS-DEEP) draws its 48-prompt subset from this same set post-hoc, after Lane A completes."
+  },
+  "secondary_reference_not_used_directly": {
+    "bcc_v2_canonical_execution": {
+      "path": "star_command_bcc_v2/",
+      "role": "Provides the ONLY empirical prior-runtime reference for Qwen2.5-0.5B-Instruct against this exact 243-prompt panel (raw/generations.jsonl, 243 real Qwen2.5-0.5B rows) -- read for resource-estimation purposes only (RESOURCE_ESTIMATE.md), never copied, merged, or modified.",
+      "raw_generations_ref": "star_command_bcc_v2/raw/generations.jsonl",
+      "empirical_stats_used": "mean generation_time_s=3.443s, mean tokens_per_second=10.60, mean generated_token_count=36.5 (median 22, max 224), n=243 Qwen2.5-0.5B-Instruct rows"
+    },
+    "atlas_kv_v0": {
+      "path": "reports/atlas-kv-compression-v0/",
+      "role": "Provides the ONLY empirical prior per-tensor storage reference for this model's full synchronized capture (H/K/V/attention/attn_output/logits, no Q) -- read for RESOURCE_ESTIMATE.md byte-size modeling only, never modified."
+    }
+  },
+  "explicitly_not_used": [
+    "V20/V21/V22 prompt categories -- not referenced in this preflight; Panel V2's 243-prompt frozen set already provides broader, more recent, and better-documented family coverage (12 families vs. narrower historical sets). May be revisited in a future phase if a specific coverage gap is identified after Lane A.",
+    "star_command_bcc_v1 (240-prompt historical panel) -- superseded by Panel V2 per PANEL_V2_FREEZE_RECORD.json; not reused directly."
+  ],
+  "canonical_artifacts_never_to_be_modified": [
+    "star_command_bcc_v2/ (entire tree)",
+    "star_command_panel_v2_authoring/FREEZE/ (entire tree)",
+    "reports/atlas-kv-compression-v0/",
+    "reports/attention-sensitivity-v1/",
+    "reports/multi-tensor-atlas-v0/",
+    "reports/multi-tensor-landmarks-v0/"
+  ]
+}

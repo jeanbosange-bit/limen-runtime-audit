@@ -1,0 +1,78 @@
+{
+  "status": "EXECUTED",
+  "attempted": 144,
+  "success": 144,
+  "failures": 0,
+  "success_rate_pct": 100.0,
+  "status_breakdown": {
+    "SUCCESS": 144
+  },
+  "prompt_coverage": {
+    "n_prompts_covered": 48,
+    "n_prompts_expected": 48
+  },
+  "family_coverage": {
+    "n_families_covered": 12,
+    "n_families_expected": 12,
+    "by_family": {
+      "MATH_REASONING": 12,
+      "GENERAL_INSTRUCTION": 12,
+      "AMBIGUITY_HANDLING": 12,
+      "CONSTRAINT_FOLLOWING": 12,
+      "SUMMARIZATION": 12,
+      "FACTUAL_GROUNDED": 12,
+      "RECOVERY_CORRECTION": 12,
+      "MULTISTEP_INSTRUCTION": 12,
+      "STRUCTURED_OUTPUT": 12,
+      "DOCUMENT_EXTRACTION": 12,
+      "TRANSFORMATION": 12,
+      "CODING": 12
+    }
+  },
+  "seed_coverage": {
+    "n_seeds_covered": 3,
+    "seeds_expected": [
+      2101,
+      2102,
+      2103
+    ],
+    "by_seed": {
+      "2101": 48,
+      "2102": 48,
+      "2103": 48
+    }
+  },
+  "duplicate_run_ids": {},
+  "generation_length_distribution": {
+    "n": 144,
+    "min": 2,
+    "median": 24.5,
+    "max": 224,
+    "mean": 44.84
+  },
+  "runtime_seconds_distribution": {
+    "min": 2.49,
+    "median": 7.47,
+    "max": 54.31,
+    "total": 1756.3
+  },
+  "storage_bytes_distribution": {
+    "min": 7227879,
+    "median": 16847079,
+    "max": 102007740,
+    "total_gb": 3.644
+  },
+  "total_nan": 0,
+  "total_inf": 0,
+  "tensor_availability_summary": {
+    "H": "COMPLETE",
+    "Q": "COMPLETE",
+    "K": "COMPLETE",
+    "V": "COMPLETE",
+    "ATTENTION": "COMPLETE",
+    "ATTENTION_OUTPUT": "COMPLETE",
+    "LOGITS": "COMPLETE",
+    "TOKEN_IDS": "COMPLETE"
+  },
+  "malformed_captures": 0
+}

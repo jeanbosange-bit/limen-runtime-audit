@@ -1,0 +1,28 @@
+{
+  "status": "FROZEN_PRE_EXECUTION",
+  "lane": "B_ATLAS_DEEP",
+  "output_directory": "reports/bcc-atlas-expansion-v1/B/ATLAS_DEEP/",
+  "full_tensors_captured": true,
+  "q_capture_audit": {
+    "status": "AVAILABLE",
+    "audit_method": "Real, empirical, zero-generation dry-run test performed at preflight time (2026-08-18): loaded Qwen/Qwen2.5-0.5B-Instruct (torch_dtype=float32, attn_implementation resolved to 'sdpa'), registered a torch forward hook on layer-0's self_attn.q_proj (a plain nn.Linear), ran ONE forward() call (no .generate(), zero tokens sampled/generated) on a 7-token input.",
+    "empirical_result": "q_proj hook fired cleanly: output shape (1, 7, 896), dtype float32, 0 NaN, 0 Inf. Reshapes to (num_heads=14, head_dim=64) exactly like k_proj/v_proj already do in reports/atlas-kv-compression-v0/execution/kv_capture_lib.py (which reshapes to (num_kv_heads=2, head_dim=64)).",
+    "code_level_finding": "In transformers 4.46.3's Qwen2 modeling code (Qwen2Attention, Qwen2SdpaAttention, Qwen2FlashAttention2 -- all 3 attention implementations), query_states = self.q_proj(hidden_states) is computed as a plain nn.Linear BEFORE any fused/optimized attention kernel runs. A forward hook on q_proj is a pure observer (does not alter the hook's return value, does not touch the computation graph) -- identical in kind and risk profile to the K/V hooks already proven safe and used throughout Multi-Tensor Atlas V0.",
+    "conclusion": "Q CAN be captured safely without changing model semantics. Included in Lane B capture. Not reconstructed after the fact -- captured live via the same hook mechanism as K and V.",
+    "shape_per_run": "(n_layers=24, n_query_heads=14, seq_len, head_dim=64) -- 7x wider per layer than K/V (2 kv-heads, GQA) at the same head_dim."
+  },
+  "per_run_tensor_inventory": {
+    "H": {"status": "RAW_AVAILABLE", "shape": "(25, seq_len, 896)", "dtype_stored": "fp16", "granularity": "RUN x STEP x LAYER", "source": "hidden_states_all_layers, same convention as reports/atlas-kv-compression-v0"},
+    "Q": {"status": "AVAILABLE (new, empirically verified above)", "shape": "(24, 14, seq_len, 64)", "dtype_stored": "fp16", "granularity": "RUN x STEP x LAYER x HEAD"},
+    "K": {"status": "RAW_AVAILABLE", "shape": "(24, 2, seq_len, 64)", "dtype_stored": "fp32, same convention as V0", "granularity": "RUN x STEP x LAYER x HEAD (GQA kv-head)"},
+    "V": {"status": "RAW_AVAILABLE", "shape": "(24, 2, seq_len, 64)", "dtype_stored": "fp32, same convention as V0", "granularity": "RUN x STEP x LAYER x HEAD (GQA kv-head)"},
+    "Attention_weights": {"status": "RAW_AVAILABLE", "shape": "(24, 14, seq_len, seq_len)", "dtype_stored": "fp16", "granularity": "RUN x STEP x LAYER x HEAD x CONTEXT_POSITION"},
+    "Attention_output": {"status": "RAW_AVAILABLE", "shape": "(24, seq_len, 896)", "dtype_stored": "fp16", "granularity": "RUN x STEP x LAYER (post-o_proj, heads already merged, no head split possible -- same structural limit as V0)"},
+    "Logits": {"status": "AVAILABLE, bounded representation (predictive positions only)", "shape": "(n_generated_steps, 151936)", "dtype_stored": "fp16", "granularity": "RUN x STEP", "note": "same convention as V0 -- full vocab at predictive positions only, NOT full-sequence logits (would require re-forward-passing every prompt position for no analytical benefit already identified)"},
+    "token_ids": {"status": "RAW_AVAILABLE", "granularity": "RUN x STEP (includes prompt + generated)"}
+  },
+  "granularity_metadata_required_per_field": "Every stored array MUST be tagged with one of: RUN | STEP | LAYER | STEP_X_LAYER | HEAD | CONTEXT_POSITION -- per mission section 10. No field may be presented as if it existed at a finer granularity than it does. CrossAxis (run_id, step, layer) remains alignment infrastructure only, not a claim of uniform coordinate coverage.",
+  "short_execution_handling": "A run with as few as 1-2 generated tokens still produces a complete, valid npz capture (all tensors captured for the full actual seq_len, prompt+generated) -- no 8-token (or any-length) minimum window is imposed at capture time. See SHORT_EXECUTION_POLICY.md.",
+  "storage_format": "One compressed .npz per run, same convention as reports/atlas-kv-compression-v0/execution/raw_captures/*.npz, extended with a new 'q_all_layers_fp16' array.",
+  "compression_method_capture": "Not applicable to this campaign -- Lane B captures BASELINE (uncompressed-model) tensors only. No KV-compression methods (M1/M2/M3) are applied or tested in this campaign; that is a separate, already-completed gate (reports/atlas-kv-compression-v0/, reports/attention-sensitivity-v1/)."
+}

@@ -1,0 +1,55 @@
+{
+  "status": "FROZEN_DESCRIPTIVE",
+  "H": {
+    "granularity": "RUN x STEP x LAYER",
+    "shape_per_run": "(25, seq_len, 896)",
+    "dtype": "fp16",
+    "epistemic_status": "MEASURED"
+  },
+  "Q": {
+    "granularity": "RUN x STEP x LAYER x HEAD",
+    "shape_per_run": "(24, 14, seq_len, 64)",
+    "dtype": "fp16",
+    "epistemic_status": "MEASURED, captured live from self_attn.q_proj -- NOT reconstructed",
+    "note": "new in this campaign; Multi-Tensor Atlas V0 had Q=NOT_CAPTURED"
+  },
+  "K": {
+    "granularity": "RUN x STEP x LAYER x HEAD (GQA kv-head)",
+    "shape_per_run": "(24, 2, seq_len, 64)",
+    "dtype": "fp32",
+    "epistemic_status": "MEASURED"
+  },
+  "V": {
+    "granularity": "RUN x STEP x LAYER x HEAD (GQA kv-head)",
+    "shape_per_run": "(24, 2, seq_len, 64)",
+    "dtype": "fp32",
+    "epistemic_status": "MEASURED"
+  },
+  "ATTENTION": {
+    "granularity": "RUN x STEP x LAYER x HEAD x CONTEXT_POSITION",
+    "shape_per_run": "(24, 14, seq_len, seq_len)",
+    "dtype": "fp16",
+    "epistemic_status": "MEASURED"
+  },
+  "ATTENTION_OUTPUT": {
+    "granularity": "RUN x STEP x LAYER",
+    "shape_per_run": "(24, seq_len, 896)",
+    "dtype": "fp16",
+    "epistemic_status": "MEASURED",
+    "note": "post-o_proj, heads already merged, no head split possible (same structural limit as V0)"
+  },
+  "LOGITS": {
+    "granularity": "RUN x STEP",
+    "shape_per_run": "(n_generated_steps, 151936)",
+    "dtype": "fp16",
+    "epistemic_status": "MEASURED",
+    "note": "bounded to predictive positions only, same convention as V0 -- NOT full-sequence logits"
+  },
+  "TOKEN_IDS": {
+    "granularity": "RUN x STEP",
+    "shape_per_run": "(seq_len,)",
+    "dtype": "int32",
+    "epistemic_status": "MEASURED"
+  },
+  "warning": "No tensor here is broadcast into a fake finer granularity. Every field above is genuinely resolved at the granularity stated -- unlike reports/multi-tensor-atlas-v0's COORDINATE_TABLE, which explicitly mixed broadcast (run,layer)-structural K/V columns with true (run,layer,step) columns. Lane B's K/V/Q/attention/attn_output are ALL genuinely step-resolved here because the full sequence (all decode steps) is captured in a single teacher-forced forward pass per run."
+}

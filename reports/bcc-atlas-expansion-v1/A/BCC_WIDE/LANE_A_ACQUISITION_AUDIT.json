@@ -1,0 +1,114 @@
+{
+  "status": "EXECUTED",
+  "attempted": 729,
+  "expected": 729,
+  "success": 729,
+  "failures": 0,
+  "success_rate_pct": 100.0,
+  "status_breakdown": {
+    "SUCCESS": 729
+  },
+  "prompt_coverage": {
+    "n_prompts_covered": 243,
+    "n_prompts_expected": 243,
+    "missing_prompt_ids": []
+  },
+  "family_coverage": {
+    "n_families_covered": 12,
+    "n_families_expected": 12,
+    "by_family_attempted": {
+      "SUMMARIZATION": 60,
+      "CODING": 69,
+      "MATH_REASONING": 60,
+      "MULTISTEP_INSTRUCTION": 60,
+      "CONSTRAINT_FOLLOWING": 60,
+      "RECOVERY_CORRECTION": 60,
+      "GENERAL_INSTRUCTION": 60,
+      "DOCUMENT_EXTRACTION": 60,
+      "FACTUAL_GROUNDED": 60,
+      "STRUCTURED_OUTPUT": 60,
+      "TRANSFORMATION": 60,
+      "AMBIGUITY_HANDLING": 60
+    },
+    "by_family_success": {
+      "SUMMARIZATION": 60,
+      "CODING": 69,
+      "MATH_REASONING": 60,
+      "MULTISTEP_INSTRUCTION": 60,
+      "CONSTRAINT_FOLLOWING": 60,
+      "RECOVERY_CORRECTION": 60,
+      "GENERAL_INSTRUCTION": 60,
+      "DOCUMENT_EXTRACTION": 60,
+      "FACTUAL_GROUNDED": 60,
+      "STRUCTURED_OUTPUT": 60,
+      "TRANSFORMATION": 60,
+      "AMBIGUITY_HANDLING": 60
+    }
+  },
+  "seed_coverage": {
+    "n_seeds_covered": 3,
+    "seeds_expected": [
+      2101,
+      2102,
+      2103
+    ],
+    "by_seed_attempted": {
+      "2101": 243,
+      "2102": 243,
+      "2103": 243
+    },
+    "by_seed_success": {
+      "2101": 243,
+      "2102": 243,
+      "2103": 243
+    }
+  },
+  "duplicate_run_audit": {
+    "n_duplicate_run_ids": 0,
+    "duplicates": {}
+  },
+  "missing_run_audit": {
+    "n_missing": 0,
+    "missing_run_ids": [],
+    "n_unexpected": 0,
+    "unexpected_run_ids": []
+  },
+  "generation_length_distribution": {
+    "n_success_rows": 729,
+    "min": 2,
+    "median": 25,
+    "max": 224,
+    "mean": 45.02,
+    "stdev": 48.77
+  },
+  "short_execution_count": {
+    "n_short_1_to_9_tokens": 189,
+    "definition": "SHORT_EXECUTION per SHORT_EXECUTION_POLICY.md = 1-9 generated tokens, never labeled NON_ANALYZABLE"
+  },
+  "runtime_distribution_seconds": {
+    "min": 0.196,
+    "median": 2.403,
+    "max": 21.615,
+    "mean": 4.321,
+    "total": 3150.1
+  },
+  "memory_distribution_mb": {
+    "n_with_memory_captured": 729,
+    "min": 1011.1,
+    "median": 1044.6,
+    "max": 1283.1
+  },
+  "probability_capture_completeness": {
+    "complete": 729,
+    "incomplete": 0,
+    "status": "YES"
+  },
+  "completion_reason_breakdown": {
+    "eos_token": 639,
+    "max_new_tokens": 90
+  },
+  "hashes": {
+    "lane_a_generations_jsonl_sha256": "1a886b55d047642734a1146eea57d07abfb36abc72ef3fc5efa9985c8407e5ad",
+    "n_rows_with_output_text_hash": 729
+  }
+}

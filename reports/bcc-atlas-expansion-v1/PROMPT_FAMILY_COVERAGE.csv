@@ -1,0 +1,13 @@
+prompt_family,n_prompts_in_frozen_panel,max_new_tokens_config,n_distinct_subtypes,subtypes
+AMBIGUITY_HANDLING,20,128,3,referential|underspecified|vague_request
+CODING,23,160,5,comprehension|dict_literal|function|loop|oneliner
+CONSTRAINT_FOLLOWING,20,96,4,exact_word_use|forbidden_word|start_word|word_count
+DOCUMENT_EXTRACTION,20,96,6,absent_field_handling|date_with_distractor|id_with_distractor|mixed_relevant_irrelevant_context|multi_field_extraction|number_with_distractor
+FACTUAL_GROUNDED,20,96,2,grounded_fact|grounded_fact_distractor
+GENERAL_INSTRUCTION,20,96/160,4,advice|creative|explanation|writing
+MATH_REASONING,20,64,4,arithmetic|percentage|sequence|word_problem
+MULTISTEP_INSTRUCTION,20,224,1,ordered_requirements
+RECOVERY_CORRECTION,20,160,4,code_bug|factual_error|format_error|math_error
+STRUCTURED_OUTPUT,20,96,5,csv|json_array|json_nested|json_object|table
+SUMMARIZATION,20,160,1,short_passage
+TRANSFORMATION,20,128,8,bullets_to_prose|case|list_to_csv|person_conversion|prose_to_bullets|rewrite_formal|rewrite_short|tense_conversion

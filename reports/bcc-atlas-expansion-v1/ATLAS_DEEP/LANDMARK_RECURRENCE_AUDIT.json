@@ -1,0 +1,1741 @@
+{
+  "status": "EXECUTED -- descriptive recurrence only, frozen nodes reused verbatim from reports/multi-tensor-landmarks-v0/FROZEN_LANDMARK_REGISTRY.json, NOT redefined",
+  "detection_rule": "Within (run,layer), z-score H_curvature/Oattn_delta_norm/A_dispersion/probability_entropy across decode steps; event if |z|>1.5 on >=3/4 signals. Identical to reports/multi-tensor-atlas-v0/build_atlas.py -- unmodified.",
+  "nodes_tested": [
+    "L0",
+    "L1",
+    "L5",
+    "L20"
+  ],
+  "n_runs_total": 144,
+  "n_runs_eligible_for_detection": 127,
+  "n_runs_ineligible_n_steps_lt_4": 17,
+  "runs_with_ge1_landmark": 87,
+  "runs_with_ge2_landmark": 62,
+  "no_landmark_runs_count": 40,
+  "no_landmark_run_ids": [
+    "BAX1DEEP_MR12_2101",
+    "BAX1DEEP_MR07_2101",
+    "BAX1DEEP_AH18_2101",
+    "BAX1DEEP_CF05_2101",
+    "BAX1DEEP_FG19-V2_2101",
+    "BAX1DEEP_FG01-V2_2101",
+    "BAX1DEEP_RC17_2101",
+    "BAX1DEEP_RC16_2101",
+    "BAX1DEEP_RC08_2101",
+    "BAX1DEEP_SO04-V2_2101",
+    "BAX1DEEP_SO08-V2_2101",
+    "BAX1DEEP_DE06-V2_2101",
+    "BAX1DEEP_TR06_2101",
+    "BAX1DEEP_TR01_2101",
+    "BAX1DEEP_CO04_2101",
+    "BAX1DEEP_MR12_2102",
+    "BAX1DEEP_CF05_2102",
+    "BAX1DEEP_SU18_2102",
+    "BAX1DEEP_SU02_2102",
+    "BAX1DEEP_FG19-V2_2102",
+    "BAX1DEEP_FG01-V2_2102",
+    "BAX1DEEP_SO04-V2_2102",
+    "BAX1DEEP_SO08-V2_2102",
+    "BAX1DEEP_DE13-V2_2102",
+    "BAX1DEEP_DE06-V2_2102",
+    "BAX1DEEP_TR06_2102",
+    "BAX1DEEP_TR01_2102",
+    "BAX1DEEP_CO06-V2A_2102",
+    "BAX1DEEP_MR12_2103",
+    "BAX1DEEP_GI11-V2_2103",
+    "BAX1DEEP_AH18_2103",
+    "BAX1DEEP_SU19_2103",
+    "BAX1DEEP_FG19-V2_2103",
+    "BAX1DEEP_FG01-V2_2103",
+    "BAX1DEEP_RC17_2103",
+    "BAX1DEEP_SO04-V2_2103",
+    "BAX1DEEP_SO08-V2_2103",
+    "BAX1DEEP_TR06_2103",
+    "BAX1DEEP_TR01_2103",
+    "BAX1DEEP_TR19_2103"
+  ],
+  "recurrence_by_family": {
+    "MATH_REASONING": {
+      "n_runs_eligible": 6,
+      "n_runs_with_landmark": 2
+    },
+    "GENERAL_INSTRUCTION": {
+      "n_runs_eligible": 12,
+      "n_runs_with_landmark": 11
+    },
+    "AMBIGUITY_HANDLING": {
+      "n_runs_eligible": 12,
+      "n_runs_with_landmark": 10
+    },
+    "CONSTRAINT_FOLLOWING": {
+      "n_runs_eligible": 12,
+      "n_runs_with_landmark": 10
+    },
+    "SUMMARIZATION": {
+      "n_runs_eligible": 12,
+      "n_runs_with_landmark": 9
+    },
+    "FACTUAL_GROUNDED": {
+      "n_runs_eligible": 7,
+      "n_runs_with_landmark": 1
+    },
+    "RECOVERY_CORRECTION": {
+      "n_runs_eligible": 9,
+      "n_runs_with_landmark": 5
+    },
+    "MULTISTEP_INSTRUCTION": {
+      "n_runs_eligible": 12,
+      "n_runs_with_landmark": 12
+    },
+    "STRUCTURED_OUTPUT": {
+      "n_runs_eligible": 12,
+      "n_runs_with_landmark": 6
+    },
+    "DOCUMENT_EXTRACTION": {
+      "n_runs_eligible": 9,
+      "n_runs_with_landmark": 6
+    },
+    "TRANSFORMATION": {
+      "n_runs_eligible": 12,
+      "n_runs_with_landmark": 5
+    },
+    "CODING": {
+      "n_runs_eligible": 12,
+      "n_runs_with_landmark": 10
+    }
+  },
+  "recurrence_by_seed": {
+    "2101": {
+      "n_runs_eligible": 42,
+      "n_runs_with_landmark": 27
+    },
+    "2102": {
+      "n_runs_eligible": 43,
+      "n_runs_with_landmark": 30
+    },
+    "2103": {
+      "n_runs_eligible": 42,
+      "n_runs_with_landmark": 30
+    }
+  },
+  "recurrence_by_execution_length_bucket": {
+    "SHORT_1_9": {
+      "n_with_landmark": 6,
+      "n_total": 21
+    },
+    "MEDIUM_10_49": {
+      "n_with_landmark": 38,
+      "n_total": 63
+    },
+    "LONG_50_PLUS": {
+      "n_with_landmark": 43,
+      "n_total": 43
+    }
+  },
+  "n_raw_events": 305,
+  "events_sample": [
+    {
+      "run_id": "BAX1DEEP_GI11-V2_2101",
+      "prompt_id": "GI11-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2101,
+      "layer": 1,
+      "step": 33
+    },
+    {
+      "run_id": "BAX1DEEP_GI11-V2_2101",
+      "prompt_id": "GI11-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2101,
+      "layer": 5,
+      "step": 34
+    },
+    {
+      "run_id": "BAX1DEEP_GI06-V2_2101",
+      "prompt_id": "GI06-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2101,
+      "layer": 0,
+      "step": 74
+    },
+    {
+      "run_id": "BAX1DEEP_GI06-V2_2101",
+      "prompt_id": "GI06-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2101,
+      "layer": 1,
+      "step": 26
+    },
+    {
+      "run_id": "BAX1DEEP_GI06-V2_2101",
+      "prompt_id": "GI06-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2101,
+      "layer": 1,
+      "step": 74
+    },
+    {
+      "run_id": "BAX1DEEP_GI06-V2_2101",
+      "prompt_id": "GI06-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2101,
+      "layer": 20,
+      "step": 26
+    },
+    {
+      "run_id": "BAX1DEEP_GI06-V2_2101",
+      "prompt_id": "GI06-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2101,
+      "layer": 20,
+      "step": 74
+    },
+    {
+      "run_id": "BAX1DEEP_GI08-V2_2101",
+      "prompt_id": "GI08-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2101,
+      "layer": 1,
+      "step": 72
+    },
+    {
+      "run_id": "BAX1DEEP_GI08-V2_2101",
+      "prompt_id": "GI08-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2101,
+      "layer": 20,
+      "step": 52
+    },
+    {
+      "run_id": "BAX1DEEP_GI01-V3_2101",
+      "prompt_id": "GI01-V3",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2101,
+      "layer": 0,
+      "step": 20
+    },
+    {
+      "run_id": "BAX1DEEP_GI01-V3_2101",
+      "prompt_id": "GI01-V3",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2101,
+      "layer": 5,
+      "step": 111
+    },
+    {
+      "run_id": "BAX1DEEP_GI01-V3_2101",
+      "prompt_id": "GI01-V3",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2101,
+      "layer": 20,
+      "step": 44
+    },
+    {
+      "run_id": "BAX1DEEP_AH11_2101",
+      "prompt_id": "AH11",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2101,
+      "layer": 0,
+      "step": 2
+    },
+    {
+      "run_id": "BAX1DEEP_AH11_2101",
+      "prompt_id": "AH11",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2101,
+      "layer": 0,
+      "step": 3
+    },
+    {
+      "run_id": "BAX1DEEP_AH11_2101",
+      "prompt_id": "AH11",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2101,
+      "layer": 1,
+      "step": 2
+    },
+    {
+      "run_id": "BAX1DEEP_AH11_2101",
+      "prompt_id": "AH11",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2101,
+      "layer": 1,
+      "step": 52
+    },
+    {
+      "run_id": "BAX1DEEP_AH11_2101",
+      "prompt_id": "AH11",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2101,
+      "layer": 5,
+      "step": 2
+    },
+    {
+      "run_id": "BAX1DEEP_AH11_2101",
+      "prompt_id": "AH11",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2101,
+      "layer": 5,
+      "step": 14
+    },
+    {
+      "run_id": "BAX1DEEP_AH16_2101",
+      "prompt_id": "AH16",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2101,
+      "layer": 1,
+      "step": 1
+    },
+    {
+      "run_id": "BAX1DEEP_AH16_2101",
+      "prompt_id": "AH16",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2101,
+      "layer": 5,
+      "step": 48
+    },
+    {
+      "run_id": "BAX1DEEP_AH16_2101",
+      "prompt_id": "AH16",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2101,
+      "layer": 20,
+      "step": 4
+    },
+    {
+      "run_id": "BAX1DEEP_AH19_2101",
+      "prompt_id": "AH19",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2101,
+      "layer": 0,
+      "step": 54
+    },
+    {
+      "run_id": "BAX1DEEP_AH19_2101",
+      "prompt_id": "AH19",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2101,
+      "layer": 0,
+      "step": 75
+    },
+    {
+      "run_id": "BAX1DEEP_AH19_2101",
+      "prompt_id": "AH19",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2101,
+      "layer": 1,
+      "step": 64
+    },
+    {
+      "run_id": "BAX1DEEP_AH19_2101",
+      "prompt_id": "AH19",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2101,
+      "layer": 1,
+      "step": 89
+    },
+    {
+      "run_id": "BAX1DEEP_AH19_2101",
+      "prompt_id": "AH19",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2101,
+      "layer": 1,
+      "step": 104
+    },
+    {
+      "run_id": "BAX1DEEP_AH19_2101",
+      "prompt_id": "AH19",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2101,
+      "layer": 1,
+      "step": 121
+    },
+    {
+      "run_id": "BAX1DEEP_AH19_2101",
+      "prompt_id": "AH19",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2101,
+      "layer": 5,
+      "step": 29
+    },
+    {
+      "run_id": "BAX1DEEP_CF14_2101",
+      "prompt_id": "CF14",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2101,
+      "layer": 5,
+      "step": 0
+    },
+    {
+      "run_id": "BAX1DEEP_CF14_2101",
+      "prompt_id": "CF14",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2101,
+      "layer": 5,
+      "step": 30
+    },
+    {
+      "run_id": "BAX1DEEP_CF14_2101",
+      "prompt_id": "CF14",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2101,
+      "layer": 20,
+      "step": 30
+    },
+    {
+      "run_id": "BAX1DEEP_CF14_2101",
+      "prompt_id": "CF14",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2101,
+      "layer": 20,
+      "step": 42
+    },
+    {
+      "run_id": "BAX1DEEP_CF02_2101",
+      "prompt_id": "CF02",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2101,
+      "layer": 0,
+      "step": 28
+    },
+    {
+      "run_id": "BAX1DEEP_CF02_2101",
+      "prompt_id": "CF02",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2101,
+      "layer": 0,
+      "step": 38
+    },
+    {
+      "run_id": "BAX1DEEP_CF19_2101",
+      "prompt_id": "CF19",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2101,
+      "layer": 0,
+      "step": 21
+    },
+    {
+      "run_id": "BAX1DEEP_CF19_2101",
+      "prompt_id": "CF19",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2101,
+      "layer": 1,
+      "step": 1
+    },
+    {
+      "run_id": "BAX1DEEP_CF19_2101",
+      "prompt_id": "CF19",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2101,
+      "layer": 5,
+      "step": 36
+    },
+    {
+      "run_id": "BAX1DEEP_SU18_2101",
+      "prompt_id": "SU18",
+      "family": "SUMMARIZATION",
+      "seed": 2101,
+      "layer": 0,
+      "step": 22
+    },
+    {
+      "run_id": "BAX1DEEP_SU18_2101",
+      "prompt_id": "SU18",
+      "family": "SUMMARIZATION",
+      "seed": 2101,
+      "layer": 0,
+      "step": 26
+    },
+    {
+      "run_id": "BAX1DEEP_SU12_2101",
+      "prompt_id": "SU12",
+      "family": "SUMMARIZATION",
+      "seed": 2101,
+      "layer": 0,
+      "step": 9
+    },
+    {
+      "run_id": "BAX1DEEP_SU12_2101",
+      "prompt_id": "SU12",
+      "family": "SUMMARIZATION",
+      "seed": 2101,
+      "layer": 20,
+      "step": 26
+    },
+    {
+      "run_id": "BAX1DEEP_SU19_2101",
+      "prompt_id": "SU19",
+      "family": "SUMMARIZATION",
+      "seed": 2101,
+      "layer": 1,
+      "step": 2
+    },
+    {
+      "run_id": "BAX1DEEP_SU19_2101",
+      "prompt_id": "SU19",
+      "family": "SUMMARIZATION",
+      "seed": 2101,
+      "layer": 5,
+      "step": 19
+    },
+    {
+      "run_id": "BAX1DEEP_SU19_2101",
+      "prompt_id": "SU19",
+      "family": "SUMMARIZATION",
+      "seed": 2101,
+      "layer": 20,
+      "step": 19
+    },
+    {
+      "run_id": "BAX1DEEP_SU02_2101",
+      "prompt_id": "SU02",
+      "family": "SUMMARIZATION",
+      "seed": 2101,
+      "layer": 0,
+      "step": 27
+    },
+    {
+      "run_id": "BAX1DEEP_SU02_2101",
+      "prompt_id": "SU02",
+      "family": "SUMMARIZATION",
+      "seed": 2101,
+      "layer": 20,
+      "step": 34
+    },
+    {
+      "run_id": "BAX1DEEP_MI15-V2_2101",
+      "prompt_id": "MI15-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2101,
+      "layer": 1,
+      "step": 20
+    },
+    {
+      "run_id": "BAX1DEEP_MI01_2101",
+      "prompt_id": "MI01",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2101,
+      "layer": 0,
+      "step": 6
+    },
+    {
+      "run_id": "BAX1DEEP_MI01_2101",
+      "prompt_id": "MI01",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2101,
+      "layer": 0,
+      "step": 33
+    },
+    {
+      "run_id": "BAX1DEEP_MI01_2101",
+      "prompt_id": "MI01",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2101,
+      "layer": 1,
+      "step": 10
+    },
+    {
+      "run_id": "BAX1DEEP_MI01_2101",
+      "prompt_id": "MI01",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2101,
+      "layer": 1,
+      "step": 54
+    },
+    {
+      "run_id": "BAX1DEEP_MI14-V2_2101",
+      "prompt_id": "MI14-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2101,
+      "layer": 0,
+      "step": 7
+    },
+    {
+      "run_id": "BAX1DEEP_MI14-V2_2101",
+      "prompt_id": "MI14-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2101,
+      "layer": 1,
+      "step": 5
+    },
+    {
+      "run_id": "BAX1DEEP_MI14-V2_2101",
+      "prompt_id": "MI14-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2101,
+      "layer": 5,
+      "step": 5
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2101",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2101,
+      "layer": 0,
+      "step": 6
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2101",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2101,
+      "layer": 0,
+      "step": 24
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2101",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2101,
+      "layer": 1,
+      "step": 1
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2101",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2101,
+      "layer": 1,
+      "step": 92
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2101",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2101,
+      "layer": 1,
+      "step": 109
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2101",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2101,
+      "layer": 5,
+      "step": 30
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2101",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2101,
+      "layer": 5,
+      "step": 108
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2101",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2101,
+      "layer": 20,
+      "step": 30
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2101",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2101,
+      "layer": 20,
+      "step": 52
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2101",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2101,
+      "layer": 20,
+      "step": 105
+    },
+    {
+      "run_id": "BAX1DEEP_SO06-V2_2101",
+      "prompt_id": "SO06-V2",
+      "family": "STRUCTURED_OUTPUT",
+      "seed": 2101,
+      "layer": 0,
+      "step": 6
+    },
+    {
+      "run_id": "BAX1DEEP_SO03-V2_2101",
+      "prompt_id": "SO03-V2",
+      "family": "STRUCTURED_OUTPUT",
+      "seed": 2101,
+      "layer": 1,
+      "step": 11
+    },
+    {
+      "run_id": "BAX1DEEP_SO03-V2_2101",
+      "prompt_id": "SO03-V2",
+      "family": "STRUCTURED_OUTPUT",
+      "seed": 2101,
+      "layer": 20,
+      "step": 5
+    },
+    {
+      "run_id": "BAX1DEEP_DE08-V2_2101",
+      "prompt_id": "DE08-V2",
+      "family": "DOCUMENT_EXTRACTION",
+      "seed": 2101,
+      "layer": 0,
+      "step": 0
+    },
+    {
+      "run_id": "BAX1DEEP_DE13-V2_2101",
+      "prompt_id": "DE13-V2",
+      "family": "DOCUMENT_EXTRACTION",
+      "seed": 2101,
+      "layer": 1,
+      "step": 0
+    },
+    {
+      "run_id": "BAX1DEEP_DE13-V2_2101",
+      "prompt_id": "DE13-V2",
+      "family": "DOCUMENT_EXTRACTION",
+      "seed": 2101,
+      "layer": 20,
+      "step": 8
+    },
+    {
+      "run_id": "BAX1DEEP_TR19_2101",
+      "prompt_id": "TR19",
+      "family": "TRANSFORMATION",
+      "seed": 2101,
+      "layer": 0,
+      "step": 5
+    },
+    {
+      "run_id": "BAX1DEEP_TR19_2101",
+      "prompt_id": "TR19",
+      "family": "TRANSFORMATION",
+      "seed": 2101,
+      "layer": 1,
+      "step": 6
+    },
+    {
+      "run_id": "BAX1DEEP_TR09-V2_2101",
+      "prompt_id": "TR09-V2",
+      "family": "TRANSFORMATION",
+      "seed": 2101,
+      "layer": 1,
+      "step": 18
+    },
+    {
+      "run_id": "BAX1DEEP_TR09-V2_2101",
+      "prompt_id": "TR09-V2",
+      "family": "TRANSFORMATION",
+      "seed": 2101,
+      "layer": 20,
+      "step": 19
+    },
+    {
+      "run_id": "BAX1DEEP_CO06-V2A_2101",
+      "prompt_id": "CO06-V2A",
+      "family": "CODING",
+      "seed": 2101,
+      "layer": 20,
+      "step": 20
+    },
+    {
+      "run_id": "BAX1DEEP_CO06-V2A_2101",
+      "prompt_id": "CO06-V2A",
+      "family": "CODING",
+      "seed": 2101,
+      "layer": 20,
+      "step": 66
+    },
+    {
+      "run_id": "BAX1DEEP_CO08_2101",
+      "prompt_id": "CO08",
+      "family": "CODING",
+      "seed": 2101,
+      "layer": 0,
+      "step": 37
+    },
+    {
+      "run_id": "BAX1DEEP_CO08_2101",
+      "prompt_id": "CO08",
+      "family": "CODING",
+      "seed": 2101,
+      "layer": 1,
+      "step": 37
+    },
+    {
+      "run_id": "BAX1DEEP_CO08_2101",
+      "prompt_id": "CO08",
+      "family": "CODING",
+      "seed": 2101,
+      "layer": 5,
+      "step": 20
+    },
+    {
+      "run_id": "BAX1DEEP_CO08_2101",
+      "prompt_id": "CO08",
+      "family": "CODING",
+      "seed": 2101,
+      "layer": 5,
+      "step": 46
+    },
+    {
+      "run_id": "BAX1DEEP_CO09_2101",
+      "prompt_id": "CO09",
+      "family": "CODING",
+      "seed": 2101,
+      "layer": 0,
+      "step": 92
+    },
+    {
+      "run_id": "BAX1DEEP_CO09_2101",
+      "prompt_id": "CO09",
+      "family": "CODING",
+      "seed": 2101,
+      "layer": 1,
+      "step": 92
+    },
+    {
+      "run_id": "BAX1DEEP_CO09_2101",
+      "prompt_id": "CO09",
+      "family": "CODING",
+      "seed": 2101,
+      "layer": 5,
+      "step": 159
+    },
+    {
+      "run_id": "BAX1DEEP_CO09_2101",
+      "prompt_id": "CO09",
+      "family": "CODING",
+      "seed": 2101,
+      "layer": 20,
+      "step": 121
+    },
+    {
+      "run_id": "BAX1DEEP_MR07_2102",
+      "prompt_id": "MR07",
+      "family": "MATH_REASONING",
+      "seed": 2102,
+      "layer": 0,
+      "step": 0
+    },
+    {
+      "run_id": "BAX1DEEP_GI11-V2_2102",
+      "prompt_id": "GI11-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 0,
+      "step": 68
+    },
+    {
+      "run_id": "BAX1DEEP_GI11-V2_2102",
+      "prompt_id": "GI11-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 1,
+      "step": 68
+    },
+    {
+      "run_id": "BAX1DEEP_GI11-V2_2102",
+      "prompt_id": "GI11-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 67
+    },
+    {
+      "run_id": "BAX1DEEP_GI11-V2_2102",
+      "prompt_id": "GI11-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 68
+    },
+    {
+      "run_id": "BAX1DEEP_GI11-V2_2102",
+      "prompt_id": "GI11-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 85
+    },
+    {
+      "run_id": "BAX1DEEP_GI06-V2_2102",
+      "prompt_id": "GI06-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 1,
+      "step": 62
+    },
+    {
+      "run_id": "BAX1DEEP_GI06-V2_2102",
+      "prompt_id": "GI06-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 63
+    },
+    {
+      "run_id": "BAX1DEEP_GI06-V2_2102",
+      "prompt_id": "GI06-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 20,
+      "step": 23
+    },
+    {
+      "run_id": "BAX1DEEP_GI08-V2_2102",
+      "prompt_id": "GI08-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 0,
+      "step": 40
+    },
+    {
+      "run_id": "BAX1DEEP_GI08-V2_2102",
+      "prompt_id": "GI08-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 0,
+      "step": 52
+    },
+    {
+      "run_id": "BAX1DEEP_GI08-V2_2102",
+      "prompt_id": "GI08-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 0,
+      "step": 90
+    },
+    {
+      "run_id": "BAX1DEEP_GI08-V2_2102",
+      "prompt_id": "GI08-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 1,
+      "step": 2
+    },
+    {
+      "run_id": "BAX1DEEP_GI08-V2_2102",
+      "prompt_id": "GI08-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 1,
+      "step": 57
+    },
+    {
+      "run_id": "BAX1DEEP_GI08-V2_2102",
+      "prompt_id": "GI08-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 1,
+      "step": 60
+    },
+    {
+      "run_id": "BAX1DEEP_GI08-V2_2102",
+      "prompt_id": "GI08-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 2
+    },
+    {
+      "run_id": "BAX1DEEP_GI01-V3_2102",
+      "prompt_id": "GI01-V3",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 0,
+      "step": 1
+    },
+    {
+      "run_id": "BAX1DEEP_GI01-V3_2102",
+      "prompt_id": "GI01-V3",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 0,
+      "step": 113
+    },
+    {
+      "run_id": "BAX1DEEP_GI01-V3_2102",
+      "prompt_id": "GI01-V3",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 0,
+      "step": 135
+    },
+    {
+      "run_id": "BAX1DEEP_GI01-V3_2102",
+      "prompt_id": "GI01-V3",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 0,
+      "step": 157
+    },
+    {
+      "run_id": "BAX1DEEP_GI01-V3_2102",
+      "prompt_id": "GI01-V3",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 64
+    },
+    {
+      "run_id": "BAX1DEEP_GI01-V3_2102",
+      "prompt_id": "GI01-V3",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 73
+    },
+    {
+      "run_id": "BAX1DEEP_GI01-V3_2102",
+      "prompt_id": "GI01-V3",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 106
+    },
+    {
+      "run_id": "BAX1DEEP_GI01-V3_2102",
+      "prompt_id": "GI01-V3",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 137
+    },
+    {
+      "run_id": "BAX1DEEP_GI01-V3_2102",
+      "prompt_id": "GI01-V3",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 156
+    },
+    {
+      "run_id": "BAX1DEEP_GI01-V3_2102",
+      "prompt_id": "GI01-V3",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2102,
+      "layer": 20,
+      "step": 117
+    },
+    {
+      "run_id": "BAX1DEEP_AH18_2102",
+      "prompt_id": "AH18",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2102,
+      "layer": 1,
+      "step": 1
+    },
+    {
+      "run_id": "BAX1DEEP_AH11_2102",
+      "prompt_id": "AH11",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2102,
+      "layer": 0,
+      "step": 50
+    },
+    {
+      "run_id": "BAX1DEEP_AH11_2102",
+      "prompt_id": "AH11",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2102,
+      "layer": 1,
+      "step": 1
+    },
+    {
+      "run_id": "BAX1DEEP_AH11_2102",
+      "prompt_id": "AH11",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2102,
+      "layer": 1,
+      "step": 54
+    },
+    {
+      "run_id": "BAX1DEEP_AH11_2102",
+      "prompt_id": "AH11",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2102,
+      "layer": 1,
+      "step": 79
+    },
+    {
+      "run_id": "BAX1DEEP_AH11_2102",
+      "prompt_id": "AH11",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2102,
+      "layer": 5,
+      "step": 79
+    },
+    {
+      "run_id": "BAX1DEEP_AH16_2102",
+      "prompt_id": "AH16",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2102,
+      "layer": 0,
+      "step": 1
+    },
+    {
+      "run_id": "BAX1DEEP_AH16_2102",
+      "prompt_id": "AH16",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2102,
+      "layer": 5,
+      "step": 19
+    },
+    {
+      "run_id": "BAX1DEEP_AH19_2102",
+      "prompt_id": "AH19",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2102,
+      "layer": 1,
+      "step": 84
+    },
+    {
+      "run_id": "BAX1DEEP_AH19_2102",
+      "prompt_id": "AH19",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2102,
+      "layer": 1,
+      "step": 123
+    },
+    {
+      "run_id": "BAX1DEEP_AH19_2102",
+      "prompt_id": "AH19",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2102,
+      "layer": 5,
+      "step": 68
+    },
+    {
+      "run_id": "BAX1DEEP_AH19_2102",
+      "prompt_id": "AH19",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2102,
+      "layer": 5,
+      "step": 106
+    },
+    {
+      "run_id": "BAX1DEEP_AH19_2102",
+      "prompt_id": "AH19",
+      "family": "AMBIGUITY_HANDLING",
+      "seed": 2102,
+      "layer": 5,
+      "step": 123
+    },
+    {
+      "run_id": "BAX1DEEP_CF14_2102",
+      "prompt_id": "CF14",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2102,
+      "layer": 5,
+      "step": 36
+    },
+    {
+      "run_id": "BAX1DEEP_CF14_2102",
+      "prompt_id": "CF14",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2102,
+      "layer": 20,
+      "step": 36
+    },
+    {
+      "run_id": "BAX1DEEP_CF02_2102",
+      "prompt_id": "CF02",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2102,
+      "layer": 0,
+      "step": 0
+    },
+    {
+      "run_id": "BAX1DEEP_CF02_2102",
+      "prompt_id": "CF02",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2102,
+      "layer": 0,
+      "step": 7
+    },
+    {
+      "run_id": "BAX1DEEP_CF02_2102",
+      "prompt_id": "CF02",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2102,
+      "layer": 1,
+      "step": 1
+    },
+    {
+      "run_id": "BAX1DEEP_CF02_2102",
+      "prompt_id": "CF02",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2102,
+      "layer": 5,
+      "step": 32
+    },
+    {
+      "run_id": "BAX1DEEP_CF19_2102",
+      "prompt_id": "CF19",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2102,
+      "layer": 0,
+      "step": 63
+    },
+    {
+      "run_id": "BAX1DEEP_CF19_2102",
+      "prompt_id": "CF19",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2102,
+      "layer": 0,
+      "step": 85
+    },
+    {
+      "run_id": "BAX1DEEP_CF19_2102",
+      "prompt_id": "CF19",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2102,
+      "layer": 1,
+      "step": 3
+    },
+    {
+      "run_id": "BAX1DEEP_CF19_2102",
+      "prompt_id": "CF19",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2102,
+      "layer": 1,
+      "step": 10
+    },
+    {
+      "run_id": "BAX1DEEP_CF19_2102",
+      "prompt_id": "CF19",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2102,
+      "layer": 1,
+      "step": 13
+    },
+    {
+      "run_id": "BAX1DEEP_CF19_2102",
+      "prompt_id": "CF19",
+      "family": "CONSTRAINT_FOLLOWING",
+      "seed": 2102,
+      "layer": 1,
+      "step": 44
+    },
+    {
+      "run_id": "BAX1DEEP_SU12_2102",
+      "prompt_id": "SU12",
+      "family": "SUMMARIZATION",
+      "seed": 2102,
+      "layer": 0,
+      "step": 14
+    },
+    {
+      "run_id": "BAX1DEEP_SU12_2102",
+      "prompt_id": "SU12",
+      "family": "SUMMARIZATION",
+      "seed": 2102,
+      "layer": 1,
+      "step": 23
+    },
+    {
+      "run_id": "BAX1DEEP_SU19_2102",
+      "prompt_id": "SU19",
+      "family": "SUMMARIZATION",
+      "seed": 2102,
+      "layer": 0,
+      "step": 27
+    },
+    {
+      "run_id": "BAX1DEEP_SU19_2102",
+      "prompt_id": "SU19",
+      "family": "SUMMARIZATION",
+      "seed": 2102,
+      "layer": 1,
+      "step": 29
+    },
+    {
+      "run_id": "BAX1DEEP_SU19_2102",
+      "prompt_id": "SU19",
+      "family": "SUMMARIZATION",
+      "seed": 2102,
+      "layer": 20,
+      "step": 27
+    },
+    {
+      "run_id": "BAX1DEEP_SU19_2102",
+      "prompt_id": "SU19",
+      "family": "SUMMARIZATION",
+      "seed": 2102,
+      "layer": 20,
+      "step": 33
+    },
+    {
+      "run_id": "BAX1DEEP_FG10-V2_2102",
+      "prompt_id": "FG10-V2",
+      "family": "FACTUAL_GROUNDED",
+      "seed": 2102,
+      "layer": 1,
+      "step": 0
+    },
+    {
+      "run_id": "BAX1DEEP_FG10-V2_2102",
+      "prompt_id": "FG10-V2",
+      "family": "FACTUAL_GROUNDED",
+      "seed": 2102,
+      "layer": 5,
+      "step": 11
+    },
+    {
+      "run_id": "BAX1DEEP_RC17_2102",
+      "prompt_id": "RC17",
+      "family": "RECOVERY_CORRECTION",
+      "seed": 2102,
+      "layer": 1,
+      "step": 7
+    },
+    {
+      "run_id": "BAX1DEEP_RC16_2102",
+      "prompt_id": "RC16",
+      "family": "RECOVERY_CORRECTION",
+      "seed": 2102,
+      "layer": 0,
+      "step": 11
+    },
+    {
+      "run_id": "BAX1DEEP_RC16_2102",
+      "prompt_id": "RC16",
+      "family": "RECOVERY_CORRECTION",
+      "seed": 2102,
+      "layer": 0,
+      "step": 51
+    },
+    {
+      "run_id": "BAX1DEEP_RC16_2102",
+      "prompt_id": "RC16",
+      "family": "RECOVERY_CORRECTION",
+      "seed": 2102,
+      "layer": 0,
+      "step": 63
+    },
+    {
+      "run_id": "BAX1DEEP_RC16_2102",
+      "prompt_id": "RC16",
+      "family": "RECOVERY_CORRECTION",
+      "seed": 2102,
+      "layer": 1,
+      "step": 47
+    },
+    {
+      "run_id": "BAX1DEEP_RC16_2102",
+      "prompt_id": "RC16",
+      "family": "RECOVERY_CORRECTION",
+      "seed": 2102,
+      "layer": 1,
+      "step": 52
+    },
+    {
+      "run_id": "BAX1DEEP_RC16_2102",
+      "prompt_id": "RC16",
+      "family": "RECOVERY_CORRECTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 20
+    },
+    {
+      "run_id": "BAX1DEEP_RC16_2102",
+      "prompt_id": "RC16",
+      "family": "RECOVERY_CORRECTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 22
+    },
+    {
+      "run_id": "BAX1DEEP_RC16_2102",
+      "prompt_id": "RC16",
+      "family": "RECOVERY_CORRECTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 47
+    },
+    {
+      "run_id": "BAX1DEEP_RC16_2102",
+      "prompt_id": "RC16",
+      "family": "RECOVERY_CORRECTION",
+      "seed": 2102,
+      "layer": 20,
+      "step": 57
+    },
+    {
+      "run_id": "BAX1DEEP_RC16_2102",
+      "prompt_id": "RC16",
+      "family": "RECOVERY_CORRECTION",
+      "seed": 2102,
+      "layer": 20,
+      "step": 60
+    },
+    {
+      "run_id": "BAX1DEEP_RC08_2102",
+      "prompt_id": "RC08",
+      "family": "RECOVERY_CORRECTION",
+      "seed": 2102,
+      "layer": 0,
+      "step": 19
+    },
+    {
+      "run_id": "BAX1DEEP_RC08_2102",
+      "prompt_id": "RC08",
+      "family": "RECOVERY_CORRECTION",
+      "seed": 2102,
+      "layer": 1,
+      "step": 13
+    },
+    {
+      "run_id": "BAX1DEEP_RC08_2102",
+      "prompt_id": "RC08",
+      "family": "RECOVERY_CORRECTION",
+      "seed": 2102,
+      "layer": 1,
+      "step": 84
+    },
+    {
+      "run_id": "BAX1DEEP_MI15-V2_2102",
+      "prompt_id": "MI15-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2102,
+      "layer": 1,
+      "step": 40
+    },
+    {
+      "run_id": "BAX1DEEP_MI15-V2_2102",
+      "prompt_id": "MI15-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2102,
+      "layer": 1,
+      "step": 41
+    },
+    {
+      "run_id": "BAX1DEEP_MI01_2102",
+      "prompt_id": "MI01",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2102,
+      "layer": 0,
+      "step": 20
+    },
+    {
+      "run_id": "BAX1DEEP_MI14-V2_2102",
+      "prompt_id": "MI14-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2102,
+      "layer": 1,
+      "step": 5
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2102",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2102,
+      "layer": 0,
+      "step": 15
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2102",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2102,
+      "layer": 0,
+      "step": 41
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2102",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2102,
+      "layer": 1,
+      "step": 41
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2102",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2102,
+      "layer": 1,
+      "step": 142
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2102",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2102,
+      "layer": 1,
+      "step": 168
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2102",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 112
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2102",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 150
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2102",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 160
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2102",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 161
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2102",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 177
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2102",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 195
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2102",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 199
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2102",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 204
+    },
+    {
+      "run_id": "BAX1DEEP_MI06-V2_2102",
+      "prompt_id": "MI06-V2",
+      "family": "MULTISTEP_INSTRUCTION",
+      "seed": 2102,
+      "layer": 20,
+      "step": 163
+    },
+    {
+      "run_id": "BAX1DEEP_SO06-V2_2102",
+      "prompt_id": "SO06-V2",
+      "family": "STRUCTURED_OUTPUT",
+      "seed": 2102,
+      "layer": 0,
+      "step": 6
+    },
+    {
+      "run_id": "BAX1DEEP_SO06-V2_2102",
+      "prompt_id": "SO06-V2",
+      "family": "STRUCTURED_OUTPUT",
+      "seed": 2102,
+      "layer": 0,
+      "step": 17
+    },
+    {
+      "run_id": "BAX1DEEP_SO03-V2_2102",
+      "prompt_id": "SO03-V2",
+      "family": "STRUCTURED_OUTPUT",
+      "seed": 2102,
+      "layer": 5,
+      "step": 60
+    },
+    {
+      "run_id": "BAX1DEEP_SO03-V2_2102",
+      "prompt_id": "SO03-V2",
+      "family": "STRUCTURED_OUTPUT",
+      "seed": 2102,
+      "layer": 20,
+      "step": 41
+    },
+    {
+      "run_id": "BAX1DEEP_DE08-V2_2102",
+      "prompt_id": "DE08-V2",
+      "family": "DOCUMENT_EXTRACTION",
+      "seed": 2102,
+      "layer": 0,
+      "step": 0
+    },
+    {
+      "run_id": "BAX1DEEP_TR19_2102",
+      "prompt_id": "TR19",
+      "family": "TRANSFORMATION",
+      "seed": 2102,
+      "layer": 0,
+      "step": 16
+    },
+    {
+      "run_id": "BAX1DEEP_TR19_2102",
+      "prompt_id": "TR19",
+      "family": "TRANSFORMATION",
+      "seed": 2102,
+      "layer": 20,
+      "step": 17
+    },
+    {
+      "run_id": "BAX1DEEP_TR09-V2_2102",
+      "prompt_id": "TR09-V2",
+      "family": "TRANSFORMATION",
+      "seed": 2102,
+      "layer": 5,
+      "step": 27
+    },
+    {
+      "run_id": "BAX1DEEP_CO04_2102",
+      "prompt_id": "CO04",
+      "family": "CODING",
+      "seed": 2102,
+      "layer": 5,
+      "step": 14
+    },
+    {
+      "run_id": "BAX1DEEP_CO04_2102",
+      "prompt_id": "CO04",
+      "family": "CODING",
+      "seed": 2102,
+      "layer": 20,
+      "step": 8
+    },
+    {
+      "run_id": "BAX1DEEP_CO08_2102",
+      "prompt_id": "CO08",
+      "family": "CODING",
+      "seed": 2102,
+      "layer": 0,
+      "step": 32
+    },
+    {
+      "run_id": "BAX1DEEP_CO08_2102",
+      "prompt_id": "CO08",
+      "family": "CODING",
+      "seed": 2102,
+      "layer": 0,
+      "step": 142
+    },
+    {
+      "run_id": "BAX1DEEP_CO08_2102",
+      "prompt_id": "CO08",
+      "family": "CODING",
+      "seed": 2102,
+      "layer": 1,
+      "step": 60
+    },
+    {
+      "run_id": "BAX1DEEP_CO08_2102",
+      "prompt_id": "CO08",
+      "family": "CODING",
+      "seed": 2102,
+      "layer": 1,
+      "step": 155
+    },
+    {
+      "run_id": "BAX1DEEP_CO08_2102",
+      "prompt_id": "CO08",
+      "family": "CODING",
+      "seed": 2102,
+      "layer": 5,
+      "step": 53
+    },
+    {
+      "run_id": "BAX1DEEP_CO09_2102",
+      "prompt_id": "CO09",
+      "family": "CODING",
+      "seed": 2102,
+      "layer": 0,
+      "step": 18
+    },
+    {
+      "run_id": "BAX1DEEP_CO09_2102",
+      "prompt_id": "CO09",
+      "family": "CODING",
+      "seed": 2102,
+      "layer": 1,
+      "step": 105
+    },
+    {
+      "run_id": "BAX1DEEP_CO09_2102",
+      "prompt_id": "CO09",
+      "family": "CODING",
+      "seed": 2102,
+      "layer": 1,
+      "step": 149
+    },
+    {
+      "run_id": "BAX1DEEP_CO09_2102",
+      "prompt_id": "CO09",
+      "family": "CODING",
+      "seed": 2102,
+      "layer": 20,
+      "step": 14
+    },
+    {
+      "run_id": "BAX1DEEP_CO09_2102",
+      "prompt_id": "CO09",
+      "family": "CODING",
+      "seed": 2102,
+      "layer": 20,
+      "step": 80
+    },
+    {
+      "run_id": "BAX1DEEP_MR07_2103",
+      "prompt_id": "MR07",
+      "family": "MATH_REASONING",
+      "seed": 2103,
+      "layer": 1,
+      "step": 16
+    },
+    {
+      "run_id": "BAX1DEEP_MR07_2103",
+      "prompt_id": "MR07",
+      "family": "MATH_REASONING",
+      "seed": 2103,
+      "layer": 20,
+      "step": 0
+    },
+    {
+      "run_id": "BAX1DEEP_GI06-V2_2103",
+      "prompt_id": "GI06-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2103,
+      "layer": 0,
+      "step": 59
+    },
+    {
+      "run_id": "BAX1DEEP_GI06-V2_2103",
+      "prompt_id": "GI06-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2103,
+      "layer": 1,
+      "step": 59
+    },
+    {
+      "run_id": "BAX1DEEP_GI06-V2_2103",
+      "prompt_id": "GI06-V2",
+      "family": "GENERAL_INSTRUCTION",
+      "seed": 2103,
+      "layer": 20,
+      "step": 45
+    }
+  ],
+  "network_edges_promoted": 0,
+  "new_landmarks_promoted": 0
+}

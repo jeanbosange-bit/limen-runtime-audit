@@ -1,0 +1,66 @@
+{
+  "n_checked": 3,
+  "checks": [
+    {
+      "run_id": "BAX1DEEP_MR13_2101",
+      "status": "SUCCESS",
+      "checks": {
+        "H_layers_25": true,
+        "Q_layers_24_heads_14": true,
+        "K_layers_24_kvheads_2": true,
+        "V_layers_24_kvheads_2": true,
+        "attn_layers_24_heads_14": true,
+        "attn_out_layers_24": true,
+        "seq_len_alignment_H": true,
+        "seq_len_alignment_Q": true,
+        "seq_len_alignment_K": true,
+        "seq_len_alignment_attn": true,
+        "zero_nan": true,
+        "zero_inf": true,
+        "npz_size_reasonable": true
+      },
+      "pass": true
+    },
+    {
+      "run_id": "BAX1DEEP_MR14_2101",
+      "status": "SUCCESS",
+      "checks": {
+        "H_layers_25": true,
+        "Q_layers_24_heads_14": true,
+        "K_layers_24_kvheads_2": true,
+        "V_layers_24_kvheads_2": true,
+        "attn_layers_24_heads_14": true,
+        "attn_out_layers_24": true,
+        "seq_len_alignment_H": true,
+        "seq_len_alignment_Q": true,
+        "seq_len_alignment_K": true,
+        "seq_len_alignment_attn": true,
+        "zero_nan": true,
+        "zero_inf": true,
+        "npz_size_reasonable": true
+      },
+      "pass": true
+    },
+    {
+      "run_id": "BAX1DEEP_MR12_2101",
+      "status": "SUCCESS",
+      "checks": {
+        "H_layers_25": true,
+        "Q_layers_24_heads_14": true,
+        "K_layers_24_kvheads_2": true,
+        "V_layers_24_kvheads_2": true,
+        "attn_layers_24_heads_14": true,
+        "attn_out_layers_24": true,
+        "seq_len_alignment_H": true,
+        "seq_len_alignment_Q": true,
+        "seq_len_alignment_K": true,
+        "seq_len_alignment_attn": true,
+        "zero_nan": true,
+        "zero_inf": true,
+        "npz_size_reasonable": true
+      },
+      "pass": true
+    }
+  ],
+  "overall_pass": true
+}
