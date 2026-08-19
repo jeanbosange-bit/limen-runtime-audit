@@ -1,0 +1,41 @@
+{
+  "gate": "REFERENCE ROUTE PROPERTY PROFILE V0",
+  "status": "EXECUTED, READ-ONLY",
+  "date": "2026-08-19",
+  "new_generations": 0,
+  "source_runs": 144,
+  "route_tested": "L0 -> L5 -> L20",
+  "route_status_inherited": "REFERENCE_ROUTE_SUPPORTED (reports/composite-reference-route-v0, unaltered)",
+  "scientific_source_artifacts_modified": false,
+  "required_deliverables": [
+    "FROZEN_PROPERTY_PROTOCOL.md", "SOURCE_PROVENANCE.json", "ROUTE_GROUP_REGISTRY.json",
+    "ROUTE_OCCURRENCE_PROFILE.json", "ROUTE_LOCAL_WINDOWS.csv", "H_ROUTE_PROPERTIES.csv",
+    "Q_ROUTE_PROPERTIES.csv", "K_ROUTE_PROPERTIES.csv", "V_ROUTE_PROPERTIES.csv",
+    "ATTENTION_ROUTE_PROPERTIES.csv", "ATTENTION_OUTPUT_ROUTE_PROPERTIES.csv",
+    "LOGIT_PROBABILITY_ROUTE_PROPERTIES.csv", "ROUTE_GROUP_COMPARISONS.json",
+    "FAMILY_CONFOUND_AUDIT.json", "SEED_ROBUSTNESS_AUDIT.json", "LENGTH_CONFOUND_AUDIT.json",
+    "ROUTE_PROPERTY_REGISTRY.json", "ROUTE_PASSPORT_L0_L5_L20.json",
+    "STAR_COMMAND_ROUTE_CARD_CONTRACT.json", "ROUTE_MAP_LINK.json", "EPISTEMIC_STATUS.md",
+    "REPORT.md", "MANIFEST.json", "SHA256SUMS.txt"
+  ],
+  "supporting_files_not_required": ["build_groups_and_profile.py", "build_local_windows.py",
+    "build_comparisons.py", "build_confounds_and_registry.py", "build_product_layer.py",
+    "GROUPS_CACHE.json", "ROUTE_FIRST_STEPS_CACHE.json", "TENSOR_GROUP_ROWS_CACHE.json", "COMPARISON_CACHE.json"],
+  "groups": {"ROUTE_FULL": 8, "L0_L5_ONLY": 12, "L0_L20_ONLY": 8, "OTHER_LANDMARK_ROUTE": 59, "NO_LANDMARK": 40, "SHORT_NON_EVALUABLE": 17},
+  "route_occurrence": {"run_count": 8, "prompt_count": 7, "family_breadth": 6, "seed_breadth": 2},
+  "property_results": {
+    "n_predeclared_tests": 48, "n_evaluable_tests": 48,
+    "H_supported_low_none": [0, 2, 0], "Q_supported_low_none": [0, 1, 0], "K_supported_low_none": [0, 0, 1],
+    "V_supported_low_none": [0, 1, 0], "attention_supported_low_none": [0, 2, 0],
+    "attention_output_supported_low_none": [0, 1, 1], "logit_probability_supported_low_none": [0, 2, 1],
+    "total_supported": 0, "total_low_support": 9, "total_not_established": 3
+  },
+  "family_confound": "PARTIAL (3 of 9 LOW_SUPPORT properties confounded)",
+  "seed_robustness": "PARTIAL (3 of 9 LOW_SUPPORT properties seed-sensitive)",
+  "length_confound": "PARTIAL (flagged risk for all 9 LOW_SUPPORT properties, not exhaustively tested, n=8 too small)",
+  "route_passport": "PASS", "human_language_contract": "PASS", "crossaxis_route_link": "PASS",
+  "control": "NO", "sra_x": "NOT_TESTED", "vbe": "NOT_TESTED", "failure_prediction": "NOT_TESTED", "safe_unsafe": "NOT_ESTABLISHED",
+  "causal_claim": "NO",
+  "final_verdict": "REFERENCE_ROUTE_PROPERTY_PROFILE_PARTIAL",
+  "hashes_file": "SHA256SUMS.txt"
+}

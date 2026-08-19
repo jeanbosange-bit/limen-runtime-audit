@@ -1,0 +1,40 @@
+{
+  "status": "FROZEN_PRE_ANALYSIS",
+  "note": "Predeclared before any route count is inspected. Not altered after seeing data. Includes the primary candidate (L0->L5->L20) alongside its 5 permutation siblings and comparable full-permutation treatment of every other 3-node subset of the 4 frozen nodes -- per mission section 4's explicit instruction not to test only the hoped-for route.",
+  "node_subsets_tested": [["L0", "L5", "L20"], ["L0", "L1", "L5"], ["L0", "L1", "L20"], ["L1", "L5", "L20"]],
+  "n_subsets": 4,
+  "permutations_per_subset": 6,
+  "routes": [
+    {"route": ["L0", "L5", "L20"], "primary_candidate": true},
+    {"route": ["L0", "L20", "L5"], "primary_candidate": false},
+    {"route": ["L5", "L0", "L20"], "primary_candidate": false},
+    {"route": ["L5", "L20", "L0"], "primary_candidate": false},
+    {"route": ["L20", "L0", "L5"], "primary_candidate": false},
+    {"route": ["L20", "L5", "L0"], "primary_candidate": false},
+    {"route": ["L0", "L1", "L5"], "primary_candidate": false},
+    {"route": ["L0", "L5", "L1"], "primary_candidate": false},
+    {"route": ["L1", "L0", "L5"], "primary_candidate": false},
+    {"route": ["L1", "L5", "L0"], "primary_candidate": false},
+    {"route": ["L5", "L0", "L1"], "primary_candidate": false},
+    {"route": ["L5", "L1", "L0"], "primary_candidate": false},
+    {"route": ["L0", "L1", "L20"], "primary_candidate": false},
+    {"route": ["L0", "L20", "L1"], "primary_candidate": false},
+    {"route": ["L1", "L0", "L20"], "primary_candidate": false},
+    {"route": ["L1", "L20", "L0"], "primary_candidate": false},
+    {"route": ["L20", "L0", "L1"], "primary_candidate": false},
+    {"route": ["L20", "L1", "L0"], "primary_candidate": false},
+    {"route": ["L1", "L5", "L20"], "primary_candidate": false},
+    {"route": ["L1", "L20", "L5"], "primary_candidate": false},
+    {"route": ["L5", "L1", "L20"], "primary_candidate": false},
+    {"route": ["L5", "L20", "L1"], "primary_candidate": false},
+    {"route": ["L20", "L1", "L5"], "primary_candidate": false},
+    {"route": ["L20", "L5", "L1"], "primary_candidate": false}
+  ],
+  "n_total_candidates": 24,
+  "known_constituent_edge_context": {
+    "L0->L5": "REFERENCE_EDGE_SUPPORTED (Reference Landmark Network V1)",
+    "L0->L20": "REFERENCE_EDGE_SUPPORTED (Reference Landmark Network V1)",
+    "all_other_directed_pairs": "REFERENCE_EDGE_LOW_SUPPORT (Reference Landmark Network V1)",
+    "disclosure": "This context is reported for interpretation only, per mission section 9 -- it does NOT pre-select which of the 24 candidates are tested (all 24 are tested identically) and does NOT lower the bar for any route's own validation."
+  }
+}

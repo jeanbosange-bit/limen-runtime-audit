@@ -1,0 +1,80 @@
+{
+  "route_id": "reference_route_a_l0_l5_l20",
+  "landmarks": [
+    {
+      "id": "L0",
+      "layer": 0,
+      "position_in_route": "occurs first"
+    },
+    {
+      "id": "L5",
+      "layer": 5,
+      "position_in_route": "intermediate confirmed landmark in this route"
+    },
+    {
+      "id": "L20",
+      "layer": 20,
+      "position_in_route": "occurs later in this route"
+    }
+  ],
+  "support": {
+    "run_count": 8,
+    "prompt_count": 7
+  },
+  "families": {
+    "CONSTRAINT_FOLLOWING": 1,
+    "SUMMARIZATION": 1,
+    "MULTISTEP_INSTRUCTION": 2,
+    "GENERAL_INSTRUCTION": 2,
+    "RECOVERY_CORRECTION": 1,
+    "CODING": 1
+  },
+  "seeds": {
+    "2103": 5,
+    "2102": 3
+  },
+  "properties": {
+    "H_norm": "ROUTE_PROPERTY_LOW_SUPPORT",
+    "H_curvature": "ROUTE_PROPERTY_LOW_SUPPORT",
+    "Q_norm": "ROUTE_PROPERTY_LOW_SUPPORT",
+    "K_norm": "ROUTE_PROPERTY_NOT_ESTABLISHED",
+    "V_norm": "ROUTE_PROPERTY_LOW_SUPPORT",
+    "A_dispersion": "ROUTE_PROPERTY_LOW_SUPPORT",
+    "A_concentration": "ROUTE_PROPERTY_LOW_SUPPORT",
+    "Oattn_norm": "ROUTE_PROPERTY_NOT_ESTABLISHED",
+    "Oattn_delta_norm": "ROUTE_PROPERTY_LOW_SUPPORT",
+    "probability_entropy": "ROUTE_PROPERTY_LOW_SUPPORT",
+    "probability_top2_gap": "ROUTE_PROPERTY_LOW_SUPPORT",
+    "logit_norm": "ROUTE_PROPERTY_NOT_ESTABLISHED"
+  },
+  "evidence_refs": [
+    "reports/composite-reference-route-v0/ROUTE_VALIDATION_RESULTS.json",
+    "reports/reference-landmark-network-v1/EDGE_VALIDATION_RESULTS.json",
+    "reports/atlas-coverage-analysis-v1/LANDMARK_REPLICATION_RESULTS.json",
+    "reports/multi-tensor-landmarks-v0/FROZEN_LANDMARK_REGISTRY.json"
+  ],
+  "unknowns": [
+    "6 of 12 prompt families never observed with this route",
+    "seed 2101 never observed with this route",
+    "no tensor property yet shown uniquely distinctive to this route vs. other landmark-bearing executions"
+  ],
+  "crossaxis_coordinate_system": "(run_id, step, layer) -- canonical linking coordinate, per reports/multi-tensor-atlas-v0",
+  "drill_down_path": [
+    "Map",
+    "Route",
+    "Landmark",
+    "Step",
+    "Layer",
+    "Tensor",
+    "Evidence"
+  ],
+  "drill_up_path": [
+    "Tensor observation",
+    "Landmark",
+    "Route",
+    "Model execution",
+    "Mission / Agent (when available)"
+  ],
+  "control": "NO",
+  "sra_x": "NOT_TESTED"
+}

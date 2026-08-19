@@ -1,0 +1,178 @@
+{
+  "schema": "NetworkExtensionGraph -- 3-node composite routes over the frozen landmark network, extends reference-landmark-network-v1/NETWORK_GRAPH.json",
+  "base_network_supported_edges": [
+    "L0->L5",
+    "L0->L20"
+  ],
+  "composite_routes": [
+    {
+      "route": [
+        "L0",
+        "L5",
+        "L20"
+      ],
+      "signature": "L0-L5-L20",
+      "status": "REFERENCE_ROUTE_SUPPORTED",
+      "observed_count": 8,
+      "n_families": 6,
+      "n_seeds": 2,
+      "holm_adjusted_p": 0.007199280071992801
+    },
+    {
+      "route": [
+        "L0",
+        "L20",
+        "L5"
+      ],
+      "signature": "L0-L20-L5",
+      "status": "REFERENCE_ROUTE_LOW_SUPPORT",
+      "observed_count": 5,
+      "n_families": 4,
+      "n_seeds": 2,
+      "holm_adjusted_p": 0.43255674432556745
+    },
+    {
+      "route": [
+        "L0",
+        "L1",
+        "L5"
+      ],
+      "signature": "L0-L1-L5",
+      "status": "REFERENCE_ROUTE_LOW_SUPPORT",
+      "observed_count": 7,
+      "n_families": 5,
+      "n_seeds": 2,
+      "holm_adjusted_p": 0.25737426257374263
+    },
+    {
+      "route": [
+        "L0",
+        "L5",
+        "L1"
+      ],
+      "signature": "L0-L5-L1",
+      "status": "REFERENCE_ROUTE_LOW_SUPPORT",
+      "observed_count": 6,
+      "n_families": 4,
+      "n_seeds": 2,
+      "holm_adjusted_p": 0.6379362063793621
+    },
+    {
+      "route": [
+        "L1",
+        "L0",
+        "L5"
+      ],
+      "signature": "L1-L0-L5",
+      "status": "REFERENCE_ROUTE_LOW_SUPPORT",
+      "observed_count": 3,
+      "n_families": 3,
+      "n_seeds": 2,
+      "holm_adjusted_p": 1.0
+    },
+    {
+      "route": [
+        "L0",
+        "L1",
+        "L20"
+      ],
+      "signature": "L0-L1-L20",
+      "status": "REFERENCE_ROUTE_LOW_SUPPORT",
+      "observed_count": 6,
+      "n_families": 5,
+      "n_seeds": 2,
+      "holm_adjusted_p": 0.0597940205979402
+    },
+    {
+      "route": [
+        "L0",
+        "L20",
+        "L1"
+      ],
+      "signature": "L0-L20-L1",
+      "status": "REFERENCE_ROUTE_LOW_SUPPORT",
+      "observed_count": 3,
+      "n_families": 2,
+      "n_seeds": 1,
+      "holm_adjusted_p": 1.0
+    },
+    {
+      "route": [
+        "L1",
+        "L5",
+        "L20"
+      ],
+      "signature": "L1-L5-L20",
+      "status": "REFERENCE_ROUTE_LOW_SUPPORT",
+      "observed_count": 3,
+      "n_families": 3,
+      "n_seeds": 2,
+      "holm_adjusted_p": 1.0
+    },
+    {
+      "route": [
+        "L1",
+        "L20",
+        "L5"
+      ],
+      "signature": "L1-L20-L5",
+      "status": "REFERENCE_ROUTE_LOW_SUPPORT",
+      "observed_count": 4,
+      "n_families": 3,
+      "n_seeds": 2,
+      "holm_adjusted_p": 1.0
+    },
+    {
+      "route": [
+        "L5",
+        "L20",
+        "L1"
+      ],
+      "signature": "L5-L20-L1",
+      "status": "REFERENCE_ROUTE_LOW_SUPPORT",
+      "observed_count": 2,
+      "n_families": 2,
+      "n_seeds": 1,
+      "holm_adjusted_p": 1.0
+    },
+    {
+      "route": [
+        "L20",
+        "L1",
+        "L5"
+      ],
+      "signature": "L20-L1-L5",
+      "status": "REFERENCE_ROUTE_LOW_SUPPORT",
+      "observed_count": 2,
+      "n_families": 2,
+      "n_seeds": 2,
+      "holm_adjusted_p": 1.0
+    }
+  ],
+  "branching_vs_composition": {
+    "primary_candidate": "L0-L5-L20",
+    "primary_candidate_status": "REFERENCE_ROUTE_SUPPORTED",
+    "runs_supporting_L0_before_L5": 25,
+    "runs_supporting_L0_before_L20": 21,
+    "runs_supporting_both_branches_any_order": 16,
+    "runs_supporting_full_composite_order": 8,
+    "runs_with_both_branches_but_not_composite_order": 8,
+    "branch_only_run_ids": [
+      "BAX1DEEP_AH11_2103",
+      "BAX1DEEP_CO04_2103",
+      "BAX1DEEP_CO09_2101",
+      "BAX1DEEP_CO09_2103",
+      "BAX1DEEP_GI01-V3_2101",
+      "BAX1DEEP_MI06-V2_2101",
+      "BAX1DEEP_MI06-V2_2103",
+      "BAX1DEEP_SU18_2103"
+    ],
+    "verdict": "COMPOSITION_SUPPORTED",
+    "verdict_rule": "reports/composite-reference-route-v0/FROZEN_ROUTE_PROTOCOL.md#branching-vs-composition"
+  },
+  "explicit_non_claims": [
+    "No route is causal.",
+    "No node initiates, mediates, or terminates anything.",
+    "This is not a reasoning path or decision path."
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "H_norm": {
+    "per_seed": {
+      "2102": {
+        "n": 9,
+        "p_raw": 0.6339606825352575,
+        "significant": false
+      },
+      "2103": {
+        "n": 15,
+        "p_raw": 0.3082946590903132,
+        "significant": false
+      }
+    },
+    "label": "SEED_STABLE"
+  },
+  "H_curvature": {
+    "per_seed": {
+      "2102": {
+        "n": 9,
+        "p_raw": 0.022661479045960907,
+        "significant": true
+      },
+      "2103": {
+        "n": 15,
+        "p_raw": 0.016162533893584633,
+        "significant": true
+      }
+    },
+    "label": "SEED_STABLE"
+  },
+  "Q_norm": {
+    "per_seed": {
+      "2102": {
+        "n": 9,
+        "p_raw": 0.23479892535988067,
+        "significant": false
+      },
+      "2103": {
+        "n": 15,
+        "p_raw": 0.2012900068436474,
+        "significant": false
+      }
+    },
+    "label": "SEED_STABLE"
+  },
+  "V_norm": {
+    "per_seed": {
+      "2102": {
+        "n": 9,
+        "p_raw": 0.7080653808785197,
+        "significant": false
+      },
+      "2103": {
+        "n": 15,
+        "p_raw": 0.4558337816924123,
+        "significant": false
+      }
+    },
+    "label": "SEED_STABLE"
+  },
+  "A_dispersion": {
+    "per_seed": {
+      "2102": {
+        "n": 9,
+        "p_raw": 0.2069293299500654,
+        "significant": false
+      },
+      "2103": {
+        "n": 15,
+        "p_raw": 0.814546428490533,
+        "significant": false
+      }
+    },
+    "label": "SEED_STABLE"
+  },
+  "A_concentration": {
+    "per_seed": {
+      "2102": {
+        "n": 9,
+        "p_raw": 0.34801296243350566,
+        "significant": false
+      },
+      "2103": {
+        "n": 15,
+        "p_raw": 0.5970508043604918,
+        "significant": false
+      }
+    },
+    "label": "SEED_STABLE"
+  },
+  "Oattn_delta_norm": {
+    "per_seed": {
+      "2102": {
+        "n": 9,
+        "p_raw": 4.2900954241682036e-05,
+        "significant": true
+      },
+      "2103": {
+        "n": 15,
+        "p_raw": 0.20628391733751517,
+        "significant": false
+      }
+    },
+    "label": "SEED_SENSITIVE"
+  },
+  "probability_entropy": {
+    "per_seed": {
+      "2102": {
+        "n": 9,
+        "p_raw": 0.43967430727952916,
+        "significant": false
+      },
+      "2103": {
+        "n": 15,
+        "p_raw": 0.003515260868430887,
+        "significant": true
+      }
+    },
+    "label": "SEED_SENSITIVE"
+  },
+  "probability_top2_gap": {
+    "per_seed": {
+      "2102": {
+        "n": 9,
+        "p_raw": 0.3335010717619018,
+        "significant": false
+      },
+      "2103": {
+        "n": 15,
+        "p_raw": 0.0007789971575590111,
+        "significant": true
+      }
+    },
+    "label": "SEED_SENSITIVE"
+  }
+}

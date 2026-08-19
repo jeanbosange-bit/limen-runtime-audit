@@ -1,0 +1,44 @@
+{
+  "H": {
+    "OTHER_LANDMARK_ROUTE": 477,
+    "L0_L5_ONLY": 150,
+    "L0_L20_ONLY": 81,
+    "ROUTE_FULL": 24
+  },
+  "Q": {
+    "OTHER_LANDMARK_ROUTE": 477,
+    "L0_L5_ONLY": 150,
+    "L0_L20_ONLY": 81,
+    "ROUTE_FULL": 24
+  },
+  "K": {
+    "OTHER_LANDMARK_ROUTE": 477,
+    "L0_L5_ONLY": 150,
+    "L0_L20_ONLY": 81,
+    "ROUTE_FULL": 24
+  },
+  "V": {
+    "OTHER_LANDMARK_ROUTE": 477,
+    "L0_L5_ONLY": 150,
+    "L0_L20_ONLY": 81,
+    "ROUTE_FULL": 24
+  },
+  "ATTENTION": {
+    "OTHER_LANDMARK_ROUTE": 477,
+    "L0_L5_ONLY": 150,
+    "L0_L20_ONLY": 81,
+    "ROUTE_FULL": 24
+  },
+  "ATTENTION_OUTPUT": {
+    "OTHER_LANDMARK_ROUTE": 477,
+    "L0_L5_ONLY": 150,
+    "L0_L20_ONLY": 81,
+    "ROUTE_FULL": 24
+  },
+  "LOGIT_PROBABILITY": {
+    "OTHER_LANDMARK_ROUTE": 477,
+    "L0_L5_ONLY": 150,
+    "L0_L20_ONLY": 81,
+    "ROUTE_FULL": 24
+  }
+}

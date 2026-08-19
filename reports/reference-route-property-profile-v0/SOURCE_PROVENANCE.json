@@ -1,0 +1,16 @@
+{
+  "status": "VERIFIED_READ_ONLY",
+  "sources": [
+    {"path": "reports/composite-reference-route-v0/OBS_CACHE.json", "role": "ROUTE_FULL membership (8 runs supporting L0-L5-L20)"},
+    {"path": "reports/reference-landmark-network-v1/RELATIONS_CACHE.json", "role": "L0->L5 / L0->L20 edge support, landmark-bearing run pool"},
+    {"path": "reports/atlas-coverage-analysis-v1/RUN_ELIGIBILITY_AUDIT.csv", "role": "144-run family/seed/length/eligibility metadata"},
+    {"path": "reports/atlas-coverage-analysis-v1/PASS1_CACHE.json", "role": "305 raw landmark events with exact step numbers"},
+    {"path": "reports/atlas-coverage-analysis-v1/H_LOCAL_PROPERTIES.csv, Q_/K_/V_/ATTENTION_/ATTENTION_OUTPUT_/LOGIT_PROBABILITY_LOCAL_PROPERTIES.csv", "role": "already-computed local-window (t-1/t/t+1) tensor descriptors -- reused directly, no npz reload"},
+    {"path": "reports/atlas-coverage-analysis-v1/PASS2_SERIES_SUMMARY_CACHE.json", "role": "per-run-layer mean tensor values, used for the NO_LANDMARK comparison population"}
+  ],
+  "read_only_never_modified_this_gate": [
+    "reports/bcc-atlas-expansion-v1/ATLAS_DEEP/", "reports/atlas-coverage-analysis-v1/",
+    "reports/reference-landmark-network-v1/", "reports/composite-reference-route-v0/"
+  ],
+  "this_gate_output_directory": "reports/reference-route-property-profile-v0/ (new, confirmed empty via ls -la before first write)"
+}

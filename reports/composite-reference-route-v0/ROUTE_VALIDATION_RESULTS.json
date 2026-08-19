@@ -1,0 +1,458 @@
+{
+  "L0-L5-L20": {
+    "route": [
+      "L0",
+      "L5",
+      "L20"
+    ],
+    "observed_count": 8,
+    "n_families": 6,
+    "n_seeds": 2,
+    "n_prompt_ids": 7,
+    "raw_p": 0.00029997000299970003,
+    "holm_adjusted_p": 0.007199280071992801,
+    "leave_family_out_stability": "STABLE",
+    "constituent_edge_statuses": {
+      "L0->L5": "REFERENCE_EDGE_SUPPORTED",
+      "L5->L20": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "status": "REFERENCE_ROUTE_SUPPORTED"
+  },
+  "L0-L20-L5": {
+    "route": [
+      "L0",
+      "L20",
+      "L5"
+    ],
+    "observed_count": 5,
+    "n_families": 4,
+    "n_seeds": 2,
+    "n_prompt_ids": 4,
+    "raw_p": 0.020597940205979402,
+    "holm_adjusted_p": 0.43255674432556745,
+    "leave_family_out_stability": "STABLE",
+    "constituent_edge_statuses": {
+      "L0->L20": "REFERENCE_EDGE_SUPPORTED",
+      "L20->L5": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "status": "REFERENCE_ROUTE_LOW_SUPPORT"
+  },
+  "L5-L0-L20": {
+    "route": [
+      "L5",
+      "L0",
+      "L20"
+    ],
+    "observed_count": 0,
+    "n_families": 0,
+    "n_seeds": 0,
+    "n_prompt_ids": 0,
+    "raw_p": 1.0,
+    "holm_adjusted_p": 1.0,
+    "leave_family_out_stability": "NOT_EVALUABLE",
+    "constituent_edge_statuses": {
+      "L5->L0": "REFERENCE_EDGE_LOW_SUPPORT",
+      "L0->L20": "REFERENCE_EDGE_SUPPORTED"
+    },
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L5-L20-L0": {
+    "route": [
+      "L5",
+      "L20",
+      "L0"
+    ],
+    "observed_count": 0,
+    "n_families": 0,
+    "n_seeds": 0,
+    "n_prompt_ids": 0,
+    "raw_p": 1.0,
+    "holm_adjusted_p": 1.0,
+    "leave_family_out_stability": "NOT_EVALUABLE",
+    "constituent_edge_statuses": {
+      "L5->L20": "REFERENCE_EDGE_LOW_SUPPORT",
+      "L20->L0": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L20-L0-L5": {
+    "route": [
+      "L20",
+      "L0",
+      "L5"
+    ],
+    "observed_count": 0,
+    "n_families": 0,
+    "n_seeds": 0,
+    "n_prompt_ids": 0,
+    "raw_p": 1.0,
+    "holm_adjusted_p": 1.0,
+    "leave_family_out_stability": "NOT_EVALUABLE",
+    "constituent_edge_statuses": {
+      "L20->L0": "REFERENCE_EDGE_LOW_SUPPORT",
+      "L0->L5": "REFERENCE_EDGE_SUPPORTED"
+    },
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L20-L5-L0": {
+    "route": [
+      "L20",
+      "L5",
+      "L0"
+    ],
+    "observed_count": 0,
+    "n_families": 0,
+    "n_seeds": 0,
+    "n_prompt_ids": 0,
+    "raw_p": 1.0,
+    "holm_adjusted_p": 1.0,
+    "leave_family_out_stability": "NOT_EVALUABLE",
+    "constituent_edge_statuses": {
+      "L20->L5": "REFERENCE_EDGE_LOW_SUPPORT",
+      "L5->L0": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L1-L5": {
+    "route": [
+      "L0",
+      "L1",
+      "L5"
+    ],
+    "observed_count": 7,
+    "n_families": 5,
+    "n_seeds": 2,
+    "n_prompt_ids": 6,
+    "raw_p": 0.011698830116988301,
+    "holm_adjusted_p": 0.25737426257374263,
+    "leave_family_out_stability": "STABLE",
+    "constituent_edge_statuses": {
+      "L0->L1": "REFERENCE_EDGE_LOW_SUPPORT",
+      "L1->L5": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "status": "REFERENCE_ROUTE_LOW_SUPPORT"
+  },
+  "L0-L5-L1": {
+    "route": [
+      "L0",
+      "L5",
+      "L1"
+    ],
+    "observed_count": 6,
+    "n_families": 4,
+    "n_seeds": 2,
+    "n_prompt_ids": 5,
+    "raw_p": 0.03189681031896811,
+    "holm_adjusted_p": 0.6379362063793621,
+    "leave_family_out_stability": "STABLE",
+    "constituent_edge_statuses": {
+      "L0->L5": "REFERENCE_EDGE_SUPPORTED",
+      "L5->L1": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "status": "REFERENCE_ROUTE_LOW_SUPPORT"
+  },
+  "L1-L0-L5": {
+    "route": [
+      "L1",
+      "L0",
+      "L5"
+    ],
+    "observed_count": 3,
+    "n_families": 3,
+    "n_seeds": 2,
+    "n_prompt_ids": 3,
+    "raw_p": 0.6476352364763523,
+    "holm_adjusted_p": 1.0,
+    "leave_family_out_stability": "FAMILY_SENSITIVE",
+    "constituent_edge_statuses": {
+      "L1->L0": "REFERENCE_EDGE_LOW_SUPPORT",
+      "L0->L5": "REFERENCE_EDGE_SUPPORTED"
+    },
+    "status": "REFERENCE_ROUTE_LOW_SUPPORT"
+  },
+  "L1-L5-L0": {
+    "route": [
+      "L1",
+      "L5",
+      "L0"
+    ],
+    "observed_count": 0,
+    "n_families": 0,
+    "n_seeds": 0,
+    "n_prompt_ids": 0,
+    "raw_p": 1.0,
+    "holm_adjusted_p": 1.0,
+    "leave_family_out_stability": "NOT_EVALUABLE",
+    "constituent_edge_statuses": {
+      "L1->L5": "REFERENCE_EDGE_LOW_SUPPORT",
+      "L5->L0": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L5-L0-L1": {
+    "route": [
+      "L5",
+      "L0",
+      "L1"
+    ],
+    "observed_count": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "n_prompt_ids": 1,
+    "raw_p": 0.9596040395960403,
+    "holm_adjusted_p": 1.0,
+    "leave_family_out_stability": "NOT_EVALUABLE",
+    "constituent_edge_statuses": {
+      "L5->L0": "REFERENCE_EDGE_LOW_SUPPORT",
+      "L0->L1": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L5-L1-L0": {
+    "route": [
+      "L5",
+      "L1",
+      "L0"
+    ],
+    "observed_count": 0,
+    "n_families": 0,
+    "n_seeds": 0,
+    "n_prompt_ids": 0,
+    "raw_p": 1.0,
+    "holm_adjusted_p": 1.0,
+    "leave_family_out_stability": "NOT_EVALUABLE",
+    "constituent_edge_statuses": {
+      "L5->L1": "REFERENCE_EDGE_LOW_SUPPORT",
+      "L1->L0": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L0-L1-L20": {
+    "route": [
+      "L0",
+      "L1",
+      "L20"
+    ],
+    "observed_count": 6,
+    "n_families": 5,
+    "n_seeds": 2,
+    "n_prompt_ids": 5,
+    "raw_p": 0.0025997400259974,
+    "holm_adjusted_p": 0.0597940205979402,
+    "leave_family_out_stability": "STABLE",
+    "constituent_edge_statuses": {
+      "L0->L1": "REFERENCE_EDGE_LOW_SUPPORT",
+      "L1->L20": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "status": "REFERENCE_ROUTE_LOW_SUPPORT"
+  },
+  "L0-L20-L1": {
+    "route": [
+      "L0",
+      "L20",
+      "L1"
+    ],
+    "observed_count": 3,
+    "n_families": 2,
+    "n_seeds": 1,
+    "n_prompt_ids": 3,
+    "raw_p": 0.22577742225777422,
+    "holm_adjusted_p": 1.0,
+    "leave_family_out_stability": "FAMILY_SENSITIVE",
+    "constituent_edge_statuses": {
+      "L0->L20": "REFERENCE_EDGE_SUPPORTED",
+      "L20->L1": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "status": "REFERENCE_ROUTE_LOW_SUPPORT"
+  },
+  "L1-L0-L20": {
+    "route": [
+      "L1",
+      "L0",
+      "L20"
+    ],
+    "observed_count": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "n_prompt_ids": 1,
+    "raw_p": 0.8433156684331566,
+    "holm_adjusted_p": 1.0,
+    "leave_family_out_stability": "NOT_EVALUABLE",
+    "constituent_edge_statuses": {
+      "L1->L0": "REFERENCE_EDGE_LOW_SUPPORT",
+      "L0->L20": "REFERENCE_EDGE_SUPPORTED"
+    },
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L1-L20-L0": {
+    "route": [
+      "L1",
+      "L20",
+      "L0"
+    ],
+    "observed_count": 0,
+    "n_families": 0,
+    "n_seeds": 0,
+    "n_prompt_ids": 0,
+    "raw_p": 1.0,
+    "holm_adjusted_p": 1.0,
+    "leave_family_out_stability": "NOT_EVALUABLE",
+    "constituent_edge_statuses": {
+      "L1->L20": "REFERENCE_EDGE_LOW_SUPPORT",
+      "L20->L0": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L20-L0-L1": {
+    "route": [
+      "L20",
+      "L0",
+      "L1"
+    ],
+    "observed_count": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "n_prompt_ids": 1,
+    "raw_p": 0.8876112388761124,
+    "holm_adjusted_p": 1.0,
+    "leave_family_out_stability": "NOT_EVALUABLE",
+    "constituent_edge_statuses": {
+      "L20->L0": "REFERENCE_EDGE_LOW_SUPPORT",
+      "L0->L1": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L20-L1-L0": {
+    "route": [
+      "L20",
+      "L1",
+      "L0"
+    ],
+    "observed_count": 0,
+    "n_families": 0,
+    "n_seeds": 0,
+    "n_prompt_ids": 0,
+    "raw_p": 1.0,
+    "holm_adjusted_p": 1.0,
+    "leave_family_out_stability": "NOT_EVALUABLE",
+    "constituent_edge_statuses": {
+      "L20->L1": "REFERENCE_EDGE_LOW_SUPPORT",
+      "L1->L0": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L1-L5-L20": {
+    "route": [
+      "L1",
+      "L5",
+      "L20"
+    ],
+    "observed_count": 3,
+    "n_families": 3,
+    "n_seeds": 2,
+    "n_prompt_ids": 3,
+    "raw_p": 0.2663733626637336,
+    "holm_adjusted_p": 1.0,
+    "leave_family_out_stability": "FAMILY_SENSITIVE",
+    "constituent_edge_statuses": {
+      "L1->L5": "REFERENCE_EDGE_LOW_SUPPORT",
+      "L5->L20": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "status": "REFERENCE_ROUTE_LOW_SUPPORT"
+  },
+  "L1-L20-L5": {
+    "route": [
+      "L1",
+      "L20",
+      "L5"
+    ],
+    "observed_count": 4,
+    "n_families": 3,
+    "n_seeds": 2,
+    "n_prompt_ids": 4,
+    "raw_p": 0.11508849115088492,
+    "holm_adjusted_p": 1.0,
+    "leave_family_out_stability": "FAMILY_SENSITIVE",
+    "constituent_edge_statuses": {
+      "L1->L20": "REFERENCE_EDGE_LOW_SUPPORT",
+      "L20->L5": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "status": "REFERENCE_ROUTE_LOW_SUPPORT"
+  },
+  "L5-L1-L20": {
+    "route": [
+      "L5",
+      "L1",
+      "L20"
+    ],
+    "observed_count": 1,
+    "n_families": 1,
+    "n_seeds": 1,
+    "n_prompt_ids": 1,
+    "raw_p": 0.9191080891910809,
+    "holm_adjusted_p": 1.0,
+    "leave_family_out_stability": "NOT_EVALUABLE",
+    "constituent_edge_statuses": {
+      "L5->L1": "REFERENCE_EDGE_LOW_SUPPORT",
+      "L1->L20": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  },
+  "L5-L20-L1": {
+    "route": [
+      "L5",
+      "L20",
+      "L1"
+    ],
+    "observed_count": 2,
+    "n_families": 2,
+    "n_seeds": 1,
+    "n_prompt_ids": 2,
+    "raw_p": 0.630936906309369,
+    "holm_adjusted_p": 1.0,
+    "leave_family_out_stability": "NOT_EVALUABLE",
+    "constituent_edge_statuses": {
+      "L5->L20": "REFERENCE_EDGE_LOW_SUPPORT",
+      "L20->L1": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "status": "REFERENCE_ROUTE_LOW_SUPPORT"
+  },
+  "L20-L1-L5": {
+    "route": [
+      "L20",
+      "L1",
+      "L5"
+    ],
+    "observed_count": 2,
+    "n_families": 2,
+    "n_seeds": 2,
+    "n_prompt_ids": 2,
+    "raw_p": 0.6502349765023497,
+    "holm_adjusted_p": 1.0,
+    "leave_family_out_stability": "NOT_EVALUABLE",
+    "constituent_edge_statuses": {
+      "L20->L1": "REFERENCE_EDGE_LOW_SUPPORT",
+      "L1->L5": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "status": "REFERENCE_ROUTE_LOW_SUPPORT"
+  },
+  "L20-L5-L1": {
+    "route": [
+      "L20",
+      "L5",
+      "L1"
+    ],
+    "observed_count": 0,
+    "n_families": 0,
+    "n_seeds": 0,
+    "n_prompt_ids": 0,
+    "raw_p": 1.0,
+    "holm_adjusted_p": 1.0,
+    "leave_family_out_stability": "NOT_EVALUABLE",
+    "constituent_edge_statuses": {
+      "L20->L5": "REFERENCE_EDGE_LOW_SUPPORT",
+      "L5->L1": "REFERENCE_EDGE_LOW_SUPPORT"
+    },
+    "status": "REFERENCE_ROUTE_NOT_SUPPORTED"
+  }
+}

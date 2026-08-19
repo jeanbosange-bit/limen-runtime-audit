@@ -1,0 +1,45 @@
+{
+  "gate": "COMPOSITE REFERENCE ROUTE V0",
+  "status": "EXECUTED, READ-ONLY",
+  "date": "2026-08-19",
+  "new_generations": 0,
+  "source_runs": 144,
+  "edge_eligible_runs_v1": 69,
+  "landmark_bearing_runs": 87,
+  "source_inputs": [
+    {"path": "reports/reference-landmark-network-v1/RELATIONS_CACHE.json", "role": "per-run tie-grouped ordered encounter sequences, read-only"},
+    {"path": "reports/reference-landmark-network-v1/EDGE_VALIDATION_RESULTS.json", "role": "constituent edge status context, read-only"},
+    {"path": "reports/atlas-coverage-analysis-v1/PASS1_CACHE.json", "role": "305 raw events with exact step numbers, read-only"},
+    {"path": "reports/atlas-coverage-analysis-v1/RUN_ELIGIBILITY_AUDIT.csv", "role": "run-level family/seed/length metadata, read-only"}
+  ],
+  "scientific_source_artifacts_modified": false,
+  "required_deliverables": [
+    "FROZEN_ROUTE_PROTOCOL.md", "ROUTE_CANDIDATE_UNIVERSE.json", "ROUTE_OBSERVED_COUNTS.csv",
+    "ROUTE_NULL_RESULTS.csv", "ROUTE_VALIDATION_RESULTS.json", "ROUTE_FAMILY_SUPPORT.csv",
+    "ROUTE_SEED_SUPPORT.csv", "ROUTE_LENGTH_SUPPORT.csv", "ROUTE_TEMPORAL_DISTANCE.csv",
+    "LEAVE_FAMILY_OUT_RESULTS.csv", "BRANCHING_VS_COMPOSITION_ANALYSIS.json",
+    "NETWORK_EXTENSION_GRAPH.json", "STAR_COMMAND_ROUTE_CONTRACT.json", "EPISTEMIC_STATUS.md",
+    "REPORT.md", "MANIFEST.json", "SHA256SUMS.txt"
+  ],
+  "supporting_files_not_required": ["build_composite_routes.py", "build_composite_routes_part2.py",
+    "build_composite_routes_part3.py", "build_composite_routes_part4.py", "OBS_CACHE.json", "NULL_CACHE.json"],
+  "counts": {
+    "candidate_3node_routes_tested": 24,
+    "primary_candidate": "L0-L5-L20",
+    "primary_candidate_status": "REFERENCE_ROUTE_SUPPORTED",
+    "supported_composite_routes": 1, "low_support_composite_routes": 10, "not_supported_composite_routes": 13,
+    "branching_vs_composition_verdict": "COMPOSITION_SUPPORTED",
+    "seed_stable_routes": 1, "family_stable_routes": 1,
+    "L0_to_L5_median_step_distance": 64.5, "L0_to_L20_median_step_distance": 94.5, "L5_to_L20_median_step_distance": 38.5
+  },
+  "null_model": {
+    "type": "within-run landmark-label permutation, group-preserving (reused from reference-landmark-network-v1)",
+    "n_permutations": 10000, "rng_seed": 20260818,
+    "correction": "Holm, family of 24 predeclared route candidates"
+  },
+  "bug_found_this_gate": false,
+  "control": "NO", "sra_x": "NOT_TESTED",
+  "causal_claim": "NO", "intervention": "NO", "steering": "NO", "navigation_policy": "NO",
+  "final_verdict": "COMPOSITE_REFERENCE_ROUTE_PARTIAL",
+  "hashes_file": "SHA256SUMS.txt"
+}

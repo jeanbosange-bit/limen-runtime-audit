@@ -1,0 +1,23 @@
+{
+  "route_full_length_bin_distribution": {
+    "LONG_50_PLUS": 7,
+    "MEDIUM_10_49": 1
+  },
+  "no_landmark_length_bin_distribution": {
+    "MEDIUM_10_49": 25,
+    "SHORT_1_9": 15
+  },
+  "route_full_concentrated_in_long": true,
+  "note": "ROUTE_FULL's generation-length distribution (median 130 steps, min 48) is concentrated in LONG_50_PLUS/upper-MEDIUM relative to the overall Lane B population. This is expected: reaching 3 distinct ordered landmark encounters mechanically requires more decode steps than reaching 0 or 1. Length-matched sub-comparison not run for individual properties in this gate (sample too small to stratify further, n=8) -- flagged as a standing LENGTH_CONFOUND risk for any property found significant against NO_LANDMARK specifically, rather than tested exhaustively.",
+  "properties_flagged_length_confound_risk": [
+    "H_norm",
+    "H_curvature",
+    "Q_norm",
+    "V_norm",
+    "A_dispersion",
+    "A_concentration",
+    "Oattn_delta_norm",
+    "probability_entropy",
+    "probability_top2_gap"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "contract": "STAR_COMMAND_ROUTE_CARD_V0",
+  "mode": "READ_ONLY",
+  "card": {
+    "title": "Reference Route A",
+    "notation": "L0 -> L5 -> L20",
+    "status_label": "Supported reference route",
+    "what_this_means": "A recurring internal path observed in multiple tasks.",
+    "observed_across": {
+      "task_families": 6,
+      "independent_seeds": 2
+    },
+    "why_it_matters": "Helps compare new executions with previously observed routes.",
+    "known_limitation": "Not observed in every task or every seed.",
+    "actions": [
+      "Why this matters",
+      "View evidence",
+      "Technical details"
+    ]
+  },
+  "forbidden_labels": [
+    "SAFE ROUTE",
+    "NORMAL ROUTE",
+    "GOOD ROUTE",
+    "ERROR ROUTE",
+    "REASONING ROUTE"
+  ],
+  "forbidden_labels_used_this_gate": false,
+  "mandatory_ux_phrases_fr": {
+    "landmark_route_explanation": "Les points de repère indiquent où Star Command reconnaît un motif interne déjà observé. Les routes montrent comment ces points se succèdent pendant une exécution.",
+    "utility": "Les routes servent à comparer une exécution actuelle aux parcours déjà observés.",
+    "limitation": "Elles ne révèlent pas ce que le modèle pense et ne constituent pas une explication causale."
+  },
+  "avoided_first_line_terms": [
+    "tensor",
+    "manifold",
+    "latent geometry",
+    "Holm correction",
+    "edge",
+    "null model"
+  ],
+  "control": "NO",
+  "sra_x": "NOT_TESTED",
+  "causal_claim": "NO"
+}

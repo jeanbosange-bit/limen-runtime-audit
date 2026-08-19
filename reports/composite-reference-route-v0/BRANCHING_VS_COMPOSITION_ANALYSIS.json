@@ -1,0 +1,21 @@
+{
+  "primary_candidate": "L0-L5-L20",
+  "primary_candidate_status": "REFERENCE_ROUTE_SUPPORTED",
+  "runs_supporting_L0_before_L5": 25,
+  "runs_supporting_L0_before_L20": 21,
+  "runs_supporting_both_branches_any_order": 16,
+  "runs_supporting_full_composite_order": 8,
+  "runs_with_both_branches_but_not_composite_order": 8,
+  "branch_only_run_ids": [
+    "BAX1DEEP_AH11_2103",
+    "BAX1DEEP_CO04_2103",
+    "BAX1DEEP_CO09_2101",
+    "BAX1DEEP_CO09_2103",
+    "BAX1DEEP_GI01-V3_2101",
+    "BAX1DEEP_MI06-V2_2101",
+    "BAX1DEEP_MI06-V2_2103",
+    "BAX1DEEP_SU18_2103"
+  ],
+  "verdict": "COMPOSITION_SUPPORTED",
+  "verdict_rule": "reports/composite-reference-route-v0/FROZEN_ROUTE_PROTOCOL.md#branching-vs-composition"
+}

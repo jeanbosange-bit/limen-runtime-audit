@@ -1,0 +1,11 @@
+{
+  "H_norm": "STABLE",
+  "H_curvature": "FAMILY_CONFOUNDED",
+  "Q_norm": "STABLE",
+  "V_norm": "STABLE",
+  "A_dispersion": "STABLE",
+  "A_concentration": "STABLE",
+  "Oattn_delta_norm": "FAMILY_CONFOUNDED",
+  "probability_entropy": "FAMILY_CONFOUNDED",
+  "probability_top2_gap": "STABLE"
+}

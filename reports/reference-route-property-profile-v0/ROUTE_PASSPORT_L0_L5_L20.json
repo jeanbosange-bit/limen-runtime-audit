@@ -1,0 +1,107 @@
+{
+  "route_id": "reference_route_a_l0_l5_l20",
+  "level_1_human_meaning": {
+    "name": "Reference Route A",
+    "technical_notation": "L0 -> L5 -> L20",
+    "human_description": "A recurring internal path observed during multiple model executions.",
+    "utility": "This route helps compare a new execution with internal paths already observed in the model.",
+    "landmark_explanation": "Points of reference are recurring measurable internal patterns. When several appear in a consistent order, Star Command calls that order a route.",
+    "critical_statement": "A route does not show what the model is thinking. It is a reference pattern for comparing executions."
+  },
+  "level_2_explanation": {
+    "how_often_observed": "8 runs",
+    "prompt_families_count": 6,
+    "seeds_count": 2,
+    "general_property_profile": "0 strongly supported measurable properties, 9 properties with limited/mixed evidence, 3 properties not yet established -- the route's internal tensor profile is largely similar to other landmark-bearing executions, not yet shown to be distinctive to this specific ordering.",
+    "current_evidence_level": "SUPPORTED",
+    "known_limitations": [
+      "Not observed in every task family (6 of 12) or every seed (2 of 3 -- absent in seed 2101).",
+      "Its own generation lengths are longer than typical (median 130 decode steps) -- whether this route requires long executions to appear, or is simply easier to detect in them, is not established.",
+      "No measurable internal property has yet been shown to be uniquely distinctive to this route versus other recurring internal patterns."
+    ]
+  },
+  "level_3_technical_detail": {
+    "route": "L0 -> L5 -> L20",
+    "run_count": 8,
+    "prompt_count": 7,
+    "prompt_ids": [
+      "CF19",
+      "CO08",
+      "GI01-V3",
+      "MI01",
+      "MI06-V2",
+      "RC16",
+      "SU12"
+    ],
+    "family_coverage": {
+      "CONSTRAINT_FOLLOWING": 1,
+      "SUMMARIZATION": 1,
+      "MULTISTEP_INSTRUCTION": 2,
+      "GENERAL_INSTRUCTION": 2,
+      "RECOVERY_CORRECTION": 1,
+      "CODING": 1
+    },
+    "seed_coverage": {
+      "2103": 5,
+      "2102": 3
+    },
+    "median_step_distances": {
+      "L0_L5": 64.5,
+      "L5_L20": 38.5,
+      "L0_L20": 94.5
+    },
+    "step_distance_distributions": {
+      "L0_L5": {
+        "min": 9,
+        "median": 64.5,
+        "q1": 44,
+        "q3": 72,
+        "max": 97
+      },
+      "L5_L20": {
+        "min": 2,
+        "median": 38.5,
+        "q1": 37,
+        "q3": 53,
+        "max": 64
+      },
+      "L0_L20": {
+        "min": 46,
+        "median": 94.5,
+        "q1": 49,
+        "q3": 130,
+        "max": 148
+      }
+    },
+    "effect_sizes_and_adjusted_p_values": "see ROUTE_GROUP_COMPARISONS.json and ROUTE_PROPERTY_REGISTRY.json",
+    "route_validation_reference": {
+      "holm_adjusted_p": 0.007199280071992801,
+      "status": "REFERENCE_ROUTE_SUPPORTED",
+      "constituent_edge_statuses": {
+        "L0->L5": "REFERENCE_EDGE_SUPPORTED",
+        "L5->L20": "REFERENCE_EDGE_LOW_SUPPORT"
+      }
+    },
+    "tensor_property_registry_summary": {
+      "H_norm": "ROUTE_PROPERTY_LOW_SUPPORT",
+      "H_curvature": "ROUTE_PROPERTY_LOW_SUPPORT",
+      "Q_norm": "ROUTE_PROPERTY_LOW_SUPPORT",
+      "K_norm": "ROUTE_PROPERTY_NOT_ESTABLISHED",
+      "V_norm": "ROUTE_PROPERTY_LOW_SUPPORT",
+      "A_dispersion": "ROUTE_PROPERTY_LOW_SUPPORT",
+      "A_concentration": "ROUTE_PROPERTY_LOW_SUPPORT",
+      "Oattn_norm": "ROUTE_PROPERTY_NOT_ESTABLISHED",
+      "Oattn_delta_norm": "ROUTE_PROPERTY_LOW_SUPPORT",
+      "probability_entropy": "ROUTE_PROPERTY_LOW_SUPPORT",
+      "probability_top2_gap": "ROUTE_PROPERTY_LOW_SUPPORT",
+      "logit_norm": "ROUTE_PROPERTY_NOT_ESTABLISHED"
+    },
+    "source_files": [
+      "reports/composite-reference-route-v0/ROUTE_VALIDATION_RESULTS.json",
+      "reports/reference-route-property-profile-v0/ROUTE_PROPERTY_REGISTRY.json",
+      "reports/reference-route-property-profile-v0/ROUTE_GROUP_COMPARISONS.json"
+    ],
+    "provenance": "reports/reference-route-property-profile-v0/SOURCE_PROVENANCE.json",
+    "hashes_file": "reports/reference-route-property-profile-v0/SHA256SUMS.txt"
+  }
+}

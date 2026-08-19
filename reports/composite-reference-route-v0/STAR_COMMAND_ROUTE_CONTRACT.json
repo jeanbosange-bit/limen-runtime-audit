@@ -1,0 +1,214 @@
+{
+  "contract": "STAR_COMMAND_COMPOSITE_ROUTE_V0",
+  "mode": "READ_ONLY",
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "base_confirmed_landmarks": [
+    "L0",
+    "L1",
+    "L5",
+    "L20"
+  ],
+  "base_supported_connections_ui_label": "SUPPORTED REFERENCE CONNECTION",
+  "base_supported_connections": [
+    "L0->L5",
+    "L0->L20"
+  ],
+  "composite_routes": [
+    {
+      "route": [
+        "L0",
+        "L5",
+        "L20"
+      ],
+      "signature": "L0-L5-L20",
+      "ui_label": "SUPPORTED REFERENCE ROUTE",
+      "ui_text": "This ordered route has been repeatedly observed across 8 runs, 6 prompt families, and 2 seeds.",
+      "technical_detail_expandable": {
+        "observed_count": 8,
+        "holm_adjusted_p": 0.007199280071992801,
+        "n_families": 6,
+        "n_seeds": 2,
+        "n_prompt_ids": 7
+      }
+    },
+    {
+      "route": [
+        "L0",
+        "L20",
+        "L5"
+      ],
+      "signature": "L0-L20-L5",
+      "ui_label": "LOW-SUPPORT ROUTE",
+      "ui_text": "This ordered route has been observed 5 time(s) across 4 prompt families and 2 seed(s) -- not yet enough to call it a stable reference route.",
+      "technical_detail_expandable": {
+        "observed_count": 5,
+        "holm_adjusted_p": 0.43255674432556745,
+        "n_families": 4,
+        "n_seeds": 2,
+        "n_prompt_ids": 4
+      }
+    },
+    {
+      "route": [
+        "L0",
+        "L1",
+        "L5"
+      ],
+      "signature": "L0-L1-L5",
+      "ui_label": "LOW-SUPPORT ROUTE",
+      "ui_text": "This ordered route has been observed 7 time(s) across 5 prompt families and 2 seed(s) -- not yet enough to call it a stable reference route.",
+      "technical_detail_expandable": {
+        "observed_count": 7,
+        "holm_adjusted_p": 0.25737426257374263,
+        "n_families": 5,
+        "n_seeds": 2,
+        "n_prompt_ids": 6
+      }
+    },
+    {
+      "route": [
+        "L0",
+        "L5",
+        "L1"
+      ],
+      "signature": "L0-L5-L1",
+      "ui_label": "LOW-SUPPORT ROUTE",
+      "ui_text": "This ordered route has been observed 6 time(s) across 4 prompt families and 2 seed(s) -- not yet enough to call it a stable reference route.",
+      "technical_detail_expandable": {
+        "observed_count": 6,
+        "holm_adjusted_p": 0.6379362063793621,
+        "n_families": 4,
+        "n_seeds": 2,
+        "n_prompt_ids": 5
+      }
+    },
+    {
+      "route": [
+        "L1",
+        "L0",
+        "L5"
+      ],
+      "signature": "L1-L0-L5",
+      "ui_label": "LOW-SUPPORT ROUTE",
+      "ui_text": "This ordered route has been observed 3 time(s) across 3 prompt families and 2 seed(s) -- not yet enough to call it a stable reference route.",
+      "technical_detail_expandable": {
+        "observed_count": 3,
+        "holm_adjusted_p": 1.0,
+        "n_families": 3,
+        "n_seeds": 2,
+        "n_prompt_ids": 3
+      }
+    },
+    {
+      "route": [
+        "L0",
+        "L1",
+        "L20"
+      ],
+      "signature": "L0-L1-L20",
+      "ui_label": "LOW-SUPPORT ROUTE",
+      "ui_text": "This ordered route has been observed 6 time(s) across 5 prompt families and 2 seed(s) -- not yet enough to call it a stable reference route.",
+      "technical_detail_expandable": {
+        "observed_count": 6,
+        "holm_adjusted_p": 0.0597940205979402,
+        "n_families": 5,
+        "n_seeds": 2,
+        "n_prompt_ids": 5
+      }
+    },
+    {
+      "route": [
+        "L0",
+        "L20",
+        "L1"
+      ],
+      "signature": "L0-L20-L1",
+      "ui_label": "LOW-SUPPORT ROUTE",
+      "ui_text": "This ordered route has been observed 3 time(s) across 2 prompt families and 1 seed(s) -- not yet enough to call it a stable reference route.",
+      "technical_detail_expandable": {
+        "observed_count": 3,
+        "holm_adjusted_p": 1.0,
+        "n_families": 2,
+        "n_seeds": 1,
+        "n_prompt_ids": 3
+      }
+    },
+    {
+      "route": [
+        "L1",
+        "L5",
+        "L20"
+      ],
+      "signature": "L1-L5-L20",
+      "ui_label": "LOW-SUPPORT ROUTE",
+      "ui_text": "This ordered route has been observed 3 time(s) across 3 prompt families and 2 seed(s) -- not yet enough to call it a stable reference route.",
+      "technical_detail_expandable": {
+        "observed_count": 3,
+        "holm_adjusted_p": 1.0,
+        "n_families": 3,
+        "n_seeds": 2,
+        "n_prompt_ids": 3
+      }
+    },
+    {
+      "route": [
+        "L1",
+        "L20",
+        "L5"
+      ],
+      "signature": "L1-L20-L5",
+      "ui_label": "LOW-SUPPORT ROUTE",
+      "ui_text": "This ordered route has been observed 4 time(s) across 3 prompt families and 2 seed(s) -- not yet enough to call it a stable reference route.",
+      "technical_detail_expandable": {
+        "observed_count": 4,
+        "holm_adjusted_p": 1.0,
+        "n_families": 3,
+        "n_seeds": 2,
+        "n_prompt_ids": 4
+      }
+    },
+    {
+      "route": [
+        "L5",
+        "L20",
+        "L1"
+      ],
+      "signature": "L5-L20-L1",
+      "ui_label": "LOW-SUPPORT ROUTE",
+      "ui_text": "This ordered route has been observed 2 time(s) across 2 prompt families and 1 seed(s) -- not yet enough to call it a stable reference route.",
+      "technical_detail_expandable": {
+        "observed_count": 2,
+        "holm_adjusted_p": 1.0,
+        "n_families": 2,
+        "n_seeds": 1,
+        "n_prompt_ids": 2
+      }
+    },
+    {
+      "route": [
+        "L20",
+        "L1",
+        "L5"
+      ],
+      "signature": "L20-L1-L5",
+      "ui_label": "LOW-SUPPORT ROUTE",
+      "ui_text": "This ordered route has been observed 2 time(s) across 2 prompt families and 2 seed(s) -- not yet enough to call it a stable reference route.",
+      "technical_detail_expandable": {
+        "observed_count": 2,
+        "holm_adjusted_p": 1.0,
+        "n_families": 2,
+        "n_seeds": 2,
+        "n_prompt_ids": 2
+      }
+    }
+  ],
+  "branching_pattern_ui_label": "BRANCHING PATTERN",
+  "branching_pattern_note": "COMPOSITION_SUPPORTED",
+  "fallback_message_if_no_composite_route_supported": "Two validated transitions originate from L0, but a stable three-landmark route has not yet been established.",
+  "supported_message_if_composite_route_supported": "This ordered route has been repeatedly observed across multiple prompts, families and seeds.",
+  "fallback_applies_this_gate": false,
+  "ui_rule": "Route p-value is NEVER the primary UI element -- it lives only in technical_detail_expandable. The primary UI text is always the plain-language run/family/seed count sentence. No mechanistic language (initiates/mediates/terminates/decision path/reasoning path/causal chain/control corridor/safe route) anywhere.",
+  "control": "NO",
+  "sra_x": "NOT_TESTED",
+  "causal_claim": "NO"
+}
