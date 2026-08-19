@@ -22,6 +22,10 @@ Its outputs do not establish cognitive states, functional localization,
 semantic identity, causality, reasoning, consciousness, or universal
 attractors.
 
+## Frozen research reports
+
+The [`reports/`](reports/) archive contains the frozen protocols, derived results, provenance, manifests, and SHA-256 registries for the August 2026 Atlas expansion, landmark/route validation, and runtime-fingerprint feasibility gates. Raw multi-gigabyte tensor captures are intentionally excluded from Git; see [`docs/data/RAW_CAPTURE_STORAGE_POLICY.md`](docs/data/RAW_CAPTURE_STORAGE_POLICY.md). A conservative milestone summary is available in [`docs/research/2026-08-18_ATLAS_DATA_AND_SECURITY_MILESTONE.md`](docs/research/2026-08-18_ATLAS_DATA_AND_SECURITY_MILESTONE.md).
+
 ## Why this exists
 
 Most model evaluations inspect the generated answer. LIMEN adds a second
