@@ -1,0 +1,42 @@
+{
+  "FULL": {
+    "eligible_cross_environment_probes": 108,
+    "cross_environment_top1": 0.9259259259259259,
+    "environment_classes": {
+      "cpu_bfloat16_eager": "FINGERPRINT_PRESERVED",
+      "cpu_float16_eager": "FINGERPRINT_PRESERVED",
+      "cpu_float32_eager": "FINGERPRINT_PRESERVED"
+    },
+    "status": "FINGERPRINT_PRESERVED"
+  },
+  "FIRST_2": {
+    "eligible_cross_environment_probes": 108,
+    "cross_environment_top1": 0.7777777777777778,
+    "environment_classes": {
+      "cpu_bfloat16_eager": "FINGERPRINT_PRESERVED",
+      "cpu_float16_eager": "FINGERPRINT_PRESERVED",
+      "cpu_float32_eager": "FINGERPRINT_PRESERVED"
+    },
+    "status": "FINGERPRINT_PRESERVED"
+  },
+  "FIRST_4": {
+    "eligible_cross_environment_probes": 101,
+    "cross_environment_top1": 0.8217821782178217,
+    "environment_classes": {
+      "cpu_bfloat16_eager": "FINGERPRINT_PRESERVED",
+      "cpu_float16_eager": "FINGERPRINT_PRESERVED",
+      "cpu_float32_eager": "FINGERPRINT_PRESERVED"
+    },
+    "status": "FINGERPRINT_PRESERVED"
+  },
+  "FIRST_8": {
+    "eligible_cross_environment_probes": 86,
+    "cross_environment_top1": 0.872093023255814,
+    "environment_classes": {
+      "cpu_bfloat16_eager": "FINGERPRINT_PRESERVED",
+      "cpu_float16_eager": "FINGERPRINT_PRESERVED",
+      "cpu_float32_eager": "FINGERPRINT_PRESERVED"
+    },
+    "status": "FINGERPRINT_PRESERVED"
+  }
+}

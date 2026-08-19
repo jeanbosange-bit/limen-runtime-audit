@@ -1,0 +1,12 @@
+{
+  "role": "SECONDARY_EXPLORATORY",
+  "landmark_presence_used_in_primary_fingerprint": false,
+  "landmark_bearing_run_count": 87,
+  "eligible_no_landmark_run_count": 57,
+  "median_prompt_seed_variability_weighted_by_runs": {
+    "landmark_bearing": 0.5517879847739229,
+    "no_landmark": 0.5547061245094345
+  },
+  "verdict": "NOT_ESTABLISHED",
+  "reason": "Existing Lane B landmark counts are descriptive candidate detections, not a frozen causal or attestation factor; run-weighted groups are prompt-dependent."
+}

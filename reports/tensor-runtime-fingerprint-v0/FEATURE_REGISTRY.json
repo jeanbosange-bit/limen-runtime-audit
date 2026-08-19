@@ -1,0 +1,20 @@
+{
+  "status": "FROZEN_PRE_ANALYSIS",
+  "frozen_date": "2026-08-18",
+  "position_rule": "generated positions start at prompt_len; prefixes never substitute prompt positions",
+  "prefixes": ["FULL", "FIRST_2", "FIRST_4", "FIRST_8"],
+  "summary_statistics": ["mean", "std", "median", "p10", "p90"],
+  "families": {
+    "H": {"source": "hidden_states_all_layers_fp16", "granularity": "RUN_STEP_LAYER", "measured": ["hidden state vectors"], "derived": ["norm", "delta_norm", "cosine_change", "curvature", "position summaries"]},
+    "Q": {"source": "q_all_layers_fp16", "granularity": "RUN_STEP_LAYER_HEAD", "measured": ["query vectors"], "derived": ["norm", "delta_norm", "cosine_change", "head_dispersion", "position summaries"]},
+    "K": {"source": "k_all_layers_fp32", "granularity": "RUN_STEP_LAYER_HEAD", "measured": ["key vectors"], "derived": ["norm", "delta_norm", "cosine_change", "head_dispersion", "position summaries"]},
+    "V": {"source": "v_all_layers_fp32", "granularity": "RUN_STEP_LAYER_HEAD", "measured": ["value vectors"], "derived": ["norm", "delta_norm", "cosine_change", "head_dispersion", "position summaries"]},
+    "ATTENTION": {"source": "attentions_all_layers_fp16", "granularity": "RUN_STEP_LAYER_HEAD_CONTEXT", "measured": ["attention weights"], "derived": ["normalized_entropy", "concentration", "maximum_mass", "normalized_position_dispersion", "position summaries"]},
+    "ATTENTION_OUTPUT": {"source": "attn_output_all_layers_fp16", "granularity": "RUN_STEP_LAYER", "measured": ["post-o_proj vectors"], "derived": ["norm", "delta_norm", "cosine_change", "position summaries"]},
+    "LOGITS": {"source": "logits_region_fp16", "granularity": "RUN_STEP", "measured": ["predictive logits"], "derived": ["entropy", "top1_probability", "top2_gap", "norm", "delta_norm", "cosine_change", "position summaries"]}
+  },
+  "combinations": {"H+Q+K+V": ["H", "Q", "K", "V"], "ATTENTION+ATTENTION_OUTPUT": ["ATTENTION", "ATTENTION_OUTPUT"], "ALL": ["H", "Q", "K", "V", "ATTENTION", "ATTENTION_OUTPUT", "LOGITS"]},
+  "distance": "robust-scaled Euclidean / sqrt(retained feature count)",
+  "raw_flattened_tensors_used": false,
+  "semantic_labels_introduced": false
+}

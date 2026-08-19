@@ -1,0 +1,28 @@
+{
+  "gate": "CROSS-ENVIRONMENT FINGERPRINT VALIDATION V0",
+  "date": "2026-08-19",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "environments_available_now": 4,
+  "environments_tested": 4,
+  "new_generations": 108,
+  "challenges": 12,
+  "seeds": 3,
+  "feature_registry": "reports/tensor-runtime-fingerprint-v0/FEATURE_REGISTRY.json",
+  "feature_registry_sha256": "f9213d0c2181d87775d9628ca4124de119f7ed98d96ace66cf449b4a5373ae71",
+  "raw_capture_hash_verification": {
+    "passed": 144,
+    "total": 144
+  },
+  "source_artifacts_modified": false,
+  "baseline_identification": 0.9444444444444444,
+  "cross_environment_identification": 0.9259259259259259,
+  "same_family_cross_environment": "NOT_ESTABLISHED",
+  "far_like_proxy": 0.0765993265993266,
+  "frr_like_proxy": 0.1388888888888889,
+  "roc_auc": 0.9305555555555556,
+  "eer": 0.10185185185185185,
+  "final_verdict": "CROSS_ENV_FINGERPRINT_ROBUSTNESS_SUPPORTED",
+  "pqc": "NOT_TESTED",
+  "authentication": "NOT_TESTED",
+  "security_product_claim": "NO"
+}

@@ -1,0 +1,32 @@
+{
+  "feature": "Runtime Fingerprint",
+  "mode": "READ_ONLY_RESEARCH",
+  "human_status_labels": [
+    "FINGERPRINT OBSERVED",
+    "FINGERPRINT STABILITY",
+    "REFERENCE SUPPORT",
+    "ENVIRONMENT COVERAGE",
+    "SECURITY VALIDATION"
+  ],
+  "forbidden_status_labels": [
+    "AUTHENTICATED"
+  ],
+  "example": {
+    "title": "Runtime fingerprint",
+    "observation": "Observed across 3 independent seeds",
+    "stability": "High / Medium / Low",
+    "reference_coverage": "48 challenges / 12 families",
+    "security_status": "Research signal only",
+    "technical_details": "expandable"
+  },
+  "evidence_fields": [
+    "run_id",
+    "prompt_id",
+    "seed",
+    "source_sha256",
+    "feature_registry",
+    "epistemic_status"
+  ],
+  "identity_preservation": true,
+  "security_boundary": "No authentication without a future cryptographic protocol."
+}

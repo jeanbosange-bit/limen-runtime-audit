@@ -1,0 +1,41 @@
+{
+  "protocol": "FROZEN_PROTOCOL.md",
+  "primary": "ALL/FULL",
+  "result": {
+    "eligible_runs": 144,
+    "retained_features": 2930,
+    "intra": {
+      "n": 144,
+      "median": 0.5316789554445693,
+      "p10": 0.0,
+      "p90": 0.8763526486746546
+    },
+    "inter": {
+      "n": 10152,
+      "median": 1.1125615357935992,
+      "p10": 0.7070506304784071,
+      "p90": 2.3539518949131164
+    },
+    "same_family_inter": {
+      "n": 648,
+      "median": 0.8602145931345422
+    },
+    "length_matched_inter": {
+      "rule": "abs generated token difference <= 2",
+      "n": 706,
+      "median": 1.238559847276592
+    },
+    "common_language_separation": 0.9092351808072848,
+    "rank_biserial": 0.8184703616145697,
+    "same_family_separation": 0.8254458161865569,
+    "length_matched_separation": 0.9215749921309412,
+    "length_distance_spearman_rho": -0.10773316326782506,
+    "median_difference_95pct_bootstrap_ci": [
+      0.5400812247127689,
+      0.6282045078056103
+    ],
+    "prompt_length_distance_spearman_rho": 0.16245755058662234,
+    "total_sequence_length_distance_spearman_rho": -0.16868160354775663,
+    "ordering_overlap_rate": 0.09076481919271517
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "task": "CHALLENGE FINGERPRINT IDENTIFICATION",
+  "validation": "strict rotating seed holdout; two-seed reference centroid, third-seed test",
+  "full_all": {
+    "eligible_prompt_challenges": 48,
+    "n_tests": 144,
+    "top1": 0.7777777777777778,
+    "top5": 0.9097222222222222,
+    "balanced_accuracy": 0.7777777777777778,
+    "same_family_top1": 0.8402777777777778,
+    "random_top1": 0.020833333333333332,
+    "same_family_random_top1": 0.25
+  },
+  "random_baselines": {
+    "global_top1": 0.020833333333333332,
+    "same_family_top1": 0.25
+  },
+  "security_interpretation": "NOT authentication"
+}

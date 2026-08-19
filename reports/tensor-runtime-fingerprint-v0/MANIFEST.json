@@ -1,0 +1,27 @@
+{
+  "gate": "TENSOR RUNTIME FINGERPRINT FEASIBILITY V0",
+  "status": "EXECUTED",
+  "date": "2026-08-18",
+  "source_runs": 144,
+  "real_new_generations": 0,
+  "prompt_challenges": 48,
+  "seeds": [
+    2101,
+    2102,
+    2103
+  ],
+  "prompt_families": 12,
+  "source_hash_verification": {
+    "passed": 144,
+    "total": 144
+  },
+  "primary_configuration": "ALL/FULL",
+  "primary_signal_status": "TENSOR_FINGERPRINT_SIGNAL_SUPPORTED",
+  "length_confound": "NO",
+  "final_verdict": "TENSOR_FINGERPRINT_SIGNAL_SUPPORTED",
+  "cryptographic_authentication": "NOT_TESTED",
+  "pqc": "NOT_TESTED",
+  "entropy_source": "NOT_TESTED",
+  "security_product_claim": "NO",
+  "control": "NO"
+}

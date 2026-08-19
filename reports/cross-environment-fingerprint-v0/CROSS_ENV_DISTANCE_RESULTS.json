@@ -1,0 +1,69 @@
+{
+  "primary": "ALL/FULL",
+  "distance": "frozen robust-scaled Euclidean / sqrt(features)",
+  "baseline_scaler_only": true,
+  "result": {
+    "retained_features": 2930,
+    "D_seed": {
+      "n": 36,
+      "median": 0.6714711056304061,
+      "p10": 0.1361678303231402,
+      "p90": 0.8248872492003965
+    },
+    "D_challenge": {
+      "n": 594,
+      "median": 1.1866291758976466,
+      "p10": 0.8280606030747205,
+      "p90": 1.8873000972843035
+    },
+    "baseline_identification": {
+      "n": 36,
+      "top1": 0.9444444444444444,
+      "top5": 0.9722222222222222
+    },
+    "environments": {
+      "cpu_bfloat16_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.6487740087108352,
+          "p10": 0.0957342672300405,
+          "p90": 0.9941712369218497
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.9166666666666666,
+          "top5": 1.0
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      },
+      "cpu_float16_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.6743654012691974,
+          "p10": 0.1356943646894726,
+          "p90": 0.9672925727696857
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.9444444444444444,
+          "top5": 1.0
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      },
+      "cpu_float32_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.6745740913510551,
+          "p10": 0.1349160762485024,
+          "p90": 1.0292926649549754
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.9166666666666666,
+          "top5": 1.0
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      }
+    }
+  }
+}

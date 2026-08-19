@@ -1,0 +1,1088 @@
+{
+  "date": "2026-08-19",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "checkpoint_revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "checkpoint_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+  "tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+  "tokenizer_config_sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+  "model_config_sha256": "18e18afcaccafade98daf13a54092927904649e1dd4eba8299ab717d5d94ff45",
+  "system": {
+    "platform": "Linux-5.15.185-tegra-aarch64-with-glibc2.35",
+    "machine": "aarch64",
+    "cpu": "ARM Cortex-A78AE, 6 cores",
+    "hardware_identifier": "Linux Tegra host; CPU execution",
+    "python": "3.10.12",
+    "torch": "2.8.0",
+    "transformers": "4.46.3",
+    "cuda_build": "12.6",
+    "cuda_available": false
+  },
+  "candidate_environments": [
+    {
+      "environment_id": "baseline_cuda_bfloat16_eager",
+      "status": "AVAILABLE_NOW",
+      "availability_scope": "existing hash-verified Lane B evidence; device not currently executable",
+      "device": "cuda",
+      "dtype": "bfloat16",
+      "attention_backend": "eager",
+      "new_execution": false
+    },
+    {
+      "environment_id": "cpu_float32_eager",
+      "status": "AVAILABLE_NOW",
+      "availability_scope": "integrity forward passed locally",
+      "device": "cpu",
+      "dtype": "float32",
+      "attention_backend": "eager",
+      "new_execution": true
+    },
+    {
+      "environment_id": "cpu_bfloat16_eager",
+      "status": "AVAILABLE_NOW",
+      "availability_scope": "integrity forward passed locally",
+      "device": "cpu",
+      "dtype": "bfloat16",
+      "attention_backend": "eager",
+      "new_execution": true
+    },
+    {
+      "environment_id": "cpu_float16_eager",
+      "status": "AVAILABLE_NOW",
+      "availability_scope": "integrity forward passed locally",
+      "device": "cpu",
+      "dtype": "float16",
+      "attention_backend": "eager",
+      "new_execution": true
+    },
+    {
+      "environment_id": "cuda_current_session",
+      "status": "NOT_AVAILABLE",
+      "reason": "torch.cuda.is_available() false; NvMap/NVML initialization unavailable"
+    },
+    {
+      "environment_id": "sdpa_full_attention_capture",
+      "status": "NOT_AVAILABLE",
+      "reason": "does not provide a distinct comparable full per-head attention capture; eager fallback would erase backend difference"
+    },
+    {
+      "environment_id": "quantized_qwen_0.5b",
+      "status": "NOT_AVAILABLE",
+      "reason": "no complete local quantized checkpoint found"
+    }
+  ],
+  "cached_checkpoint_inventory": [
+    {
+      "repository": "01-ai/Yi-1.5-6B",
+      "revision": "157a3d77ab5a8a8f079510eaa25169b547481f06",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "01-ai/Yi-6B",
+      "revision": "80080be87ec5a0103f643195f2d9003b8068941b",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "01-ai/Yi-Coder-1.5B",
+      "revision": "00e59e64f47d3c78e4cfbdd345888479797e8109",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "01-ai/Yi-Coder-1.5B-Chat",
+      "revision": "92fdd1b2f1539ac990e7f4a921db5601da2f0299",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "ByteDance-Seed/Seed-Coder-8B-Base",
+      "revision": "049f843238b40ea67671836204f3d8585a679327",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "Deci/DeciCoder-1b",
+      "revision": "d045c14763eab7225fe79a6bc309890fda7b1483",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "EleutherAI/gpt-j-6b",
+      "revision": "47e169305d2e8376be1d31e765533382721b2cc1",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "EleutherAI/gpt-neo-125m",
+      "revision": "21def0189f5705e2521767faed922f1f15e7d7db",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "EleutherAI/gpt-neox-20b",
+      "revision": "c292233c833e336628618a88a648727eb3dff0a7",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": true,
+      "has_config": false
+    },
+    {
+      "repository": "EleutherAI/pythia-160m",
+      "revision": "50f5173d932e8e61f858120bcb800b97af589f46",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "EleutherAI/pythia-410m",
+      "revision": "9879c9b5f8bea9051dcb0e68dff21493d67e9d4f",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "EleutherAI/pythia-70m",
+      "revision": "a39f36b100fe8a5377810d56c3f4789b9c53ac42",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "HuggingFaceTB/SmolLM-360M-Instruct",
+      "revision": "73b7144f76331266f5f45d5642fd8da653583b13",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+      "revision": "31b70e2e869a7173562077fd711b654946d38674",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "HuggingFaceTB/SmolLM2-135M",
+      "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "HuggingFaceTB/SmolLM3-3B",
+      "revision": "a07cc9a04f16550a088caea529712d1d335b0ac1",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "MiniMaxAI/MiniMax-Text-01",
+      "revision": "a7351bf2bee0e1253919d349f1ad304e6dac13e9",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "OpenBuddy/openbuddy-llama3-8b-v21.1-8k",
+      "revision": "658508bce03ccd61cea9657e0357bd4cd10503ba",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "Qwen/Qwen1.5-0.5B-Chat",
+      "revision": "4d14e384a4b037942bb3f3016665157c8bcb70ea",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "Qwen/Qwen2-0.5B-Instruct",
+      "revision": "c540970f9e29518b1d8f06ab8b24cba66ad77b6d",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "Qwen/Qwen2-VL-2B-Instruct",
+      "revision": "895c3a49bc3fa70a340399125c650a463535e71c",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "Qwen/Qwen2.5-0.5B",
+      "revision": "060db6499f32faf8b98477b0a26969ef7d8b9987",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "Qwen/Qwen2.5-0.5B-Instruct",
+      "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "Qwen/Qwen2.5-1.5B-Instruct",
+      "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "Qwen/Qwen2.5-3B-Instruct",
+      "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+      "revision": "ea3f2471cf1b1f0db85067f1ef93848e38e88c25",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+      "revision": "2e1fd397ee46e1388853d2af2c993145b0f1098a",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "Qwen/Qwen2.5-Math-1.5B-Instruct",
+      "revision": "aafeb0fc6f22cbf0eaeed126eff8be45b0360a35",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "Qwen/Qwen3-0.6B",
+      "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "Qwen/Qwen3-0.6B-Base",
+      "revision": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "RWKV/rwkv-4-169m-pile",
+      "revision": "46bdc280eb97b6141d5d51a935e0c4870ecaefcc",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "RWKV/rwkv-4-169m-pile",
+      "revision": "54646c56ad6b5d4283918ef47561e01b777f7575",
+      "status": "NOT_AVAILABLE",
+      "has_weights": true,
+      "has_tokenizer": false,
+      "has_config": false
+    },
+    {
+      "repository": "RWKV/rwkv-5-world-1b5",
+      "revision": "5e4ae736346d42e5c0fefaad5276271b04957aed",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "RWKV/v6-Finch-1B6-HF",
+      "revision": "ba89236d95b2be90e20dcb4779271403e8b1d745",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "Rakuten/RakutenAI-2.0-mini-instruct",
+      "revision": "6d902489587d324b7d5e201299e4e1a169f3a40b",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "Salesforce/codegen-350M-mono",
+      "revision": "d9107f71cca463240db1143f4a75a927a27fcb27",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "Skywork/Skywork-13B-base",
+      "revision": "bc35915066fbbf15b77a1a4a74e9b574ab167816",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "THUDM/chatglm3-6b",
+      "revision": "e9e0406d062cdb887444fe5bd546833920abd4ac",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "THUDM/glm-4-9b-chat",
+      "revision": "bd8234fe5e0c09c48637a92abb0c797cb5fa0e73",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "THUDM/glm-edge-1.5b-chat",
+      "revision": "7b201d3c160c25beda4cf0d107617ad975cd1ca8",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+      "revision": "fe8a4ea1ffedaf415f4da2f062534de366a451e6",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "ai21labs/Jamba-tiny-dev",
+      "revision": "ed303361004ac875426a61675edecf8e9d976882",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "allenai/OLMo-1B-hf",
+      "revision": "aee7752d9c08ee4775e9b0091426d8410e8f6a89",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "allenai/OLMo-2-0425-1B",
+      "revision": "a1847dff35000b4271fa70afc5db10fd29fedbdf",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "allenai/OLMoE-1B-7B-0924",
+      "revision": "6d84c48581ece794365f2b8e9cfb043c68ade9c5",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "apple/OpenELM-1_1B-Instruct",
+      "revision": "effd796da2a77361d7360e45e54c7cc14bc5df2a",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "baichuan-inc/Baichuan2-7B-Base",
+      "revision": "f9d4d8dd2f7a3dbede3bda3b0cf0224e9272bbe5",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "baichuan-inc/Baichuan2-7B-Chat",
+      "revision": "ea66ced17780ca3db39bc9f8aa601d8463db3da5",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "bigcode/starcoder2-3b",
+      "revision": "733247c55e3f73af49ce8e9c7949bf14af205928",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "bigcode/tiny_starcoder_py",
+      "revision": "8547527bef0bc927268c1653cce6948c5c242dd1",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "bigscience/bloomz-560m",
+      "revision": "a2845d7e13dd12efae154a9f1c63fcc2e0cc4b05",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B",
+      "revision": "ad9f0ae0864d7fbcd1cd905e3c6c5b069cc8b562",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "deepseek-ai/deepseek-coder-1.3b-base",
+      "revision": "5c35001666790ef534566439e4976b0c275eeb48",
+      "status": "NOT_AVAILABLE",
+      "has_weights": true,
+      "has_tokenizer": false,
+      "has_config": false
+    },
+    {
+      "repository": "deepseek-ai/deepseek-coder-1.3b-base",
+      "revision": "c919139c3a9b4070729c8b2cca4847ab29ca8d94",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "deepseek-ai/deepseek-coder-1.3b-instruct",
+      "revision": "e063262dac8366fc1f28a4da0ff3c50ea66259ca",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "deepseek-ai/deepseek-math-7b-instruct",
+      "revision": "0a5828f800a36df0fd7f0ed581b983246c0677ff",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "distilbert/distilgpt2",
+      "revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "distilgpt2",
+      "revision": "2290a62682d06624634c1f46a6ad5be0f47f38aa",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "facebook/blenderbot-400M-distill",
+      "revision": "eaaf64e3be20ad1f1fb0bdf689565ba52c97eafe",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "facebook/opt-125m",
+      "revision": "1f9886ce095904096e22b0f4d9e7ba932fa7df2a",
+      "status": "NOT_AVAILABLE",
+      "has_weights": true,
+      "has_tokenizer": false,
+      "has_config": false
+    },
+    {
+      "repository": "facebook/opt-125m",
+      "revision": "27dcfa74d334bc871f3234de431e71c6eeba5dd6",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "facebook/opt-350m",
+      "revision": "dc18cb1d9753e32a3ca31571c6177b4a460f75b9",
+      "status": "NOT_AVAILABLE",
+      "has_weights": true,
+      "has_tokenizer": false,
+      "has_config": false
+    },
+    {
+      "repository": "facebook/opt-350m",
+      "revision": "08ab08cc4b72ff5593870b5d527cf4230323703c",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "facebook/xglm-564M",
+      "revision": "f3059f01b98ccc877c673149e0178c0e957660f9",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "google/gemma-2-2b-it",
+      "revision": "299a8560bedf22ed1c72a8a11e7dce4a7f9f51f8",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "google/gemma-2b-it",
+      "revision": "96988410cbdaeb8d5093d1ebdc5a8fb563e02bad",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "google/gemma-3-1b-it",
+      "revision": "dcc83ea841ab6100d6b47a070329e1ba4cf78752",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "gpt2",
+      "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "h2oai/h2o-danube3-500m-chat",
+      "revision": "c202f976c26875541e738ea978c8158fa536da9a",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": true,
+      "has_config": false
+    },
+    {
+      "repository": "hfl/chinese-llama-2-1.3b",
+      "revision": "aa14950865547be912e10566898ac4c6722f2a8a",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": false
+    },
+    {
+      "repository": "hfl/chinese-llama-2-1.3b",
+      "revision": "99f0fa34dfcdcd1497efdcefce45712cd9fed9ea",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "ibm-granite/granite-3.0-1b-a400m-instruct",
+      "revision": "ffec3c35bdfd97a06f0b4cd5fcc92cd9b1584445",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "ibm-granite/granite-3.1-2b-instruct",
+      "revision": "bbc2aed595bd38bd770263dc3ab831db9794441d",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "internlm/internlm2-chat-1_8b",
+      "revision": "21ccc6447f57c3c6dd2a78e2248bd6afbe0133e1",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "internlm/internlm2_5-1_8b",
+      "revision": "d5dd991c55b98edda3eda58fedd14eb34244c752",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "internlm/internlm2_5-1_8b-chat",
+      "revision": "57dcbc5455bf050d27a80f0ebd7808387caa714d",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": true,
+      "has_config": false
+    },
+    {
+      "repository": "liuhaotian/llava-v1.5-7b",
+      "revision": "4481d270cc22fd5c4d1bb5df129622006ccd9234",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "meta-llama/Llama-3.2-1B",
+      "revision": "4e20de362430cd3b72f300e6b0f18e50e7166e08",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "meta-llama/Llama-3.2-1B-Instruct",
+      "revision": "9213176726f574b556790deb65791e0c5aa438b6",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "meta-llama/Llama-3.2-3B-Instruct",
+      "revision": "0cb88a4f764b7a12671c53f0838cd831a0843b95",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "microsoft/Phi-3-mini-4k-instruct",
+      "revision": "f39ac1d28e925b323eae81227eaba4464caced4e",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "microsoft/Phi-3.5-mini-instruct",
+      "revision": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "microsoft/Phi-4-mini-instruct",
+      "revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "microsoft/biogpt",
+      "revision": "eb0d815e95434dc9e3b78f464e52b899bee7d923",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "microsoft/phi-1",
+      "revision": "d4c0adcb065e84e00ca814e35cba3012ea9841ab",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "microsoft/phi-1_5",
+      "revision": "77aa61eeac94fbf33d492b9f2744c98b42d5b5eb",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "microsoft/phi-2",
+      "revision": "810d367871c1d460086d9f82db8696f2e0a0fcd0",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "mistralai/Mistral-7B-Instruct-v0.2",
+      "revision": "63a8b081895390a26e140280378bc85ec8bce07a",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "mistralai/Mistral-7B-v0.1",
+      "revision": "27d67f1b5f57dc0953326b2601d68371d40ea8da",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "moondream/starmie-v1",
+      "revision": "35192e10a54e36eabe0a7cc57a2c1aab371cafc5",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": true,
+      "has_config": false
+    },
+    {
+      "repository": "moonshotai/Kimi-VL-A3B-Instruct",
+      "revision": "398eede0903cd983a2bfa0cc634e9ac1d843f375",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "moonshotai/Moonlight-16B-A3B-Instruct",
+      "revision": "4e735b07a89f73647dfab71ab91b840f362ede5b",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "nvidia/Minitron-4B-Base",
+      "revision": "3478fb8d5e0a4347e4ab08727f9f95f33f97df3b",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "openai/clip-vit-base-patch32",
+      "revision": "c237dc49a33fc61debc9276459120b7eac67e7ef",
+      "status": "NOT_AVAILABLE",
+      "has_weights": true,
+      "has_tokenizer": false,
+      "has_config": false
+    },
+    {
+      "repository": "openai/clip-vit-base-patch32",
+      "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "openai-community/gpt2",
+      "revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "openai-community/gpt2-medium",
+      "revision": "6dcaa7a952f72f9298047fd5137cd6e4f05f41da",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "openbmb/MiniCPM-1B-sft-bf16",
+      "revision": "85252935bfc9acb3ee93dcea4b793fb87a0b43e8",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "openbmb/MiniCPM-2B-sft-bf16",
+      "revision": "4ec16344ac13e6ef5010aeecaa533369ac8eb53c",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "openbmb/MiniCPM-S-1B-sft",
+      "revision": "e46afa6f3d196527ab75e869184e27c833e8effb",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "openbmb/MiniCPM3-4B",
+      "revision": "d6b14ddaefdb11c624dd75c3c779549bc90b08cb",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "openbmb/MiniCPM4-0.5B",
+      "revision": "5253c7fcc5e29e1cf3eacb59a58adf1ba4df8630",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "replit/replit-code-v1_5-3b",
+      "revision": "b85a5dd28ef6053ad095bf5113dd740a86a67597",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "stabilityai/stablelm-2-1_6b",
+      "revision": "f499ead74c53749bd93cebc6ce8bc0d7bdf1eaef",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "stabilityai/stablelm-2-zephyr-1_6b",
+      "revision": "2f275b1127d59fc31e4f7c7426d528768ada9ea4",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "state-spaces/mamba-1.4b-hf",
+      "revision": "6e46eae61c27280517feef46f536d16b91076f08",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "state-spaces/mamba-130m-hf",
+      "revision": "1e76775f628fbf1350fbe4dbb3d971ba64af25a1",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "state-spaces/mamba-370m-hf",
+      "revision": "b519127f5bfaaa1c27dd938dad051ec360972b23",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "state-spaces/mamba-790m-hf",
+      "revision": "9822dd4b76af2bd9099b6ce2f19efd8329189a7e",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "state-spaces/mamba2-130m",
+      "revision": "3a5aea0c25d0fb43cc360e2c2aac82c26e3eed49",
+      "status": "NOT_AVAILABLE",
+      "has_weights": true,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "state-spaces/mamba2-130m",
+      "revision": "ea6060f68a4289e9c06f80effa896629ba519216",
+      "status": "NOT_AVAILABLE",
+      "has_weights": true,
+      "has_tokenizer": false,
+      "has_config": false
+    },
+    {
+      "repository": "stepfun-ai/GOT-OCR2_0",
+      "revision": "979938bf89ccdc949c0131ddd3841e24578a4742",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "tencent/Hunyuan-1.8B-Instruct",
+      "revision": "de940610ab5d45b4fedbd37e08444d0dc502837c",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "tencent/Hunyuan-A13B-Instruct",
+      "revision": "290ddb9a56ed23c2c83a1c8081533e58925df952",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "tiiuae/Falcon3-1B-Base",
+      "revision": "cb37ef3559b157b5c9d9226296ba01a5162da1f7",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "tiiuae/Falcon3-1B-Instruct",
+      "revision": "28ba2251970a01dd1edc7ba7dad2eb71216ccfdf",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "tiiuae/falcon-mamba-7b",
+      "revision": "080ad94b3619e2c2d0afa59bafdc6113465b7006",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "tiiuae/falcon-rw-1b",
+      "revision": "e4b9872bb803165eb22f0a867d4e6a64d34fce19",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "uer/gpt2-chinese-cluecorpussmall",
+      "revision": "684a6fb3f0f6b5046aed368a40feee3b30b9df6a",
+      "status": "NOT_AVAILABLE",
+      "has_weights": true,
+      "has_tokenizer": false,
+      "has_config": false
+    },
+    {
+      "repository": "uer/gpt2-chinese-cluecorpussmall",
+      "revision": "c2c0249d8a2731f269414cc3b22dff021f8e07a3",
+      "status": "NOT_AVAILABLE",
+      "has_weights": true,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "unsloth/Llama-3.2-1B-Instruct",
+      "revision": "5a8abab4a5d6f164389b1079fb721cfab8d7126c",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "vikhyatk/moondream2",
+      "revision": "6b714b26eea5cbd9f31e4edb2541c170afa935ba",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    },
+    {
+      "repository": "zai-org/glm-4-9b-chat",
+      "revision": "bd8234fe5e0c09c48637a92abb0c797cb5fa0e73",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "zai-org/glm-4-9b-chat-hf",
+      "revision": "8599336fc6c125203efb2360bfaf4c80eef1d1bf",
+      "status": "NOT_AVAILABLE",
+      "has_weights": false,
+      "has_tokenizer": false,
+      "has_config": true
+    },
+    {
+      "repository": "zai-org/glm-edge-1.5b-chat",
+      "revision": "7b201d3c160c25beda4cf0d107617ad975cd1ca8",
+      "status": "AVAILABLE_NOW",
+      "has_weights": true,
+      "has_tokenizer": true,
+      "has_config": true
+    }
+  ],
+  "classification_counts": {
+    "AVAILABLE_NOW": 4,
+    "NOT_AVAILABLE": 3
+  },
+  "large_downloads_performed": false
+}

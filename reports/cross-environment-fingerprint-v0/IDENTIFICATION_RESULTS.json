@@ -1,0 +1,36 @@
+{
+  "task": "CHALLENGE FINGERPRINT IDENTIFICATION — NOT AUTHENTICATION",
+  "baseline": {
+    "n": 36,
+    "top1": 0.9444444444444444,
+    "top5": 0.9722222222222222
+  },
+  "alternate_environments": {
+    "cpu_bfloat16_eager": {
+      "n": 36,
+      "top1": 0.9166666666666666,
+      "top5": 1.0
+    },
+    "cpu_float16_eager": {
+      "n": 36,
+      "top1": 0.9444444444444444,
+      "top5": 1.0
+    },
+    "cpu_float32_eager": {
+      "n": 36,
+      "top1": 0.9166666666666666,
+      "top5": 1.0
+    }
+  },
+  "pooled_cross_environment": {
+    "n": 108,
+    "top1": 0.9259259259259259,
+    "top5": 1.0
+  },
+  "random_top1": 0.08333333333333333,
+  "same_family_cross_environment": {
+    "status": "NOT_ESTABLISHED",
+    "reason": "Frozen panel has exactly one challenge per family; within-family candidate count is one.",
+    "candidate_count_per_family": 1
+  }
+}

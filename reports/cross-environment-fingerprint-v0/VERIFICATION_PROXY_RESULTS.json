@@ -1,0 +1,18 @@
+{
+  "label": "RESEARCH VERIFICATION PROXY",
+  "authentication": false,
+  "threshold": {
+    "value": 0.740097769049342,
+    "selection": "baseline-only closest FAR-like/FRR-like operating point",
+    "frozen_before_alternate_labels": true
+  },
+  "alternate_probes": {
+    "genuine_n": 108,
+    "impostor_n": 1188,
+    "far_like": 0.0765993265993266,
+    "frr_like": 0.1388888888888889,
+    "roc_auc": 0.9305555555555556,
+    "eer": 0.10185185185185185,
+    "eer_statistically_meaningful": true
+  }
+}

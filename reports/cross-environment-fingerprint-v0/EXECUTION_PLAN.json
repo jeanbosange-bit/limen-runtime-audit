@@ -1,0 +1,28 @@
+{
+  "status": "FROZEN_PRE_EXECUTION",
+  "baseline_reused_runs": 36,
+  "new_environments": [
+    "cpu_float32_eager",
+    "cpu_bfloat16_eager",
+    "cpu_float16_eager"
+  ],
+  "challenges": 12,
+  "seeds": [
+    2101,
+    2102,
+    2103
+  ],
+  "planned_new_generations": 108,
+  "authorization_stop_threshold": 216,
+  "threshold_exceeded": false,
+  "generation_config": {
+    "do_sample": true,
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "repetition_penalty": 1.0,
+    "max_new_tokens": "frozen per prompt from Panel V2"
+  },
+  "capture": "same H/Q/K/V/Attention/Attention Output/Logits teacher-forced Lane B mechanism",
+  "feature_registry": "reports/tensor-runtime-fingerprint-v0/FEATURE_REGISTRY.json"
+}

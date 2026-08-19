@@ -1,0 +1,11 @@
+{
+  "primary": "ALL/FULL",
+  "same_family_inter_distance": {
+    "n": 648,
+    "median": 0.8602145931345422
+  },
+  "same_family_separation": 0.8254458161865569,
+  "identification_top1": 0.8402777777777778,
+  "random_baseline": 0.25,
+  "interpretation": "Controls prompt-family classification by restricting comparison candidates to four prompts in the true family."
+}

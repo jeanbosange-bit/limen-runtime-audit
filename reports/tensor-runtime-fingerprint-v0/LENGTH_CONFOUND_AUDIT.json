@@ -1,0 +1,17 @@
+{
+  "generated_length": {
+    "spearman_rho_distance_vs_absolute_length_difference": -0.10773316326782506,
+    "length_matched_separation": 0.9215749921309412,
+    "status": "NO"
+  },
+  "prompt_token_count": {
+    "spearman_rho_distance_vs_absolute_length_difference": 0.16245755058662234,
+    "status": "DERIVED_CONFOUND_DIAGNOSTIC",
+    "limitation": "prompt_len is nearly prompt-identity-deterministic and cannot independently identify mechanism."
+  },
+  "total_sequence_length": {
+    "spearman_rho_distance_vs_absolute_length_difference": -0.16868160354775663,
+    "status": "DERIVED_CONFOUND_DIAGNOSTIC",
+    "limitation": "seq_len combines prompt identity and generation length."
+  }
+}

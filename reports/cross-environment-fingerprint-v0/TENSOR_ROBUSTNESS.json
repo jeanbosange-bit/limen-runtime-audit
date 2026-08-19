@@ -1,0 +1,418 @@
+{
+  "H": {
+    "baseline_identification": {
+      "n": 36,
+      "top1": 0.6944444444444444,
+      "top5": 0.9444444444444444
+    },
+    "environments": {
+      "cpu_bfloat16_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.631173527219935,
+          "p10": 0.0490738480871365,
+          "p90": 1.0652527686345645
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.7222222222222222,
+          "top5": 0.9722222222222222
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      },
+      "cpu_float16_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.6471558054642399,
+          "p10": 0.07402740596409257,
+          "p90": 0.9690612962582044
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.8055555555555556,
+          "top5": 0.9722222222222222
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      },
+      "cpu_float32_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.6477634417175147,
+          "p10": 0.06847375251764781,
+          "p90": 0.9701539491072642
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.8055555555555556,
+          "top5": 0.9722222222222222
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      }
+    },
+    "status": "FINGERPRINT_PRESERVED"
+  },
+  "Q": {
+    "baseline_identification": {
+      "n": 36,
+      "top1": 0.8055555555555556,
+      "top5": 0.9722222222222222
+    },
+    "environments": {
+      "cpu_bfloat16_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.629693018342486,
+          "p10": 0.0734244206628483,
+          "p90": 1.09075359069077
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.9166666666666666,
+          "top5": 0.9444444444444444
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      },
+      "cpu_float16_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.6478401795886961,
+          "p10": 0.12175953412265109,
+          "p90": 1.0169261502491107
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.9444444444444444,
+          "top5": 0.9444444444444444
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      },
+      "cpu_float32_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.6471825157723043,
+          "p10": 0.11772598559367516,
+          "p90": 1.2058268975705935
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.9166666666666666,
+          "top5": 0.9444444444444444
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      }
+    },
+    "status": "FINGERPRINT_PRESERVED"
+  },
+  "K": {
+    "baseline_identification": {
+      "n": 36,
+      "top1": 0.8888888888888888,
+      "top5": 0.9722222222222222
+    },
+    "environments": {
+      "cpu_bfloat16_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.6749910810408011,
+          "p10": 0.05925117759302243,
+          "p90": 1.1144508359593672
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.8888888888888888,
+          "top5": 0.9444444444444444
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      },
+      "cpu_float16_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.6870526613239287,
+          "p10": 0.12529145241128925,
+          "p90": 1.0694520645960615
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.9166666666666666,
+          "top5": 0.9722222222222222
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      },
+      "cpu_float32_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.6870919521172952,
+          "p10": 0.12321484401200561,
+          "p90": 1.068843952934353
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.8888888888888888,
+          "top5": 0.9722222222222222
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      }
+    },
+    "status": "FINGERPRINT_PRESERVED"
+  },
+  "V": {
+    "baseline_identification": {
+      "n": 36,
+      "top1": 0.8333333333333334,
+      "top5": 1.0
+    },
+    "environments": {
+      "cpu_bfloat16_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.6485568053074756,
+          "p10": 0.06332179695173461,
+          "p90": 0.9493948853323612
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.9166666666666666,
+          "top5": 1.0
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      },
+      "cpu_float16_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.6715199026864833,
+          "p10": 0.08230025419590441,
+          "p90": 0.9558986736591852
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.9166666666666666,
+          "top5": 0.9722222222222222
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      },
+      "cpu_float32_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.67228993679735,
+          "p10": 0.08217390422724426,
+          "p90": 1.0239833036431234
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.9166666666666666,
+          "top5": 0.9444444444444444
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      }
+    },
+    "status": "FINGERPRINT_PRESERVED"
+  },
+  "ATTENTION": {
+    "baseline_identification": {
+      "n": 36,
+      "top1": 0.9444444444444444,
+      "top5": 1.0
+    },
+    "environments": {
+      "cpu_bfloat16_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.5856733242372141,
+          "p10": 0.16988513192584687,
+          "p90": 1.0240097849871934
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.9166666666666666,
+          "top5": 1.0
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      },
+      "cpu_float16_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.6092627042154052,
+          "p10": 0.23003188753668913,
+          "p90": 0.9419859237450972
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.9444444444444444,
+          "top5": 1.0
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      },
+      "cpu_float32_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.6103829940542904,
+          "p10": 0.23202312872638386,
+          "p90": 0.9718938438809408
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.9444444444444444,
+          "top5": 1.0
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      }
+    },
+    "status": "FINGERPRINT_PRESERVED"
+  },
+  "ATTENTION_OUTPUT": {
+    "baseline_identification": {
+      "n": 36,
+      "top1": 0.9166666666666666,
+      "top5": 0.9722222222222222
+    },
+    "environments": {
+      "cpu_bfloat16_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.6178455179091706,
+          "p10": 0.10481831911915387,
+          "p90": 1.250801371884587
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.8888888888888888,
+          "top5": 1.0
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      },
+      "cpu_float16_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.6383432312736422,
+          "p10": 0.1351162775102588,
+          "p90": 1.179577922640381
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.9166666666666666,
+          "top5": 0.9722222222222222
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      },
+      "cpu_float32_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.6386313975993104,
+          "p10": 0.13090585204515254,
+          "p90": 1.1790460233213922
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.9166666666666666,
+          "top5": 1.0
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      }
+    },
+    "status": "FINGERPRINT_PRESERVED"
+  },
+  "LOGITS": {
+    "baseline_identification": {
+      "n": 36,
+      "top1": 0.8055555555555556,
+      "top5": 0.9444444444444444
+    },
+    "environments": {
+      "cpu_bfloat16_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.5552121435669102,
+          "p10": 0.04742666691493318,
+          "p90": 0.9071670101455078
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.6944444444444444,
+          "top5": 1.0
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      },
+      "cpu_float16_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.5302807401531733,
+          "p10": 0.03607112747352103,
+          "p90": 0.8851438565224696
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.75,
+          "top5": 0.9722222222222222
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      },
+      "cpu_float32_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.5104000074009993,
+          "p10": 0.04579358995624133,
+          "p90": 0.8954377249273053
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.75,
+          "top5": 0.9722222222222222
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      }
+    },
+    "status": "FINGERPRINT_PRESERVED"
+  },
+  "ALL": {
+    "baseline_identification": {
+      "n": 36,
+      "top1": 0.9444444444444444,
+      "top5": 0.9722222222222222
+    },
+    "environments": {
+      "cpu_bfloat16_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.6487740087108352,
+          "p10": 0.0957342672300405,
+          "p90": 0.9941712369218497
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.9166666666666666,
+          "top5": 1.0
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      },
+      "cpu_float16_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.6743654012691974,
+          "p10": 0.1356943646894726,
+          "p90": 0.9672925727696857
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.9444444444444444,
+          "top5": 1.0
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      },
+      "cpu_float32_eager": {
+        "matched_environment_distance": {
+          "n": 36,
+          "median": 0.6745740913510551,
+          "p10": 0.1349160762485024,
+          "p90": 1.0292926649549754
+        },
+        "identification": {
+          "n": 36,
+          "top1": 0.9166666666666666,
+          "top5": 1.0
+        },
+        "stability_class": "FINGERPRINT_PRESERVED"
+      }
+    },
+    "status": "FINGERPRINT_PRESERVED"
+  }
+}

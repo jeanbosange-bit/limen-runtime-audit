@@ -1,0 +1,24 @@
+{
+  "status": "CONCEPT_ONLY",
+  "flow": [
+    "challenge",
+    "runtime fingerprint",
+    "canonical evidence object",
+    "hash",
+    "PQC signature",
+    "verification record"
+  ],
+  "implemented_here": [
+    "challenge",
+    "runtime fingerprint",
+    "canonical evidence object references"
+  ],
+  "not_implemented": [
+    "PQC",
+    "signature",
+    "authentication",
+    "freshness",
+    "anti-replay",
+    "attestation security"
+  ]
+}

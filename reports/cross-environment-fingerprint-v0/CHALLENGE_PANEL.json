@@ -1,0 +1,128 @@
+{
+  "status": "FROZEN_PRE_EXECUTION",
+  "selection_uses_fingerprint_separation": false,
+  "n_challenges": 12,
+  "n_families": 12,
+  "challenges": [
+    {
+      "prompt_id": "AH16",
+      "prompt_family": "AMBIGUITY_HANDLING",
+      "selection_basis": "MODERATE preferred, then closest to family median length, then lower maximum length",
+      "v0_stability_class": "MODERATE",
+      "v0_seed_variability": 0.5886270668698029,
+      "baseline_mean_steps": 32.333333333333336,
+      "baseline_min_steps": 20,
+      "baseline_max_steps": 49
+    },
+    {
+      "prompt_id": "CO06-V2A",
+      "prompt_family": "CODING",
+      "selection_basis": "MODERATE preferred, then closest to family median length, then lower maximum length",
+      "v0_stability_class": "MODERATE",
+      "v0_seed_variability": 0.5204020942888097,
+      "baseline_mean_steps": 57.666666666666664,
+      "baseline_min_steps": 49,
+      "baseline_max_steps": 67
+    },
+    {
+      "prompt_id": "CF14",
+      "prompt_family": "CONSTRAINT_FOLLOWING",
+      "selection_basis": "MODERATE preferred, then closest to family median length, then lower maximum length",
+      "v0_stability_class": "MODERATE",
+      "v0_seed_variability": 0.5102307472744305,
+      "baseline_mean_steps": 38.0,
+      "baseline_min_steps": 34,
+      "baseline_max_steps": 43
+    },
+    {
+      "prompt_id": "DE08-V2",
+      "prompt_family": "DOCUMENT_EXTRACTION",
+      "selection_basis": "MODERATE preferred, then closest to family median length, then lower maximum length",
+      "v0_stability_class": "MOST_STABLE",
+      "v0_seed_variability": 0.0,
+      "baseline_mean_steps": 4.0,
+      "baseline_min_steps": 4,
+      "baseline_max_steps": 4
+    },
+    {
+      "prompt_id": "FG19-V2",
+      "prompt_family": "FACTUAL_GROUNDED",
+      "selection_basis": "MODERATE preferred, then closest to family median length, then lower maximum length",
+      "v0_stability_class": "MODERATE",
+      "v0_seed_variability": 0.5588968050174378,
+      "baseline_mean_steps": 4.0,
+      "baseline_min_steps": 4,
+      "baseline_max_steps": 4
+    },
+    {
+      "prompt_id": "GI11-V2",
+      "prompt_family": "GENERAL_INSTRUCTION",
+      "selection_basis": "MODERATE preferred, then closest to family median length, then lower maximum length",
+      "v0_stability_class": "MODERATE",
+      "v0_seed_variability": 0.545397735152897,
+      "baseline_mean_steps": 54.666666666666664,
+      "baseline_min_steps": 35,
+      "baseline_max_steps": 87
+    },
+    {
+      "prompt_id": "MR07",
+      "prompt_family": "MATH_REASONING",
+      "selection_basis": "MODERATE preferred, then closest to family median length, then lower maximum length",
+      "v0_stability_class": "MODERATE",
+      "v0_seed_variability": 0.6246739832167195,
+      "baseline_mean_steps": 20.0,
+      "baseline_min_steps": 17,
+      "baseline_max_steps": 25
+    },
+    {
+      "prompt_id": "MI01",
+      "prompt_family": "MULTISTEP_INSTRUCTION",
+      "selection_basis": "MODERATE preferred, then closest to family median length, then lower maximum length",
+      "v0_stability_class": "MODERATE",
+      "v0_seed_variability": 0.4900987061379039,
+      "baseline_mean_steps": 79.33333333333333,
+      "baseline_min_steps": 37,
+      "baseline_max_steps": 103
+    },
+    {
+      "prompt_id": "RC17",
+      "prompt_family": "RECOVERY_CORRECTION",
+      "selection_basis": "MODERATE preferred, then closest to family median length, then lower maximum length",
+      "v0_stability_class": "UNSTABLE",
+      "v0_seed_variability": 0.8532265096886594,
+      "baseline_mean_steps": 11.0,
+      "baseline_min_steps": 8,
+      "baseline_max_steps": 16
+    },
+    {
+      "prompt_id": "SO06-V2",
+      "prompt_family": "STRUCTURED_OUTPUT",
+      "selection_basis": "MODERATE preferred, then closest to family median length, then lower maximum length",
+      "v0_stability_class": "MODERATE",
+      "v0_seed_variability": 0.5919894595617637,
+      "baseline_mean_steps": 30.666666666666668,
+      "baseline_min_steps": 28,
+      "baseline_max_steps": 36
+    },
+    {
+      "prompt_id": "SU12",
+      "prompt_family": "SUMMARIZATION",
+      "selection_basis": "MODERATE preferred, then closest to family median length, then lower maximum length",
+      "v0_stability_class": "MODERATE",
+      "v0_seed_variability": 0.5806458808972521,
+      "baseline_mean_steps": 33.333333333333336,
+      "baseline_min_steps": 25,
+      "baseline_max_steps": 48
+    },
+    {
+      "prompt_id": "TR19",
+      "prompt_family": "TRANSFORMATION",
+      "selection_basis": "MODERATE preferred, then closest to family median length, then lower maximum length",
+      "v0_stability_class": "MODERATE",
+      "v0_seed_variability": 0.6258246651951095,
+      "baseline_mean_steps": 16.666666666666668,
+      "baseline_min_steps": 14,
+      "baseline_max_steps": 18
+    }
+  ]
+}

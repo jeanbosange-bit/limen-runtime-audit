@@ -1,0 +1,178 @@
+{
+  "FULL": {
+    "distance": {
+      "eligible_runs": 144,
+      "retained_features": 2930,
+      "intra": {
+        "n": 144,
+        "median": 0.5316789554445693,
+        "p10": 0.0,
+        "p90": 0.8763526486746546
+      },
+      "inter": {
+        "n": 10152,
+        "median": 1.1125615357935992,
+        "p10": 0.7070506304784071,
+        "p90": 2.3539518949131164
+      },
+      "same_family_inter": {
+        "n": 648,
+        "median": 0.8602145931345422
+      },
+      "length_matched_inter": {
+        "rule": "abs generated token difference <= 2",
+        "n": 706,
+        "median": 1.238559847276592
+      },
+      "common_language_separation": 0.9092351808072848,
+      "rank_biserial": 0.8184703616145697,
+      "same_family_separation": 0.8254458161865569,
+      "length_matched_separation": 0.9215749921309412,
+      "length_distance_spearman_rho": -0.10773316326782506,
+      "ordering_overlap_rate": 0.09076481919271517
+    },
+    "identification": {
+      "eligible_prompt_challenges": 48,
+      "n_tests": 144,
+      "top1": 0.7777777777777778,
+      "top5": 0.9097222222222222,
+      "balanced_accuracy": 0.7777777777777778,
+      "same_family_top1": 0.8402777777777778,
+      "random_top1": 0.020833333333333332,
+      "same_family_random_top1": 0.25
+    },
+    "signal_status": "TENSOR_FINGERPRINT_SIGNAL_SUPPORTED"
+  },
+  "FIRST_2": {
+    "distance": {
+      "eligible_runs": 144,
+      "retained_features": 2585,
+      "intra": {
+        "n": 144,
+        "median": 0.7041423245263658,
+        "p10": 0.0,
+        "p90": 1.116563578047205
+      },
+      "inter": {
+        "n": 10152,
+        "median": 1.0895302916375984,
+        "p10": 0.8319624499612298,
+        "p90": 1.4284747114839502
+      },
+      "same_family_inter": {
+        "n": 648,
+        "median": 0.9572284239377582
+      },
+      "length_matched_inter": {
+        "rule": "abs generated token difference <= 2",
+        "n": 706,
+        "median": 1.0692906301561316
+      },
+      "common_language_separation": 0.8448424229489537,
+      "rank_biserial": 0.6896848458979075,
+      "same_family_separation": 0.716253000685871,
+      "length_matched_separation": 0.8209494019515265,
+      "length_distance_spearman_rho": -0.06887745748059787,
+      "ordering_overlap_rate": 0.15515757705104627
+    },
+    "identification": {
+      "eligible_prompt_challenges": 48,
+      "n_tests": 144,
+      "top1": 0.5486111111111112,
+      "top5": 0.7222222222222222,
+      "balanced_accuracy": 0.5486111111111112,
+      "same_family_top1": 0.7083333333333334,
+      "random_top1": 0.020833333333333332,
+      "same_family_random_top1": "REALIZED_CANDIDATE_SET_VARIES"
+    },
+    "signal_status": "TENSOR_FINGERPRINT_SIGNAL_SUPPORTED"
+  },
+  "FIRST_4": {
+    "distance": {
+      "eligible_runs": 127,
+      "retained_features": 2930,
+      "intra": {
+        "n": 126,
+        "median": 0.7372917145054863,
+        "p10": 0.0,
+        "p90": 1.0516688432598555
+      },
+      "inter": {
+        "n": 7875,
+        "median": 1.082104436819466,
+        "p10": 0.8314437830206431,
+        "p90": 1.433704045833353
+      },
+      "same_family_inter": {
+        "n": 510,
+        "median": 0.9368619507675074
+      },
+      "length_matched_inter": {
+        "rule": "abs generated token difference <= 2",
+        "n": 433,
+        "median": 1.0576129765747588
+      },
+      "common_language_separation": 0.8621637692113883,
+      "rank_biserial": 0.7243275384227765,
+      "same_family_separation": 0.7021630874572051,
+      "length_matched_separation": 0.8544484768503244,
+      "length_distance_spearman_rho": -0.0751403419774299,
+      "ordering_overlap_rate": 0.13783623078861174
+    },
+    "identification": {
+      "eligible_prompt_challenges": 42,
+      "n_tests": 126,
+      "top1": 0.6190476190476191,
+      "top5": 0.7619047619047619,
+      "balanced_accuracy": 0.6190476190476191,
+      "same_family_top1": 0.746031746031746,
+      "random_top1": 0.023809523809523808,
+      "same_family_random_top1": "REALIZED_CANDIDATE_SET_VARIES"
+    },
+    "signal_status": "TENSOR_FINGERPRINT_SIGNAL_SUPPORTED"
+  },
+  "FIRST_8": {
+    "distance": {
+      "eligible_runs": 114,
+      "retained_features": 2930,
+      "intra": {
+        "n": 112,
+        "median": 0.793834008674725,
+        "p10": 0.00540326087977236,
+        "p90": 1.1144668033279947
+      },
+      "inter": {
+        "n": 6329,
+        "median": 1.0910115643725664,
+        "p10": 0.863140275351342,
+        "p90": 1.3830476445697508
+      },
+      "same_family_inter": {
+        "n": 443,
+        "median": 0.903518062308503
+      },
+      "length_matched_inter": {
+        "rule": "abs generated token difference <= 2",
+        "n": 361,
+        "median": 1.1179024284300414
+      },
+      "common_language_separation": 0.8375039500711012,
+      "rank_biserial": 0.6750079001422025,
+      "same_family_separation": 0.6411842953885843,
+      "length_matched_separation": 0.8593193510091017,
+      "length_distance_spearman_rho": -0.07071248111071869,
+      "ordering_overlap_rate": 0.16249604992889877
+    },
+    "identification": {
+      "eligible_prompt_challenges": 37,
+      "n_tests": 111,
+      "top1": 0.6396396396396397,
+      "top5": 0.7837837837837838,
+      "balanced_accuracy": 0.6396396396396397,
+      "same_family_top1": 0.7117117117117117,
+      "random_top1": 0.02702702702702703,
+      "same_family_random_top1": "REALIZED_CANDIDATE_SET_VARIES"
+    },
+    "signal_status": "TENSOR_FINGERPRINT_SIGNAL_PARTIAL"
+  }
+}
