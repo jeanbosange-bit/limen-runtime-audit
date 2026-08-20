@@ -1,0 +1,2 @@
+classification,replay_rows,historical_rows,columns,row_order_equal,numeric_mismatch_count,max_abs_difference,mean_abs_difference,replay_sha256,historical_sha256
+BYTE_IDENTICAL,185005,185005,24,true,0,0.0,0.0,e45ecf217851bb701a1f9b1929d5151334f40cdd08b707220971960e27ac773d,e45ecf217851bb701a1f9b1929d5151334f40cdd08b707220971960e27ac773d

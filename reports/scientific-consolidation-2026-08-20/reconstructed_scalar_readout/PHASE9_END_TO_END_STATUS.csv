@@ -1,0 +1,11 @@
+stage,status,evidence
+raw source artifacts,FULLY_RECONSTRUCTIBLE,Archived NPZ/JSON inputs and hashes remain available
+projected H,FULLY_RECONSTRUCTIBLE,392856-row final table previously replayed byte-identically
+orthogonal control,FULLY_RECONSTRUCTIBLE,183627 rotated rows previously replayed within byte-identical package
+geometry-destroying control,FULLY_RECONSTRUCTIBLE,183627 rows replayed with zero float32 mismatch
+intermediate projected readout,FULLY_RECONSTRUCTIBLE,31329 rows replayed semantically and numerically
+generation-native final readout,FULLY_RECONSTRUCTIBLE,52167 rows independently replayed with zero mismatches
+future readout,FULLY_RECONSTRUCTIBLE,50874 t+2 and 50238 t+3 rows independently replayed with zero mismatches
+packaging,FULLY_RECONSTRUCTIBLE,185005-row readout_features parquet reproduced byte-identically
+Phase 9 logit-lens,FULLY_RECONSTRUCTIBLE,Recovered Phase 9 script replay previously validated
+Phase 9 CSV outputs,FULLY_RECONSTRUCTIBLE,Previous output-by-output replay validation
