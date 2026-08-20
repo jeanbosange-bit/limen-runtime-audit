@@ -1,0 +1,10 @@
+stage,status,evidence,limitation
+raw source artifacts,FULLY_RECONSTRUCTIBLE,Historical tensor/model-wide sources and hashes remain available,Historical failed models remain absent
+projection,FULLY_RECONSTRUCTIBLE,392856 rows and final parquet byte-identical,None observed
+orthogonal rotation,FULLY_RECONSTRUCTIBLE,183627 rotated rows and combined final parquet byte-identical,Only 4 of planned 6 models succeeded historically
+geometry-destroying control,FULLY_RECONSTRUCTIBLE,183627 rows; keyed float32 mismatch count 0,None observed for available rows
+intermediate projected readout,FULLY_RECONSTRUCTIBLE,31329 rows previously replayed semantically identically,Historical missing readout cells remain explicit
+final native readout source,PARTIALLY_RECONSTRUCTIBLE,Archived extract_features source and packaged 153676 scalar/future rows exist,Deleted original scalar part files not independently replayed here
+compact packaging,PARTIALLY_RECONSTRUCTIBLE,Exact finalizer/recast recovered; all final values keyed-identical,Original readout physical row interleaving not recovered
+Phase 9 logit-lens,FULLY_RECONSTRUCTIBLE,Recovered script replay previously validated,None beyond disclosed scientific missingness
+Phase 9 final CSVs,FULLY_RECONSTRUCTIBLE,Previous output-by-output replay validation,Serialization qualifications documented in prior report

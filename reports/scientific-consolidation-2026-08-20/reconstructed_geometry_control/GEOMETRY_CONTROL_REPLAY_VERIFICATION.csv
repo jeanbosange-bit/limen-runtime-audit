@@ -1,0 +1,2 @@
+classification,rows,models,runs,unique_layers,projection_dimensions,keys_equal,row_order_equal,null_pattern_equal,pre_recast_dtype,post_recast_dtype,numeric_mismatch_count,max_abs_difference,mean_abs_difference,final_table_sha256
+BYTE_IDENTICAL,183627,4,144,25,128,true,true,true,float64,float32,0,0.0,0.0,13414276f1a476d5e856f0f41cc63d0f00f49ed0eccad5ae1389450ddfd7b543
