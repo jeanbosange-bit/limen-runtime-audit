@@ -1,0 +1,12 @@
+channel,rows,models,runs,prompts,explicit_keys,readiness_limitation
+raw_hidden_and_token_ids,,19,684,12,"model;run_id;prompt_id;seed;token_position;layer","generation_id absent for 36 reused Qwen runs; normalized depth must use explicit layer metadata"
+layerwise_geometry,984287,18,648,12,"model_id;run_id;prompt_id;seed;token_step;layer_index;num_layers","does not include generation_id; excludes reused Qwen compact geometry"
+qkv_summaries,931472,18,648,12,"model_id;run_id;prompt_id;seed;token_step;layer_index;num_layers","summary features only; no generation_id"
+attention_summaries,915296,17,612,12,"model_id;run_id;prompt_id;seed;token_step;layer_index;num_layers","36 layerwise runs lack the compact attention channel"
+dynamic_probability_inputs,52167,18,648,12,"model_id;run_id;prompt_id;seed;token_step","metrics available but Dynamic Regime label is not frozen"
+token_path_curves,971039,18,648,12,"model_id;run_id;prompt_id;seed;token_step;layer_index;num_layers","derived geometry only; no generation_id"
+intermediate_projected_readout,31329,8,288,12,"model_id;run_id;prompt_id;seed;token_step;layer_index;num_layers;readout_type","effective Phase 9 extraction panel only"
+all_readout_types,185005,19,684,12,"model_id;run_id;prompt_id;seed;token_step;layer_index;num_layers;readout_type","readout types have different sources and coverage and must not be conflated"
+orthogonal_rotated,183627,4,144,12,"model_id;run_id;prompt_id;seed;token_step;layer_index;num_layers;representation","compact transformed subset only"
+geometry_destroying_control,183627,4,144,12,"model_id;run_id;prompt_id;seed;token_step;layer_index;num_layers;representation","compact transformed subset only"
+landmarks_and_routes,,,,,"artifact-specific identifiers","not a fully replicated common cross-model execution channel"

@@ -230,3 +230,71 @@ not authorized or recommended in this mission.
 `READOUT ACCESSIBILITY != HELD-OUT FUNCTIONAL DECODABILITY != PREDICTION != CAUSAL CONTROL`.
 The proposed probe asks whether a simple learned function transfers across the twelve
 archived prompts. It does not establish prediction in deployment, mechanism, or control.
+
+## 13. Program context: P2 is the next step, not the roadmap
+
+The authoritative program remains the three-campaign, ten-priority LIMEN roadmap.
+P2 is next only because a defensible subset may be executable from archived hidden
+states without new generation. Phase 9 partially executed P1; it did not replace P1,
+P2, token-path reconstruction, Dynamic Regimes, Failure Cartography, behavioral
+transitions, ACP versus FREEFORM, Macaque/Gibbon, or cross-model synthesis.
+
+| Priority | Program status | Preserved question / next boundary |
+|---|---|---|
+| P1 — Representation-to-Probability Transition Audit | `PARTIALLY_EXECUTED` | Phase 9 measured projected-readout accessibility on an effective 8-model panel. Attention, branching, commitment, regimes, routes, and output behavior are not jointly resolved. Common transition depth was not supported; a common sequential mechanism was not established. |
+| P2 — Layerwise Decodability Audit | `NEXT_PRIORITY` | Test whether simple learned decoders transfer to prompts never seen during probe training. No probe is authorized by this report. |
+| P3 — Orthogonal Invariance × Decodability | `EXPERIMENT_EXISTS / FUNCTIONAL_EXTENSION_PENDING` | Existing transformed features and destructive controls are reproducible. Held-out functional decodability under those transformations awaits P2. |
+| P4 — Dynamic Regime Cross-Model | `PARTIAL` | Historical V20/V22 evidence exists; the exact cross-model protocol and coverage still require consolidation. |
+| P5 — Token-Path Reconstruction | `PARTIALLY_ADDRESSED / FULL_RECONSTRUCTION_PENDING` | Reconstruct execution-level paths and let event order vary by model, prompt, task, and execution. Phase 9 is not a substitute. |
+| P6 — Failure Cartography | `PENDING` | Use a controlled, length-matched FORMAT_RECOVERY success/failure replication informed by P2/P5. Do not label divergence as causal error location. |
+| P7 — Observable Behavioral Transitions | `PENDING_SELECTIVE` | Retain only operational events such as repetition collapse, language switch, code/format/structured-output transitions, and instruction-following transitions. |
+| P8 — ACP vs FREEFORM | `PENDING` | Requires matched pairs and a preregistered comparison; no ACP effect is currently established. |
+| P9 — Macaque/Gibbon | `PENDING` | A downstream, falsifiable constraint hypothesis only; no control claim. |
+| P10 — Cross-Model Unification | `ACTIVE_LIVING_SYNTHESIS` | Update after each priority and preserve negative results and scope limits. |
+
+The working order after review is P2 execution, P3 functional invariance, P5 token-path
+reconstruction, P4 regime consolidation when archival reuse permits, P6 failure
+cartography, P7 behavioral transitions, P8 ACP/FREEFORM, P9 Macaque/Gibbon, and continuous
+P10 synthesis. This ordering does not impose a scientific sequence on the measured
+events. `COMMON PHENOMENA != COMMON TRAJECTORY`; the data may support model-, task-, or
+execution-specific orderings, recurrent motifs, or no clear ordering.
+
+## 14. Downstream experiment readiness
+
+These are archive-readiness judgments, not execution authorizations or scientific
+results.
+
+| Priority | Readiness | Archive evidence | Unresolved requirement |
+|---|---|---|---|
+| P3 | `PARTIALLY_READY` | Fixed random projections cover 8 models/288 runs. Orthogonally rotated and per-dimension shuffled controls each cover 4 models/144 runs and are reproducible. | These are compact transformed features, not a complete raw-H transformed panel. A prompt-held-out P2 probe protocol must first be frozen and then applied identically across representations. |
+| P4 | `PARTIALLY_READY` | V20/V22 reports contain the five-state regime taxonomy and partial cross-model evidence, including a reported transient D_FULL_BIFURCATION result and counterexamples to universal pathways. Current compact dynamic inputs cover 18 models/648 runs, but do not contain frozen regime labels. | Consolidate the exact historical classifier, thresholds, eligible architectures, run linkage, and independence assumptions before cross-model execution. Do not silently derive new labels. |
+| P5 | `PARTIALLY_READY` | For 648 runs, compact tables link hidden geometry, Q/K/V summaries, dynamic probability inputs, and token-path curves by explicit model/run/prompt/seed/step keys; attention covers 612 of those runs. Readout rows cover 684 runs, including 31,329 INTERMEDIATE_PROJECTED rows for 8 models. Raw deep archives contain H and token IDs for 684 runs. | `generation_id` is absent for 36 reused Qwen runs; compact tables do not carry it. Dynamic Regime labels, landmarks, and routes are not a common cross-model channel. Exact emitted-token linkage must use token IDs and explicit step alignment, never row order. Held-out P2 curves do not yet exist. |
+| P6 | `NEW_CAPTURE_LIKELY_REQUIRED` | Existing deep Failure Cartography has 60 runs with success/failure labels and multi-channel measurements. | The required length-matched FORMAT_RECOVERY replication is absent; the existing FORMAT_RECOVERY panel has a material length confound. Archive reuse can refine design, but cannot manufacture the required matched evidence. |
+| P7 | `PARTIALLY_READY` | Historical candidate registries and generated text preserve some observable behavioral events. Weak semantic attractor labels have already been rejected for modern use. | Modern, deterministic event definitions and execution-level labels are not frozen across the model panel. Recoverable labels must be audited before analysis; no heuristic relabeling may be hidden. |
+| P8 | `NEW_CAPTURE_LIKELY_REQUIRED` | A design critique and readiness audit exist. | Zero modern ACP/FREEFORM paired generations exist and the current audit is `NOT_READY`. Future units must be persistent `pair_id` pairs with the same underlying task, model, decoding configuration, token budget, and seed where supported; only input structuring may differ. |
+| P9 | `NEW_CAPTURE_LIKELY_REQUIRED` | Macaque/Gibbon exists as a conceptual, testable hypothesis. | No defensible matched Macaque/Gibbon intervention panel was found. It remains downstream of P8 and requires the same persistent pairing discipline. |
+
+### P5 identifier linkage audit
+
+The execution identity available today is explicit but incomplete:
+
+| Required field/channel | Availability | Coverage / rule |
+|---|---|---|
+| `prompt_id`, `run_id`, seed | Available | Explicit across all 684 deep runs. |
+| `generation_id` | Partial | Present for 648 new deep runs; absent for 36 reused Qwen runs and must remain unknown. |
+| `step`, `layer`, normalized depth | Available | Explicit in layerwise compact tables; normalized depth is architectural alignment only, not semantic equivalence. |
+| hidden state | Available | Raw fp16 H for 684 runs; compact geometry for 648; fixed projected H for 288. |
+| probability/readout | Partial | Generation-native/future scalar readout covers the historical pipeline; INTERMEDIATE_PROJECTED is limited to 8 models/288 runs. Distinct readout types must not be conflated. |
+| dynamic metrics | Partial | 18 models/648 runs; regime labels are not frozen. |
+| attention | Partial | 17 models/612 runs; 36 layerwise runs lack this compact channel. |
+| final emitted token | Reconstructible with restrictions | Token IDs exist for 684 runs. Use the archived prompt/generation boundary and step offset; never infer solely from physical row order. |
+| landmarks/routes | Partial and non-common | Existing Atlas artifacts are not a fully replicated cross-model execution channel and do not establish semantic equivalence. |
+
+Therefore an execution object can be assembled only with explicit unavailable fields and
+coverage masks. P5 is not ready for a complete cross-model reconstruction claim.
+
+## 15. Stop condition
+
+This mission stops at feasibility. It does not train probes, execute P3–P9, create ACP
+pairs, run model inference, or modify Star Command/PIM. Any P2 execution requires
+separate review and authorization.
