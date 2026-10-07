@@ -1,0 +1,50 @@
+{
+  "A_high_repetition_full": {
+    "observed": 0.6409465020576132,
+    "permutation_mean": 0.46275720164609063,
+    "p_one_sided": 0.09090909090909091,
+    "nperm": 10
+  },
+  "A_high_repetition_entropy": {
+    "observed": 0.5658436213991769,
+    "permutation_mean": 0.46358024691358024,
+    "p_one_sided": 0.18181818181818182,
+    "nperm": 10
+  },
+  "B_ratio_0.25_full": {
+    "observed": 0.6296296296296297,
+    "permutation_mean": 0.49344135802469136,
+    "p_one_sided": 0.18181818181818182,
+    "nperm": 10
+  },
+  "B_ratio_0.25_entropy": {
+    "observed": 0.5030864197530864,
+    "permutation_mean": 0.4794753086419753,
+    "p_one_sided": 0.5454545454545454,
+    "nperm": 10
+  },
+  "B_ratio_0.5_full": {
+    "observed": 0.697530864197531,
+    "permutation_mean": 0.5375771604938272,
+    "p_one_sided": 0.09090909090909091,
+    "nperm": 10
+  },
+  "B_ratio_0.5_entropy": {
+    "observed": 0.6072530864197531,
+    "permutation_mean": 0.4685185185185185,
+    "p_one_sided": 0.09090909090909091,
+    "nperm": 10
+  },
+  "B_ratio_0.75_full": {
+    "observed": 0.7762345679012346,
+    "permutation_mean": 0.49575617283950624,
+    "p_one_sided": 0.09090909090909091,
+    "nperm": 10
+  },
+  "B_ratio_0.75_entropy": {
+    "observed": 0.617283950617284,
+    "permutation_mean": 0.5010802469135802,
+    "p_one_sided": 0.2727272727272727,
+    "nperm": 10
+  }
+}

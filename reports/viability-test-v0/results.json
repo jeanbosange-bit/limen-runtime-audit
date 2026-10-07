@@ -1,0 +1,680 @@
+{
+  "design": {
+    "part_a": "same-run full dynamics -> output properties, prompt-grouped OOF",
+    "part_b": "same-run prefix dynamics -> final dynamic endpoint, prompt-grouped OOF",
+    "part_c": "within model+prompt intervention minus baseline deltas",
+    "no_claim": "No early-output-failure or causal claim from V0"
+  },
+  "part_a": {
+    "repetition_threshold_q75": 0.202625,
+    "class_counts": {
+      "any_marker": {
+        "0": 56,
+        "1": 16
+      },
+      "high_repetition": {
+        "0": 54,
+        "1": 18
+      },
+      "uncertainty_markers_bin": {
+        "0": 65,
+        "1": 7
+      },
+      "refusal_markers_bin": {
+        "0": 70,
+        "1": 2
+      },
+      "contradiction_markers_bin": {
+        "0": 64,
+        "1": 8
+      }
+    },
+    "full_dynamic": {
+      "any_marker": {
+        "n": 72,
+        "positives": 16,
+        "auroc": 0.2064732142857143,
+        "balanced_accuracy": 0.32589285714285715,
+        "brier": 0.39431301468387736
+      },
+      "high_repetition": {
+        "n": 72,
+        "positives": 18,
+        "auroc": 0.6409465020576132,
+        "balanced_accuracy": 0.6203703703703703,
+        "brier": 0.25766939664064314
+      },
+      "uncertainty_markers_bin": {
+        "n": 72,
+        "positives": 7,
+        "auroc": 0.15604395604395602,
+        "balanced_accuracy": 0.33076923076923076,
+        "brier": 0.30059033440811556
+      },
+      "refusal_markers_bin": null,
+      "contradiction_markers_bin": {
+        "n": 72,
+        "positives": 8,
+        "auroc": 0.3359375,
+        "balanced_accuracy": 0.359375,
+        "brier": 0.2559278463444876
+      }
+    },
+    "entropy_only": {
+      "any_marker": {
+        "n": 72,
+        "positives": 16,
+        "auroc": 0.20870535714285715,
+        "balanced_accuracy": 0.3392857142857143,
+        "brier": 0.2791883170140754
+      },
+      "high_repetition": {
+        "n": 72,
+        "positives": 18,
+        "auroc": 0.5658436213991769,
+        "balanced_accuracy": 0.6296296296296295,
+        "brier": 0.273393196001651
+      },
+      "uncertainty_markers_bin": {
+        "n": 72,
+        "positives": 7,
+        "auroc": 0.19340659340659339,
+        "balanced_accuracy": 0.31758241758241756,
+        "brier": 0.261813415255827
+      },
+      "refusal_markers_bin": null,
+      "contradiction_markers_bin": {
+        "n": 72,
+        "positives": 8,
+        "auroc": 0.251953125,
+        "balanced_accuracy": 0.4609375,
+        "brier": 0.2453731458239535
+      }
+    },
+    "continuous_spearman": {
+      "repetition_rate": {
+        "ratio_norm": {
+          "rho": 0.29930764903081836,
+          "p": 0.010646156469492362
+        },
+        "dynamic_mean": {
+          "rho": -0.06471690603154204,
+          "p": 0.589130070098707
+        },
+        "dynamic_max": {
+          "rho": 0.1835361162107251,
+          "p": 0.1227722966096174
+        },
+        "transition_entropy": {
+          "rho": 0.04693042084794083,
+          "p": 0.6954541093651159
+        },
+        "markov_stability": {
+          "rho": -0.10510489369128319,
+          "p": 0.3795784953055058
+        },
+        "oscillation_rate": {
+          "rho": 0.2704651279433435,
+          "p": 0.021572406554678777
+        },
+        "recovery_rate": {
+          "rho": -0.1531523077116805,
+          "p": 0.19900589442316705
+        },
+        "top5_prob_mean": {
+          "rho": 0.043069551280434784,
+          "p": 0.7194245392263364
+        },
+        "logit_entropy_mean": {
+          "rho": -0.0810884734145677,
+          "p": 0.49832167500649216
+        }
+      },
+      "lexical_diversity": {
+        "ratio_norm": {
+          "rho": -0.29930764903081836,
+          "p": 0.010646156469492362
+        },
+        "dynamic_mean": {
+          "rho": 0.06471690603154204,
+          "p": 0.589130070098707
+        },
+        "dynamic_max": {
+          "rho": -0.1835361162107251,
+          "p": 0.1227722966096174
+        },
+        "transition_entropy": {
+          "rho": -0.04693042084794083,
+          "p": 0.6954541093651159
+        },
+        "markov_stability": {
+          "rho": 0.10510489369128319,
+          "p": 0.3795784953055058
+        },
+        "oscillation_rate": {
+          "rho": -0.2704651279433435,
+          "p": 0.021572406554678777
+        },
+        "recovery_rate": {
+          "rho": 0.1531523077116805,
+          "p": 0.19900589442316705
+        },
+        "top5_prob_mean": {
+          "rho": -0.043069551280434784,
+          "p": 0.7194245392263364
+        },
+        "logit_entropy_mean": {
+          "rho": 0.0810884734145677,
+          "p": 0.49832167500649216
+        }
+      },
+      "compression_ratio": {
+        "ratio_norm": {
+          "rho": -0.036264222981734935,
+          "p": 0.7623271744489697
+        },
+        "dynamic_mean": {
+          "rho": -0.08718691126185188,
+          "p": 0.46646285422191824
+        },
+        "dynamic_max": {
+          "rho": -0.165038398381399,
+          "p": 0.1659274155780711
+        },
+        "transition_entropy": {
+          "rho": 0.15353744943837835,
+          "p": 0.1978651361466677
+        },
+        "markov_stability": {
+          "rho": -0.18530991699584495,
+          "p": 0.11913407284253082
+        },
+        "oscillation_rate": {
+          "rho": 0.2874212973533136,
+          "p": 0.014362664210816821
+        },
+        "recovery_rate": {
+          "rho": 0.0405615140326997,
+          "p": 0.7351434939514018
+        },
+        "top5_prob_mean": {
+          "rho": -0.06733405837007725,
+          "p": 0.5741245890440855
+        },
+        "logit_entropy_mean": {
+          "rho": 0.12102986611238692,
+          "p": 0.311190231811123
+        }
+      },
+      "output_length": {
+        "ratio_norm": {
+          "rho": 0.18064113914200752,
+          "p": 0.12889171865134058
+        },
+        "dynamic_mean": {
+          "rho": -0.3038418303710056,
+          "p": 0.009466866623121491
+        },
+        "dynamic_max": {
+          "rho": -0.2067130561315756,
+          "p": 0.08147501921894978
+        },
+        "transition_entropy": {
+          "rho": 0.17497519758973967,
+          "p": 0.14153558046193948
+        },
+        "markov_stability": {
+          "rho": -0.24722721855602164,
+          "p": 0.03628684208902993
+        },
+        "oscillation_rate": {
+          "rho": 0.2998180468375249,
+          "p": 0.010507318425657988
+        },
+        "recovery_rate": {
+          "rho": -0.07073482165731694,
+          "p": 0.5548952080415406
+        },
+        "top5_prob_mean": {
+          "rho": -0.28048674579500715,
+          "p": 0.017010783345372604
+        },
+        "logit_entropy_mean": {
+          "rho": 0.3465586139300734,
+          "p": 0.0028619444475746427
+        }
+      },
+      "mean_sentence_length": {
+        "ratio_norm": {
+          "rho": 0.06255287621250429,
+          "p": 0.6016696277699742
+        },
+        "dynamic_mean": {
+          "rho": -0.28038918248747424,
+          "p": 0.017050845593386776
+        },
+        "dynamic_max": {
+          "rho": -0.27059290783162326,
+          "p": 0.02150826353728082
+        },
+        "transition_entropy": {
+          "rho": -0.05039171461359599,
+          "p": 0.6742139297274926
+        },
+        "markov_stability": {
+          "rho": 0.004328862114285389,
+          "p": 0.9712114620937925
+        },
+        "oscillation_rate": {
+          "rho": 0.012218980444965341,
+          "p": 0.9188593197551431
+        },
+        "recovery_rate": {
+          "rho": -0.08057574580425006,
+          "p": 0.5010508376748803
+        },
+        "top5_prob_mean": {
+          "rho": -0.15175773712962856,
+          "p": 0.20317582788680807
+        },
+        "logit_entropy_mean": {
+          "rho": 0.24515443089554648,
+          "p": 0.037932252231076054
+        }
+      }
+    }
+  },
+  "part_b": {
+    "0.25": {
+      "n": 72,
+      "high_final_ratio_full_prefix": {
+        "n": 72,
+        "positives": 36,
+        "auroc": 0.6296296296296297,
+        "balanced_accuracy": 0.5694444444444444,
+        "brier": 0.27936231447246296
+      },
+      "high_final_ratio_entropy_only": {
+        "n": 72,
+        "positives": 36,
+        "auroc": 0.5030864197530864,
+        "balanced_accuracy": 0.5,
+        "brier": 0.252655632543644
+      },
+      "high_final_entropy_full_prefix": {
+        "n": 72,
+        "positives": 36,
+        "auroc": 0.7191358024691359,
+        "balanced_accuracy": 0.6388888888888888,
+        "brier": 0.22546370881917646
+      },
+      "high_final_entropy_entropy_only": {
+        "n": 72,
+        "positives": 36,
+        "auroc": 0.742283950617284,
+        "balanced_accuracy": 0.6944444444444444,
+        "brier": 0.196930661361559
+      }
+    },
+    "0.5": {
+      "n": 72,
+      "high_final_ratio_full_prefix": {
+        "n": 72,
+        "positives": 36,
+        "auroc": 0.697530864197531,
+        "balanced_accuracy": 0.6111111111111112,
+        "brier": 0.24742960114394968
+      },
+      "high_final_ratio_entropy_only": {
+        "n": 72,
+        "positives": 36,
+        "auroc": 0.6072530864197531,
+        "balanced_accuracy": 0.5972222222222222,
+        "brier": 0.24188094455416836
+      },
+      "high_final_entropy_full_prefix": {
+        "n": 72,
+        "positives": 36,
+        "auroc": 0.8634259259259259,
+        "balanced_accuracy": 0.7361111111111112,
+        "brier": 0.15747227620231843
+      },
+      "high_final_entropy_entropy_only": {
+        "n": 72,
+        "positives": 36,
+        "auroc": 0.8634259259259259,
+        "balanced_accuracy": 0.7361111111111112,
+        "brier": 0.1516437335158549
+      }
+    },
+    "0.75": {
+      "n": 72,
+      "high_final_ratio_full_prefix": {
+        "n": 72,
+        "positives": 36,
+        "auroc": 0.7762345679012346,
+        "balanced_accuracy": 0.7361111111111112,
+        "brier": 0.20072987750216914
+      },
+      "high_final_ratio_entropy_only": {
+        "n": 72,
+        "positives": 36,
+        "auroc": 0.617283950617284,
+        "balanced_accuracy": 0.6111111111111112,
+        "brier": 0.24296005436797208
+      },
+      "high_final_entropy_full_prefix": {
+        "n": 72,
+        "positives": 36,
+        "auroc": 0.974537037037037,
+        "balanced_accuracy": 0.875,
+        "brier": 0.07155872799069703
+      },
+      "high_final_entropy_entropy_only": {
+        "n": 72,
+        "positives": 36,
+        "auroc": 0.9575617283950617,
+        "balanced_accuracy": 0.875,
+        "brier": 0.08819671298441428
+      }
+    }
+  },
+  "part_c": {
+    "n_pairs": 54,
+    "by_condition": {
+      "CONSTRAIN": {
+        "delta_ratio_norm": {
+          "mean": 0.17610000000000003,
+          "median": 0.12059999999999982,
+          "wilcoxon_p": 0.39273834228515625
+        },
+        "delta_transition_entropy": {
+          "mean": -0.08136111111111109,
+          "median": -0.0193500000000002,
+          "wilcoxon_p": 0.15404510498046875
+        },
+        "delta_oscillation_rate": {
+          "mean": -0.06980555555555555,
+          "median": -0.061350000000000016,
+          "wilcoxon_p": 0.011529722157428967
+        },
+        "delta_recovery_rate": {
+          "mean": -0.004700000000000006,
+          "median": 0.016049999999999953,
+          "wilcoxon_p": 0.9645588791407429
+        },
+        "delta_logit_entropy_mean": {
+          "mean": 0.11973888888888891,
+          "median": 0.17320000000000002,
+          "wilcoxon_p": 0.4171142578125
+        },
+        "delta_repetition_rate": {
+          "mean": -0.03317222222222223,
+          "median": -0.015350000000000003,
+          "wilcoxon_p": 0.34654998779296875
+        },
+        "delta_lexical_diversity": {
+          "mean": 0.03317222222222223,
+          "median": 0.015349999999999975,
+          "wilcoxon_p": 0.34654998779296875
+        },
+        "delta_compression_ratio": {
+          "mean": -1.9279388888888889,
+          "median": -1.80815,
+          "wilcoxon_p": 0.00019609335453373022
+        },
+        "delta_output_length": {
+          "mean": -5.5,
+          "median": -2.5,
+          "wilcoxon_p": 0.030503083263679513
+        }
+      },
+      "DIVERGE": {
+        "delta_ratio_norm": {
+          "mean": 0.17148333333333338,
+          "median": 0.20009999999999994,
+          "wilcoxon_p": 0.34654998779296875
+        },
+        "delta_transition_entropy": {
+          "mean": 0.03501666666666665,
+          "median": 0.013100000000000112,
+          "wilcoxon_p": 0.3559586988465746
+        },
+        "delta_oscillation_rate": {
+          "mean": -0.024844444444444454,
+          "median": 0.0,
+          "wilcoxon_p": 0.26320253153738693
+        },
+        "delta_recovery_rate": {
+          "mean": -0.016666666666666677,
+          "median": 0.0,
+          "wilcoxon_p": 0.8014682069954929
+        },
+        "delta_logit_entropy_mean": {
+          "mean": 0.12062222222222226,
+          "median": 0.18514999999999998,
+          "wilcoxon_p": 0.0897674560546875
+        },
+        "delta_repetition_rate": {
+          "mean": -0.02025555555555556,
+          "median": -0.012900000000000002,
+          "wilcoxon_p": 0.3132195064700367
+        },
+        "delta_lexical_diversity": {
+          "mean": 0.020255555555555544,
+          "median": 0.012900000000000023,
+          "wilcoxon_p": 0.3132195064700367
+        },
+        "delta_compression_ratio": {
+          "mean": -1.5888,
+          "median": -1.50895,
+          "wilcoxon_p": 7.62939453125e-06
+        },
+        "delta_output_length": {
+          "mean": -0.4444444444444444,
+          "median": -0.5,
+          "wilcoxon_p": 0.4522601767686497
+        }
+      },
+      "FOCUS": {
+        "delta_ratio_norm": {
+          "mean": 0.2603222222222223,
+          "median": 0.26125,
+          "wilcoxon_p": 0.19638824462890625
+        },
+        "delta_transition_entropy": {
+          "mean": -0.0027111111111111086,
+          "median": 0.007550000000000168,
+          "wilcoxon_p": 0.8106749789942621
+        },
+        "delta_oscillation_rate": {
+          "mean": -0.03362777777777778,
+          "median": 0.0,
+          "wilcoxon_p": 0.3193756918826459
+        },
+        "delta_recovery_rate": {
+          "mean": -0.04166666666666667,
+          "median": -0.025000000000000022,
+          "wilcoxon_p": 0.34227900340329953
+        },
+        "delta_logit_entropy_mean": {
+          "mean": 0.07017222222222229,
+          "median": -0.008599999999999997,
+          "wilcoxon_p": 0.522613525390625
+        },
+        "delta_repetition_rate": {
+          "mean": 0.012461111111111112,
+          "median": 0.025550000000000003,
+          "wilcoxon_p": 0.38369388713833996
+        },
+        "delta_lexical_diversity": {
+          "mean": -0.012461111111111109,
+          "median": -0.025550000000000017,
+          "wilcoxon_p": 0.38369388713833996
+        },
+        "delta_compression_ratio": {
+          "mean": -1.846977777777778,
+          "median": -1.76065,
+          "wilcoxon_p": 0.00019609335453373022
+        },
+        "delta_output_length": {
+          "mean": -0.4444444444444444,
+          "median": 0.5,
+          "wilcoxon_p": 0.9545332402421146
+        }
+      }
+    },
+    "delta_correlations": {
+      "delta_ratio_norm": {
+        "delta_repetition_rate": {
+          "rho": 0.23648700177278575,
+          "p": 0.08512942035583744
+        },
+        "delta_lexical_diversity": {
+          "rho": -0.23648700177278575,
+          "p": 0.08512942035583744
+        },
+        "delta_compression_ratio": {
+          "rho": -0.036403140988557445,
+          "p": 0.7938344939081643
+        },
+        "delta_output_length": {
+          "rho": 0.06948812778250445,
+          "p": 0.6175769164670766
+        },
+        "delta_uncertainty_markers": {
+          "rho": -0.01296778008051472,
+          "p": 0.9258499835875895
+        },
+        "delta_refusal_markers": {
+          "rho": -0.018725193234764972,
+          "p": 0.89309141475514
+        },
+        "delta_contradiction_markers": {
+          "rho": 0.01008193357765526,
+          "p": 0.9423193712119116
+        }
+      },
+      "delta_transition_entropy": {
+        "delta_repetition_rate": {
+          "rho": -0.1341058971524416,
+          "p": 0.33364882140405927
+        },
+        "delta_lexical_diversity": {
+          "rho": 0.1341058971524416,
+          "p": 0.33364882140405927
+        },
+        "delta_compression_ratio": {
+          "rho": -0.10096062211718065,
+          "p": 0.46759025612692184
+        },
+        "delta_output_length": {
+          "rho": -0.08818509799670453,
+          "p": 0.5260158012429499
+        },
+        "delta_uncertainty_markers": {
+          "rho": 0.1374637086601499,
+          "p": 0.32157463128775016
+        },
+        "delta_refusal_markers": {
+          "rho": -0.14586054036282267,
+          "p": 0.2926102005424562
+        },
+        "delta_contradiction_markers": {
+          "rho": 0.02016463578577015,
+          "p": 0.8849267114616027
+        }
+      },
+      "delta_oscillation_rate": {
+        "delta_repetition_rate": {
+          "rho": 0.3234367082508449,
+          "p": 0.017048339576985108
+        },
+        "delta_lexical_diversity": {
+          "rho": -0.3234367082508449,
+          "p": 0.017048339576985108
+        },
+        "delta_compression_ratio": {
+          "rho": 0.15233355324548323,
+          "p": 0.27148103221631803
+        },
+        "delta_output_length": {
+          "rho": 0.037782013449851,
+          "p": 0.7862061913711195
+        },
+        "delta_uncertainty_markers": {
+          "rho": -0.11692414317636003,
+          "p": 0.3997866168398251
+        },
+        "delta_refusal_markers": {
+          "rho": 0.1875534130010389,
+          "p": 0.17444211170067966
+        },
+        "delta_contradiction_markers": {
+          "rho": 0.022725968473578658,
+          "p": 0.8704283263195793
+        }
+      },
+      "delta_recovery_rate": {
+        "delta_repetition_rate": {
+          "rho": 0.09568219090746126,
+          "p": 0.49129719245459413
+        },
+        "delta_lexical_diversity": {
+          "rho": -0.09568219090746126,
+          "p": 0.49129719245459413
+        },
+        "delta_compression_ratio": {
+          "rho": -0.03865848747227979,
+          "p": 0.7813675836471027
+        },
+        "delta_output_length": {
+          "rho": -0.12717504378240316,
+          "p": 0.35945548700611196
+        },
+        "delta_uncertainty_markers": {
+          "rho": 0.28356868330187923,
+          "p": 0.03771848438347141
+        },
+        "delta_refusal_markers": {
+          "rho": -0.2958043637248175,
+          "p": 0.029878063475144104
+        },
+        "delta_contradiction_markers": {
+          "rho": -0.03992035505276812,
+          "p": 0.7744158464644266
+        }
+      },
+      "delta_logit_entropy_mean": {
+        "delta_repetition_rate": {
+          "rho": 0.0478386826603556,
+          "p": 0.7312131601464529
+        },
+        "delta_lexical_diversity": {
+          "rho": -0.0478386826603556,
+          "p": 0.7312131601464529
+        },
+        "delta_compression_ratio": {
+          "rho": 0.15784859354305383,
+          "p": 0.2542995387781651
+        },
+        "delta_output_length": {
+          "rho": 0.21945837048840572,
+          "p": 0.11083449701783465
+        },
+        "delta_uncertainty_markers": {
+          "rho": 0.09596157259580891,
+          "p": 0.4900269084524804
+        },
+        "delta_refusal_markers": {
+          "rho": -0.3483053880619063,
+          "p": 0.009851572297912638
+        },
+        "delta_contradiction_markers": {
+          "rho": 0.18147480439779465,
+          "p": 0.1890840734561548
+        }
+      }
+    }
+  }
+}
